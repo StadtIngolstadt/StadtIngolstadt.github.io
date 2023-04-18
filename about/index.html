@@ -127,7 +127,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230324173730">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230418063307">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -158,36 +158,39 @@ layout-page
     <p class="internet-explorer-message-body">Wir haben festgestellt, dass Sie den Internet Explorer verwenden, um diese Website zu besuchen. Der Internet Explorer wird von Microsoft nicht mehr unterstützt. Aus diesem Grund hat diese Website ebenfalls die Unterstützung für alle Versionen des Internet Explorers eingestellt, einige Bereiche auf dieser Website werden daher nicht oder nur eingeschränkt funktionieren. Bitte verwenden Sie einen modernen Browser wie Edge, Chrome, Firefox oder Safari. Wenn Sie Schwierigkeiten haben, einen anderen Browser zu installieren oder darauf zuzugreifen, wenden Sie sich bitte an Ihr IT-Supportteam.</p>
 </div>
 
-<!-- position: sticky;  position: -webkit-sticky;  -->
-<div style="top: 15px; z-index:3; background-color: white;"> 
-    <div id="color-bar-background"  style="position: relative;"> </div>
+<header>
+    <div id="color-bar-background"></div>
 
-    <header role="banner" class="">
-        <div class="container" style="top: 0px;">
-
-            <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-center" id="narbar-container"> 
-
-                <a class="navbar-brand" href="/" id="home" aria-label="" title="">
-                    <img src="/assets/img/SDG_logo.png"
-                    onmouseover="this.src='/assets/img/SDG_logo.png'"
-                    onmouseout="this.src='/assets/img/SDG_logo.png'" alt="Ziele für Nachhaltige Entwicklung - 17 Ziele, um unsere Welt zu verändern"/>
+    <div class="header-container justify-content-between"> 
+      
+        <!-- header logo and lower navbar -->
+        <div class="row g-0 w-100">
+            <div class="col align-self-center">
+                <a href="https://nachhaltigkeitsagenda-ingolstadt.de/" id="home" aria-label="" title="" target="_blank">
+                    <img src="/assets/img/SDG_logo.png" alt="Nachhaltigkeitsagenda Ingolstadt" style="width: 100%">      
                 </a>
-<!-- 
-                
-                <h1 class="header">
-                    Monitoring der <br>
-                    Kommunalen Nachhaltigkeitsstrategie <br>
-                    Ingolstadt
-                </h1>
-                 -->
+            </div>
+            <div class="col align-self-center">
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <!-- header page-top navbar -->
+                <div class="row justify-content-end">
+                    <li class="page-top-navbar" style="width:fit-content; list-style-type: none; padding-bottom: 20px;">
+        <a id="page-top-navbar-item" href="//leichte-sprache">Leichtes Deutsch
+        </a>
+    </li>
 
-                <div class="d-flex flex-wrap w-100 justify-content-between"  id="navigation-search-bar">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <!---->
+                </div>
+
+                <div class="navbar navbar-expand-lg navbar-dark align-items-center" id="narbar-container">
+                    <button class="navbar-toggler" id="navbar-hamburger-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="container nav-link" href="/"  target="">Startseite</a>
+</li><li class="nav-item ">
     <a class="container nav-link" href="/goals"  target="">Ziele</a>
 </li><li class="nav-item ">
     <a class="container nav-link" href="/reporting-status"  target="">Berichtsstatus</a>
@@ -198,37 +201,51 @@ layout-page
 </li></ul>
     
                     </div>
-                    <div class="d-flex header-toggle">
-                        <!-- add placeholder in input field -->
-
-<form class="search-field" id="search" action="/search/">
-    <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Suche</label>
-        <input class="form-control" type="search" placeholder="Indikatoren suchen" name="q" id="indicator_search" title="Suche">
-        <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
-                <i class="fa fa-search"></i>
+                    <span class="d-flex justify-content-end">
+                        <div class="align-items-center" id="navbar-search-md">
+    <button class="btn hide-btn" id="search-btn-collapse" onclick="showSearchField()" aria-label="">
+        <i class="fa fa-search"></i>
+    </button>
+    <div class="overlay header-container" id="search-field-input">
+        <form class="search-field float-start" id="search-md" action="/search/">
+            <div class="input-group">
+                <label class="visually-hidden" for="indicator_search">Suche</label>
+                <input class="form-control" type="search" placeholder="Indikatoren suchen" name="q" id="indicator_search" title="Suche">
+            </div>
+        </form>
+        <span class="float-end" >
+            <button id="search-field-close" onclick="hideSearchField()">
+                <i class="fa fa-close" style="padding: 0.45em; background-color: white;"></i>
             </button>
         </span>
     </div>
-</form>
-<a title="Aktivieren Sie hohen Kontrast" aria-label="Aktivieren Sie hohen Kontrast"
-    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="high"
->A</a>
-
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
 </div>
+
+
+<script>
+    function showSearchField() {
+        $("#search-field-input").slideDown(500);
+        // document.getElementById( "search-field-input" ).style.display = "unset";
+        // document.getElementById( "search-field-input" ).style.top="45px";
+    }
+    function hideSearchField() {
+        $("#search-field-input").slideUp(500);
+        // document.getElementById( "search-field-input" ).style.top="0px";
+        // document.getElementById( "search-field-input" ).style.display = "none";  
+    }
+</script>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+<!--
 <div id="top" tabindex=-1></div>
 
-
+ -->
 
 <div class="container">
     <nav>
@@ -246,25 +263,28 @@ data-event-label="high"
         
 
 
-    <p>Der Berliner Bezirk Treptow-Köpenick beschäftigt sich schon lange mit nachhaltiger Entwicklung auf kommunaler Ebene. Bereits 2004 wurde die „Lokale Agenda 21 Treptow-Köpenick“ verabschiedet, welche ein Leitbild und eine Vorgehensweise zur Umsetzung einer zukunftsfähigen Entwicklung im Bezirk Treptow-Köpenick umfasste. <br /></p>
-
-<p>Von 2018 bis 2020 wurde dieses Leitbild überarbeitet und dabei an der Agenda 2030 der Vereinten Nationen mit ihren 17 globalen Nachhaltigkeitszielen (SDGs) ausgerichtet. All das fand in einem praxisorientierten und partizipativen Prozess mit verschiedenen Akteuren des Bezirks statt, welche sich in insgesamt 8 Workshops vernetzen und konkrete Maßnahmen entwickeln konnten. Der erste Workshop wurde bereits im September 2018 durchgeführt, während der letzte Workshop aufgrund der Covid-19 Pandemie leider bis in den September 2020 verschoben werden musste. Jeder Workshop folgte einem ähnlichen Schema: Nach einem Vortrag von Themenpaten*innen und Themenpaten, wurden von allen Teilnehmenden zunächst allgemeine Ideen zur Erreichung des jeweiligen SDG gesammelt. Diese Ideensammlung wurde dann in Kleingruppen aufgegriffen und in konkrete Maßnahmen überführt. <br /></p>
-
-<p>Das Ergebnis ist die Kommunale Nachhaltigkeitsstrategie, welche 2021 verabschiedet wurde und neben den konkreten Maßnahmen auch ein Indikatoren-basiertes Monitoring umfasst. Dieses Monitoring ist hier, in einem webbasierten Format, veröffentlicht. <br /></p>
-
-<p>Das Monitoringsystem besteht dabei aus zwei Bereichen: Die “Maßnahmen-Indikatoren” sollen die Ergebnisse und Wirkungen der beschlossenen Maßnahmen sichtbar machen, während die “SDG-Indikatoren” umfassendere Daten für die Erreichung der Agenda 2030 Ziele auf Bezirksebene abbilden. 
-Die Maßnahmen-Indikatoren wurden dabei direkt aus den beschlossenen Maßnahmen abgeleitet. Hier finden sich auch viele Daten, die von verschiedenen Akteuren des Bezirks zur Verfügung gestellt wurden. Ohne diese Datenkooperationen wären die beschlossenen Maßnahmen kaum abzubilden. 
-Bei der Auswahl der allgemeineren, gesamtbezirklichen SDG-Indikatoren wurde sich hingegen vor allem an gängigen (in der Literatur verbreiteten) Nachhaltigkeitsindikatoren orientiert, welche dann in einen Kontext zur Nachhaltigkeitsstrategie Treptow-Köpenicks gesetzt wurden. Hier finden auch viele amtliche Daten Verwendung. <br /></p>
-
-<p>Die Website selbst basiert auf der Plattform Open-SDG und wurde in Zusammenarbeit mit Studentinnen der Hochschule für Technik und Wirtschaft Berlin (HTW Berlin) weiter entwickelt. Ein großer Dank gilt deshalb: Marlene Bueltemann, Grace Dodi, Lucia Feddersen, Christina Gottschalk, Neslihan Kilic, Mia Lohe, Mahulome Pede and Hatice Pinar. <br /></p>
-
-<p>An der wissenschafltlichen Begleitung des Projekts waren Prof. Florian Koch, Sarah Beyer und Chih-Yu Chen von der HTW Berlin beteiligt. <br /></p>
-
-<p>Verantwortlicher des Bezirksamts Treptow-Köpenick ist der Koordinator für kommunale Entwicklungspolitik Dennis Lumme. <br /></p>
-
-<p>Harald Oehlerking war für das Design der Nachhaltigkeitsstrategie zuständig. <br /></p>
-
-<p>Das gesamte Vorhaben wurde von der  Servicestelle Kommunen in der Einen Welt (SKEW) im Rahmen der Projekte INDIKON und DATAKON gefördert.</p>
+    <p>Am 27. Februar 2019 beschloss der Ingolstädter Stadtrat die Entwicklung einer Nachhaltigkeitsagenda. Als Grundlage für die jetzige Strategie diente eine im Herbst 2019 durchgeführte Bestandsaufnahme, die sich an den 17 Zielen für eine nachhaltige Entwicklung der Vereinten Nationen (SDGs) orientierte. Im Rahmen von Workshops mit Mitarbeitenden aus der Stadtverwaltung, Beteiligungsunternehmen und Mitgliedern des Stadtrates ist 2020 ein erstes Zielmodell mit Indikatoren für Ingolstadt entstanden. Darauf aufbauend sind in einem nächsten Schritt fünf Handlungsfelder und 15 Schwerpunktthemen für Ingolstadt entstanden. Diese bildeten den Rahmen für den Dialogprozess mit dem Titel „Wie wollen wir leben?“. Mit den externen Anspruchsgruppen der Stadt sowie den Bürger/-innen wurden zwischen Sommer 2021 und Sommer 2022 Visionen für 2045 erarbeitet, welche sich auf die fünf Handlungsfelder der Nachhaltigkeitsagenda Ingolstadt aufteilen:<br /> 
+<br /></p>
+<ul>
+  <li>Wirtschaft und Innovation</li>
+  <li>Klima, Umwelt und Energie</li>
+  <li>Nachhaltiges Leben im Alltag</li>
+  <li>Bildung und Kultur</li>
+  <li>Vielfalt und Engagement</li>
+</ul>
+<p><br />
+Die gemeinsame Erarbeitung von Meilensteinen für Teilziele und Maßnahmenwünsche zur Zielerreichung ergänzten den offenen Dialog mit der Bevölkerung. Die entstandenen Maßnahmenwünsche werden derzeit geprüft, ob diese umsetzbar sind oder sogar bereits durch die Verwaltung bearbeitet werden. Ein Maßnahmen-Monitoring soll in Zukunft einen Überblick verschaffen, welche Maßnahmen bereits existieren oder geplant sind und auf die Zielerreichung der Nachhaltigkeitsagenda Ingolstadt einzahlen.<br /> 
+<br /></p>
+<h3>Messung der Zielerreichung</h3>
+<p>Die Nachhaltigkeitsstrategie der Stadt Ingolstadt, umfasst neben den aktuell 80 Zielen und der Umsetzung von Maßnahmen auch ein Indikatoren-basiertes Monitoring.   Festgelegt wurden 98 Indikatoren, welche einen Überblick über den aktuellen Stand der Zielerreichung geben sollen. Dieses Monitoring finden Sie hier in einem  webbasierten Format. Die Indikatoren werden im weiteren Prozess stetig angepasst und wurden im Rahmen des Förderprojektes “Dashboard und Monitoring für Kommunale Nachhaltigkeitsstrategien (DashKon) online veröffentlicht. Bei der Auswahl der SDG-Indikatoren wurde sich vor allem an gängigen (in der Literatur verbreiteten) Nachhaltigkeitsindikatoren sowie an den Indikatoren des Berichtsrahmens Nachhaltige Kommune (BNK) des Rats für Nachhaltige Entwicklung orientiert und durch die Verwaltung in einen Kontext zur Nachhaltigkeitsstrategie Ingolstadts gesetzt. Neben öffentlich zugänglichen Quellen finden dabei auch zahlreiche amtliche Daten Verwendung.<br />
+<br /></p>
+<h3>Webseite Open-SDG</h3>
+<p>Die Webseite selbst basiert auf der Plattform Open-SDG und wurde in Zusammenarbeit mit Studentinnen der Hochschule für Technik und Wirtschaft Berlin (HTW Berlin) entwickelt. Ein großer Dank gilt deshalb: Marlene Bueltemann, Grace Dodi, Lucia Feddersen, Christina Gottschalk, Neslihan Kilic, Mia Lohe, Mahulome Pede and Hatice Pinar. An der wissenschaftlichen Begleitung des Projekts waren Prof. Florian Koch, Sarah Beyer und Chih-Yu Chen von der Hochschule für Technik und Wirtschaft Berlin beteiligt.<br />
+<br /></p>
+<h3>SDG-DashKon</h3>
+<p>Das gesamte Vorhaben wurde von der Servicestelle Kommunen in der Einen Welt (SKEW) gefördert. Das Projekt SDG-DashKon baut auf den Erfahrungen der Projekte „SDG-Dashboard“, INDIKON und DATAKON der letzten Jahre auf. Das SDG-DashKon ist ein Gemeinschaftsprojekt der SKEW in Kooperation mit der HTW Berlin und der Forschungsstätte der Evangelischen Studiengemeinschaft e.V. FEST.<br />
+<br />
+Weitere Informationen zum Projekt SDG-DashKon unter <a href="https://skew.engagement-global.de/sdg-dashkon.html">SKEW</a></p>
 
 
 
@@ -272,7 +292,7 @@ Bei der Auswahl der allgemeineren, gesamtbezirklichen SDG-Indikatoren wurde sich
 </div>
 
 
-<footer class="wide-background " style="width: 100%; margin-top: 6rem; padding-top: 5rem;">
+<footer class="wide-background " style="width: 100%; margin-top: 6rem; padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="row g-0" style="padding: 0px;">
             <div class="col-xs-12">
@@ -284,6 +304,11 @@ Bei der Auswahl der allgemeineren, gesamtbezirklichen SDG-Indikatoren wurde sich
     </div>
     <div class="container">
         <div class="row g-0 flexdirection justify-content-around">
+            <div class="col-xs-3" id="footer-binder">
+                <div id="bilder" style="background-color:white; padding-top: 1.4rem;">
+                    <a href="https://www.htw-berlin.de" id="footer-binder-href" target="_blank"><img src="/assets/img/logo_htw.png" alt="htw_berlin" id="footer-binder-image" class="img-responsive"></a>
+                </div>
+            </div>
             <div class="col-xs-3" id="footer-binder">
                 <div id="bilder" style="background-color:white;">
                     <h5 style="margin-top: 3%; margin-bottom: 2%;">In Koorperation mit</h5>
@@ -302,11 +327,6 @@ Bei der Auswahl der allgemeineren, gesamtbezirklichen SDG-Indikatoren wurde sich
                     <a href="https://www.bmz.de/de" id="footer-binder-href" target="_blank" ><img src="/assets/img/logo_BMZ.png" alt="bmz" id="footer-binder-image" class="img-responsive"></a>
                 </div>
             </div>
-            <div class="col-xs-3" id="footer-binder">
-                <div id="bilder" style="background-color:white; padding-top: 1.4rem;">
-                    <a href="https://www.htw-berlin.de" id="footer-binder-href" target="_blank"><img src="/assets/img/logo_htw.png" alt="htw_berlin" id="footer-binder-image" class="img-responsive"></a>
-                </div>
-            </div>
          </div>
     </div>
     <div class="container">
@@ -317,12 +337,12 @@ Bei der Auswahl der allgemeineren, gesamtbezirklichen SDG-Indikatoren wurde sich
                         
                             <li style="color:white;margin: 15px;font-weight: bold;">
                                     
-                                        <a href="https://sdgs-treptow-koepenick.github.io/DataTK/en/zip/all_indicators.zip" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem; font-size: 1.1rem; font-weight: 600;">Download</a>
+                                        <a href="https://StadtIngolstadt.github.io/sdg-data/de/zip/all_indicators.zip" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem; font-size: 1.1rem; font-weight: 600;">Download</a>
                                         
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
                                     
-                                        <a href="mailto:nachhaltigkeit@ba-tk.berlin.de" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Kontakt</a>
+                                        <a href="mailto:nachhaltigkeit@ingolstadt.de" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Kontakt</a>
                                     
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
@@ -380,12 +400,12 @@ Bei der Auswahl der allgemeineren, gesamtbezirklichen SDG-Indikatoren wurde sich
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230324173730'></script>
+<script src='/assets/js/sdg.js?v=20230418063307'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230324173730"></script><script>
+    <script src="/assets/js/custom.js?v=20230418063307"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

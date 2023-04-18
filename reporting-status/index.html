@@ -127,7 +127,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230324173730">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230418063307">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -158,36 +158,39 @@ layout-reportingstatus
     <p class="internet-explorer-message-body">Wir haben festgestellt, dass Sie den Internet Explorer verwenden, um diese Website zu besuchen. Der Internet Explorer wird von Microsoft nicht mehr unterstützt. Aus diesem Grund hat diese Website ebenfalls die Unterstützung für alle Versionen des Internet Explorers eingestellt, einige Bereiche auf dieser Website werden daher nicht oder nur eingeschränkt funktionieren. Bitte verwenden Sie einen modernen Browser wie Edge, Chrome, Firefox oder Safari. Wenn Sie Schwierigkeiten haben, einen anderen Browser zu installieren oder darauf zuzugreifen, wenden Sie sich bitte an Ihr IT-Supportteam.</p>
 </div>
 
-<!-- position: sticky;  position: -webkit-sticky;  -->
-<div style="top: 15px; z-index:3; background-color: white;"> 
-    <div id="color-bar-background"  style="position: relative;"> </div>
+<header>
+    <div id="color-bar-background"></div>
 
-    <header role="banner" class="">
-        <div class="container" style="top: 0px;">
-
-            <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-center" id="narbar-container"> 
-
-                <a class="navbar-brand" href="/" id="home" aria-label="" title="">
-                    <img src="/assets/img/SDG_logo.png"
-                    onmouseover="this.src='/assets/img/SDG_logo.png'"
-                    onmouseout="this.src='/assets/img/SDG_logo.png'" alt="Ziele für Nachhaltige Entwicklung - 17 Ziele, um unsere Welt zu verändern"/>
+    <div class="header-container justify-content-between"> 
+      
+        <!-- header logo and lower navbar -->
+        <div class="row g-0 w-100">
+            <div class="col align-self-center">
+                <a href="https://nachhaltigkeitsagenda-ingolstadt.de/" id="home" aria-label="" title="" target="_blank">
+                    <img src="/assets/img/SDG_logo.png" alt="Nachhaltigkeitsagenda Ingolstadt" style="width: 100%">      
                 </a>
-<!-- 
-                
-                <h1 class="header">
-                    Monitoring der <br>
-                    Kommunalen Nachhaltigkeitsstrategie <br>
-                    Ingolstadt
-                </h1>
-                 -->
+            </div>
+            <div class="col align-self-center">
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <!-- header page-top navbar -->
+                <div class="row justify-content-end">
+                    <li class="page-top-navbar" style="width:fit-content; list-style-type: none; padding-bottom: 20px;">
+        <a id="page-top-navbar-item" href="//leichte-sprache">Leichtes Deutsch
+        </a>
+    </li>
 
-                <div class="d-flex flex-wrap w-100 justify-content-between"  id="navigation-search-bar">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <!---->
+                </div>
+
+                <div class="navbar navbar-expand-lg navbar-dark align-items-center" id="narbar-container">
+                    <button class="navbar-toggler" id="navbar-hamburger-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="container nav-link" href="/"  target="">Startseite</a>
+</li><li class="nav-item ">
     <a class="container nav-link" href="/goals"  target="">Ziele</a>
 </li><li class="nav-item active">
     <a class="container nav-link" href="/reporting-status"  target="">Berichtsstatus</a>
@@ -198,37 +201,51 @@ layout-reportingstatus
 </li></ul>
     
                     </div>
-                    <div class="d-flex header-toggle">
-                        <!-- add placeholder in input field -->
-
-<form class="search-field" id="search" action="/search/">
-    <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Suche</label>
-        <input class="form-control" type="search" placeholder="Indikatoren suchen" name="q" id="indicator_search" title="Suche">
-        <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
-                <i class="fa fa-search"></i>
+                    <span class="d-flex justify-content-end">
+                        <div class="align-items-center" id="navbar-search-md">
+    <button class="btn hide-btn" id="search-btn-collapse" onclick="showSearchField()" aria-label="">
+        <i class="fa fa-search"></i>
+    </button>
+    <div class="overlay header-container" id="search-field-input">
+        <form class="search-field float-start" id="search-md" action="/search/">
+            <div class="input-group">
+                <label class="visually-hidden" for="indicator_search">Suche</label>
+                <input class="form-control" type="search" placeholder="Indikatoren suchen" name="q" id="indicator_search" title="Suche">
+            </div>
+        </form>
+        <span class="float-end" >
+            <button id="search-field-close" onclick="hideSearchField()">
+                <i class="fa fa-close" style="padding: 0.45em; background-color: white;"></i>
             </button>
         </span>
     </div>
-</form>
-<a title="Aktivieren Sie hohen Kontrast" aria-label="Aktivieren Sie hohen Kontrast"
-    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="high"
->A</a>
-
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
 </div>
+
+
+<script>
+    function showSearchField() {
+        $("#search-field-input").slideDown(500);
+        // document.getElementById( "search-field-input" ).style.display = "unset";
+        // document.getElementById( "search-field-input" ).style.top="45px";
+    }
+    function hideSearchField() {
+        $("#search-field-input").slideUp(500);
+        // document.getElementById( "search-field-input" ).style.top="0px";
+        // document.getElementById( "search-field-input" ).style.display = "none";  
+    }
+</script>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+<!--
 <div id="top" tabindex=-1></div>
 
-
+ -->
 
 
 
@@ -267,16 +284,24 @@ data-event-label="high"
         <h2 class="status-goal">
             Gesamtstatus der Berichterstattung
         </h2>
-        <span class="total"><span>101</span> indikatoren</span>
+        <span class="total"><span>98</span> indikatoren</span>
         <div class="summary">
             <div class="statuses">
             
             <div>
-                <span class="status complete"><span class="status-inner">101</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                <span class="status complete"><span class="status-inner">75</span></span><strong>Daten verfügbar</strong><span class="value">77%</span>
+            </div>
+            
+            
+            <div>
+                <span class="status inprogress"><span class="status-inner">22</span></span><strong>in Bearbeitung</strong><span class="value">22%</span>
             </div>
             
             
             
+            <div>
+                <span class="status notapplicable"><span class="status-inner">1</span></span><strong>Nicht zutreffend</strong><span class="value">1%</span>
+            </div>
             <br style="clear:both;">
             </div>
         </div>
@@ -285,10 +310,20 @@ data-event-label="high"
             
             
             
-            <span class="complete" style="width:100.0%" title="Daten verfügbar: 100%"></span>
+            <span class="complete" style="width:76.53061224489797%" title="Daten verfügbar: 77%"></span>
             
             
             
+            
+            
+            <span class="inprogress" style="width:22.448979591836736%" title="in Bearbeitung: 22%"></span>
+            
+            
+            
+            
+            
+            
+            <span class="notapplicable" style="width:1.020408163265306%" title="Nicht zutreffend: 1%"></span>
             </div>
     </div>
     <br style="clear:both;">
@@ -303,16 +338,24 @@ data-event-label="high"
         <h3 class="status-goal">
             <a href="/1">Keine Armut</a>
         </h3>
-        <span class="total">5 indikatoren</span>
+        <span class="total">7 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">5</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">7</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>in Bearbeitung</strong><span class="value">0%</span>
                 </div>
                 
                 
                 
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -325,6 +368,16 @@ data-event-label="high"
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:0.0%" title="in Bearbeitung: 0%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -344,11 +397,19 @@ data-event-label="high"
             <div class="statuses">
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">1</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Daten verfügbar</strong><span class="value">0%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">1</span></span><strong>in Bearbeitung</strong><span class="value">100%</span>
                 </div>
                 
                 
                 
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -357,10 +418,20 @@ data-event-label="high"
                 
                 
                 
-                <span class="complete" style="width:100.0%" title="Daten verfügbar: 100%"></span>
+                <span class="complete" style="width:0.0%" title="Daten verfügbar: 0%"></span>
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:100.0%" title="in Bearbeitung: 100%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -380,11 +451,19 @@ data-event-label="high"
             <div class="statuses">
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">8</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">3</span></span><strong>Daten verfügbar</strong><span class="value">38%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">5</span></span><strong>in Bearbeitung</strong><span class="value">63%</span>
                 </div>
                 
                 
                 
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -393,10 +472,20 @@ data-event-label="high"
                 
                 
                 
-                <span class="complete" style="width:100.0%" title="Daten verfügbar: 100%"></span>
+                <span class="complete" style="width:37.5%" title="Daten verfügbar: 38%"></span>
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:62.5%" title="in Bearbeitung: 63%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -416,11 +505,19 @@ data-event-label="high"
             <div class="statuses">
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">9</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">8</span></span><strong>Daten verfügbar</strong><span class="value">89%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">1</span></span><strong>in Bearbeitung</strong><span class="value">11%</span>
                 </div>
                 
                 
                 
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -429,10 +526,20 @@ data-event-label="high"
                 
                 
                 
-                <span class="complete" style="width:100.0%" title="Daten verfügbar: 100%"></span>
+                <span class="complete" style="width:88.88888888888889%" title="Daten verfügbar: 89%"></span>
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:11.11111111111111%" title="in Bearbeitung: 11%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -452,11 +559,19 @@ data-event-label="high"
             <div class="statuses">
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">6</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">5</span></span><strong>Daten verfügbar</strong><span class="value">83%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">1</span></span><strong>in Bearbeitung</strong><span class="value">17%</span>
                 </div>
                 
                 
                 
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -465,10 +580,20 @@ data-event-label="high"
                 
                 
                 
-                <span class="complete" style="width:100.0%" title="Daten verfügbar: 100%"></span>
+                <span class="complete" style="width:83.33333333333334%" title="Daten verfügbar: 83%"></span>
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:16.666666666666664%" title="in Bearbeitung: 17%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -483,16 +608,24 @@ data-event-label="high"
         <h3 class="status-goal">
             <a href="/6">Sauberes Wasser und Sanitärversorgung</a>
         </h3>
-        <span class="total">6 indikatoren</span>
+        <span class="total">4 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">6</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">1</span></span><strong>Daten verfügbar</strong><span class="value">25%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">3</span></span><strong>in Bearbeitung</strong><span class="value">75%</span>
                 </div>
                 
                 
                 
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -501,10 +634,20 @@ data-event-label="high"
                 
                 
                 
-                <span class="complete" style="width:100.0%" title="Daten verfügbar: 100%"></span>
+                <span class="complete" style="width:25.0%" title="Daten verfügbar: 25%"></span>
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:75.0%" title="in Bearbeitung: 75%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -528,7 +671,15 @@ data-event-label="high"
                 </div>
                 
                 
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>in Bearbeitung</strong><span class="value">0%</span>
+                </div>
                 
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -541,6 +692,16 @@ data-event-label="high"
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:0.0%" title="in Bearbeitung: 0%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -564,7 +725,15 @@ data-event-label="high"
                 </div>
                 
                 
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>in Bearbeitung</strong><span class="value">0%</span>
+                </div>
                 
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -577,6 +746,16 @@ data-event-label="high"
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:0.0%" title="in Bearbeitung: 0%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -591,16 +770,24 @@ data-event-label="high"
         <h3 class="status-goal">
             <a href="/9">Industrie, Innovationen und Infrastruktur</a>
         </h3>
-        <span class="total">5 indikatoren</span>
+        <span class="total">4 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">5</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">4</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>in Bearbeitung</strong><span class="value">0%</span>
                 </div>
                 
                 
                 
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -613,6 +800,16 @@ data-event-label="high"
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:0.0%" title="in Bearbeitung: 0%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -632,11 +829,19 @@ data-event-label="high"
             <div class="statuses">
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">7</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">5</span></span><strong>Daten verfügbar</strong><span class="value">71%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">2</span></span><strong>in Bearbeitung</strong><span class="value">29%</span>
                 </div>
                 
                 
                 
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -645,10 +850,20 @@ data-event-label="high"
                 
                 
                 
-                <span class="complete" style="width:100.0%" title="Daten verfügbar: 100%"></span>
+                <span class="complete" style="width:71.42857142857143%" title="Daten verfügbar: 71%"></span>
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:28.57142857142857%" title="in Bearbeitung: 29%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -668,11 +883,19 @@ data-event-label="high"
             <div class="statuses">
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">19</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">15</span></span><strong>Daten verfügbar</strong><span class="value">79%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">4</span></span><strong>in Bearbeitung</strong><span class="value">21%</span>
                 </div>
                 
                 
                 
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -681,10 +904,20 @@ data-event-label="high"
                 
                 
                 
-                <span class="complete" style="width:100.0%" title="Daten verfügbar: 100%"></span>
+                <span class="complete" style="width:78.94736842105263%" title="Daten verfügbar: 79%"></span>
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:21.052631578947366%" title="in Bearbeitung: 21%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -704,11 +937,19 @@ data-event-label="high"
             <div class="statuses">
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">6</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">5</span></span><strong>Daten verfügbar</strong><span class="value">83%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>in Bearbeitung</strong><span class="value">0%</span>
                 </div>
                 
                 
                 
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">1</span></span><strong>Nicht zutreffend</strong><span class="value">17%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -717,10 +958,20 @@ data-event-label="high"
                 
                 
                 
-                <span class="complete" style="width:100.0%" title="Daten verfügbar: 100%"></span>
+                <span class="complete" style="width:83.33333333333334%" title="Daten verfügbar: 83%"></span>
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:0.0%" title="in Bearbeitung: 0%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:16.666666666666664%" title="Nicht zutreffend: 17%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -740,11 +991,19 @@ data-event-label="high"
             <div class="statuses">
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">4</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">1</span></span><strong>Daten verfügbar</strong><span class="value">25%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">3</span></span><strong>in Bearbeitung</strong><span class="value">75%</span>
                 </div>
                 
                 
                 
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -753,10 +1012,20 @@ data-event-label="high"
                 
                 
                 
-                <span class="complete" style="width:100.0%" title="Daten verfügbar: 100%"></span>
+                <span class="complete" style="width:25.0%" title="Daten verfügbar: 25%"></span>
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:75.0%" title="in Bearbeitung: 75%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -780,7 +1049,15 @@ data-event-label="high"
                 </div>
                 
                 
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>in Bearbeitung</strong><span class="value">0%</span>
+                </div>
                 
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -793,6 +1070,16 @@ data-event-label="high"
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:0.0%" title="in Bearbeitung: 0%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -812,11 +1099,19 @@ data-event-label="high"
             <div class="statuses">
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">5</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">3</span></span><strong>Daten verfügbar</strong><span class="value">60%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">2</span></span><strong>in Bearbeitung</strong><span class="value">40%</span>
                 </div>
                 
                 
                 
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -825,10 +1120,20 @@ data-event-label="high"
                 
                 
                 
-                <span class="complete" style="width:100.0%" title="Daten verfügbar: 100%"></span>
+                <span class="complete" style="width:60.0%" title="Daten verfügbar: 60%"></span>
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:40.0%" title="in Bearbeitung: 40%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -852,7 +1157,15 @@ data-event-label="high"
                 </div>
                 
                 
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>in Bearbeitung</strong><span class="value">0%</span>
+                </div>
                 
+                
+                
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -865,6 +1178,16 @@ data-event-label="high"
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:0.0%" title="in Bearbeitung: 0%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -879,16 +1202,24 @@ data-event-label="high"
         <h3 class="status-goal">
             <a href="/17">Partnerschaften zur Erreichung der Ziele</a>
         </h3>
-        <span class="total">5 indikatoren</span>
+        <span class="total">3 indikatoren</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">5</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                    <span class="status complete"><span class="status-inner">3</span></span><strong>Daten verfügbar</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>in Bearbeitung</strong><span class="value">0%</span>
                 </div>
                 
                 
                 
+                <div>
+                    <span class="status notapplicable"><span class="status-inner">0</span></span><strong>Nicht zutreffend</strong><span class="value">0%</span>
+                </div>
                 <br style="clear:both;">
             </div>
         </div>
@@ -901,6 +1232,16 @@ data-event-label="high"
                 
                 
                 
+                
+                
+                <span class="inprogress" style="width:0.0%" title="in Bearbeitung: 0%"></span>
+                
+                
+                
+                
+                
+                
+                <span class="notapplicable" style="width:0.0%" title="Nicht zutreffend: 0%"></span>
                 </div>
         <div class="divider"></div>
     </div>
@@ -918,7 +1259,7 @@ data-event-label="high"
   <a href="#top">Zurück nach oben</a>
 </div>
 
-<footer class="wide-background " style="width: 100%; margin-top: 6rem; padding-top: 5rem;">
+<footer class="wide-background " style="width: 100%; margin-top: 6rem; padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="row g-0" style="padding: 0px;">
             <div class="col-xs-12">
@@ -930,6 +1271,11 @@ data-event-label="high"
     </div>
     <div class="container">
         <div class="row g-0 flexdirection justify-content-around">
+            <div class="col-xs-3" id="footer-binder">
+                <div id="bilder" style="background-color:white; padding-top: 1.4rem;">
+                    <a href="https://www.htw-berlin.de" id="footer-binder-href" target="_blank"><img src="/assets/img/logo_htw.png" alt="htw_berlin" id="footer-binder-image" class="img-responsive"></a>
+                </div>
+            </div>
             <div class="col-xs-3" id="footer-binder">
                 <div id="bilder" style="background-color:white;">
                     <h5 style="margin-top: 3%; margin-bottom: 2%;">In Koorperation mit</h5>
@@ -948,11 +1294,6 @@ data-event-label="high"
                     <a href="https://www.bmz.de/de" id="footer-binder-href" target="_blank" ><img src="/assets/img/logo_BMZ.png" alt="bmz" id="footer-binder-image" class="img-responsive"></a>
                 </div>
             </div>
-            <div class="col-xs-3" id="footer-binder">
-                <div id="bilder" style="background-color:white; padding-top: 1.4rem;">
-                    <a href="https://www.htw-berlin.de" id="footer-binder-href" target="_blank"><img src="/assets/img/logo_htw.png" alt="htw_berlin" id="footer-binder-image" class="img-responsive"></a>
-                </div>
-            </div>
          </div>
     </div>
     <div class="container">
@@ -963,12 +1304,12 @@ data-event-label="high"
                         
                             <li style="color:white;margin: 15px;font-weight: bold;">
                                     
-                                        <a href="https://sdgs-treptow-koepenick.github.io/DataTK/en/zip/all_indicators.zip" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem; font-size: 1.1rem; font-weight: 600;">Download</a>
+                                        <a href="https://StadtIngolstadt.github.io/sdg-data/de/zip/all_indicators.zip" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem; font-size: 1.1rem; font-weight: 600;">Download</a>
                                         
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
                                     
-                                        <a href="mailto:nachhaltigkeit@ba-tk.berlin.de" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Kontakt</a>
+                                        <a href="mailto:nachhaltigkeit@ingolstadt.de" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Kontakt</a>
                                     
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
@@ -1026,12 +1367,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230324173730'></script>
+<script src='/assets/js/sdg.js?v=20230418063307'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230324173730"></script><script>
+    <script src="/assets/js/custom.js?v=20230418063307"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

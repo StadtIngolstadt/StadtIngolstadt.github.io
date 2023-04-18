@@ -127,7 +127,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230324173730">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230418063307">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -158,36 +158,39 @@ layout-page
     <p class="internet-explorer-message-body">Wir haben festgestellt, dass Sie den Internet Explorer verwenden, um diese Website zu besuchen. Der Internet Explorer wird von Microsoft nicht mehr unterstützt. Aus diesem Grund hat diese Website ebenfalls die Unterstützung für alle Versionen des Internet Explorers eingestellt, einige Bereiche auf dieser Website werden daher nicht oder nur eingeschränkt funktionieren. Bitte verwenden Sie einen modernen Browser wie Edge, Chrome, Firefox oder Safari. Wenn Sie Schwierigkeiten haben, einen anderen Browser zu installieren oder darauf zuzugreifen, wenden Sie sich bitte an Ihr IT-Supportteam.</p>
 </div>
 
-<!-- position: sticky;  position: -webkit-sticky;  -->
-<div style="top: 15px; z-index:3; background-color: white;"> 
-    <div id="color-bar-background"  style="position: relative;"> </div>
+<header>
+    <div id="color-bar-background"></div>
 
-    <header role="banner" class="">
-        <div class="container" style="top: 0px;">
-
-            <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-center" id="narbar-container"> 
-
-                <a class="navbar-brand" href="/" id="home" aria-label="" title="">
-                    <img src="/assets/img/SDG_logo.png"
-                    onmouseover="this.src='/assets/img/SDG_logo.png'"
-                    onmouseout="this.src='/assets/img/SDG_logo.png'" alt="Ziele für Nachhaltige Entwicklung - 17 Ziele, um unsere Welt zu verändern"/>
+    <div class="header-container justify-content-between"> 
+      
+        <!-- header logo and lower navbar -->
+        <div class="row g-0 w-100">
+            <div class="col align-self-center">
+                <a href="https://nachhaltigkeitsagenda-ingolstadt.de/" id="home" aria-label="" title="" target="_blank">
+                    <img src="/assets/img/SDG_logo.png" alt="Nachhaltigkeitsagenda Ingolstadt" style="width: 100%">      
                 </a>
-<!-- 
-                
-                <h1 class="header">
-                    Monitoring der <br>
-                    Kommunalen Nachhaltigkeitsstrategie <br>
-                    Ingolstadt
-                </h1>
-                 -->
+            </div>
+            <div class="col align-self-center">
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <!-- header page-top navbar -->
+                <div class="row justify-content-end">
+                    <li class="page-top-navbar" style="width:fit-content; list-style-type: none; padding-bottom: 20px;">
+        <a id="page-top-navbar-item" href="//leichte-sprache">Leichtes Deutsch
+        </a>
+    </li>
 
-                <div class="d-flex flex-wrap w-100 justify-content-between"  id="navigation-search-bar">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <!---->
+                </div>
+
+                <div class="navbar navbar-expand-lg navbar-dark align-items-center" id="narbar-container">
+                    <button class="navbar-toggler" id="navbar-hamburger-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="container nav-link" href="/"  target="">Startseite</a>
+</li><li class="nav-item ">
     <a class="container nav-link" href="/goals"  target="">Ziele</a>
 </li><li class="nav-item ">
     <a class="container nav-link" href="/reporting-status"  target="">Berichtsstatus</a>
@@ -198,37 +201,51 @@ layout-page
 </li></ul>
     
                     </div>
-                    <div class="d-flex header-toggle">
-                        <!-- add placeholder in input field -->
-
-<form class="search-field" id="search" action="/search/">
-    <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Suche</label>
-        <input class="form-control" type="search" placeholder="Indikatoren suchen" name="q" id="indicator_search" title="Suche">
-        <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
-                <i class="fa fa-search"></i>
+                    <span class="d-flex justify-content-end">
+                        <div class="align-items-center" id="navbar-search-md">
+    <button class="btn hide-btn" id="search-btn-collapse" onclick="showSearchField()" aria-label="">
+        <i class="fa fa-search"></i>
+    </button>
+    <div class="overlay header-container" id="search-field-input">
+        <form class="search-field float-start" id="search-md" action="/search/">
+            <div class="input-group">
+                <label class="visually-hidden" for="indicator_search">Suche</label>
+                <input class="form-control" type="search" placeholder="Indikatoren suchen" name="q" id="indicator_search" title="Suche">
+            </div>
+        </form>
+        <span class="float-end" >
+            <button id="search-field-close" onclick="hideSearchField()">
+                <i class="fa fa-close" style="padding: 0.45em; background-color: white;"></i>
             </button>
         </span>
     </div>
-</form>
-<a title="Aktivieren Sie hohen Kontrast" aria-label="Aktivieren Sie hohen Kontrast"
-    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="high"
->A</a>
-
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
 </div>
+
+
+<script>
+    function showSearchField() {
+        $("#search-field-input").slideDown(500);
+        // document.getElementById( "search-field-input" ).style.display = "unset";
+        // document.getElementById( "search-field-input" ).style.top="45px";
+    }
+    function hideSearchField() {
+        $("#search-field-input").slideUp(500);
+        // document.getElementById( "search-field-input" ).style.top="0px";
+        // document.getElementById( "search-field-input" ).style.display = "none";  
+    }
+</script>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+<!--
 <div id="top" tabindex=-1></div>
 
-
+ -->
 
 <div class="container">
     <nav>
@@ -248,47 +265,46 @@ data-event-label="high"
 
     <h2 id="herausgeber">Herausgeber</h2>
 
-<p>Herausgeber dieser Website ist das Bezirksamt Treptow-Köpenick von Berlin.</p>
+<p>Herausgeber dieser Webseite ist die Stadt Ingolstadt.</p>
+
+<h3 id="vertretungsberechtigt">Vertretungsberechtigt</h3>
+
+<p>Oberbürgermeister Dr. Christian Scharpf</p>
 
 <h3 id="rechtsform">Rechtsform:</h3>
 <p>Behörde, Organ der juristischen Person des öffentlichen Rechts</p>
 
-<h3 id="hausanschrift">Hausanschrift:</h3>
-<p>Bezirksamt Treptow-Köpenick von Berlin
-Büro Bezirksbürgermeister
-Rudower Chaussee 4
-12489 Berlin</p>
-
-<h3 id="postanschrift">Postanschrift:</h3>
-<p>Bezirksamt Treptow-Köpenick von Berlin						                           <br />
-PF: 910240										           <br />
-12414 Berlin</p>
+<h3 id="anschrift">Anschrift:</h3>
+<p>Stadt Ingolstadt <br />
+Direktorium - Stabsstelle Nachhaltigkeit <br />
+Rathausplatz 2 <br />
+85049 Ingolstadt <br /></p>
 
 <h3 id="kontakt">Kontakt</h3>
-<p>Telefon: +49 (030) 90297 – 2351
-E-Mail: nachhaltigkeit@ba-tk.berlin.de</p>
+<p>Telefon: +49 (841) 305 – 2004 <br />
+E-Mail: nachhaltigkeit@ingolstadt.de</p>
 
 <h3 id="redaktion">Redaktion:</h3>
-<p>E-Mail: nachhaltigkeit@ba-tk.berlin.de</p>
+<p>E-Mail: nachhaltigkeit@ingolstadt.de</p>
 
 <h3 id="inhalteproduktion">Inhalte/Produktion:</h3>
-<p>Bezirksamt Treptow-Köpenick und HTW</p>
+<p>Stadt Ingolstadt und HTW</p>
 
 <h3 id="umsatzsteuer-identifikationsnummer">Umsatzsteuer-Identifikationsnummer</h3>
-<p>DE 814 554 323</p>
+<p>Die Umsatzsteueridentifikationsnummer (abgekürzt USt-IdNr. oder UID) der Stadt Ingolstadt gemäß § 27a UStG lautet: DE 128 601 333</p>
 
 <h3 id="hosting">Hosting:</h3>
 <p>GitHub</p>
 
 <h2 id="haftungsausschluss">Haftungsausschluss</h2>
-<p>Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt recherchiert und implementiert. Fehler im Bearbeitungsvorgang sind dennoch nicht auszuschließen. Hinweise und Korrekturen senden Sie bitte an unsere E-Mail-Adresse: nachhaltigkeit@ba-tk.berlin.de.
-Eine Haftung für die Richtigkeit, Vollständigkeit und Aktualität dieser Website kann trotz sorgfältiger Prüfung nicht übernommen werden. Das Bezirksamt Treptow-Köpenick übernimmt insbesondere keinerlei Haftung für eventuelle Schäden oder Konsequenzen, die durch die direkte oder indirekte Nutzung der angebotenen Inhalte entstehen.
-Neben den eigenen Inhalten bietet das Bezirksamt Treptow-Köpenick Querverweise („externe Links“) auf die von anderen Anbietern bereitgehaltenen Inhalte. Die fremden Inhalte stammen weder vom Bezirksamt Treptow-Köpenick noch hat es die Möglichkeit, den Inhalt von Seiten Dritter zu beeinflussen. Die Inhalte fremder Seiten, auf die das Bezirksamt Treptow-Köpenick mittels Links hinweist, spiegeln nicht die Meinung des Bezirksamtes Treptow-Köpenick wider, sondern dienen lediglich der Information und der Darstellung von Zusammenhängen. Das Bezirksamt Treptow-Köpenick haftet nicht für fremde Inhalte, auf die es lediglich im oben genannten Sinne hinweist. Die Verantwortlichkeit liegt alleine bei dem Anbieter der Inhalte. Bei Nutzungsausfällen der Website wegen technischer oder organisatorischer Störungen bestehen keinerlei Ansprüche - gleich welcher Art - gegen das Bezirksamt Treptow-Köpenick.</p>
+<p>Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt recherchiert und implementiert. Fehler im Bearbeitungsvorgang sind dennoch nicht auszuschließen. Hinweise und Korrekturen senden Sie bitte an unsere E-Mail-Adresse: <a href="mailto:nachhaltigkeit@ingolstadt.de">nachhaltigkeit@ingolstadt.de</a>.
+Eine Haftung für die Richtigkeit, Vollständigkeit und Aktualität dieser Website kann trotz sorgfältiger Prüfung nicht übernommen werden. Die Stadt Ingolstadt übernimmt insbesondere keinerlei Haftung für eventuelle Schäden oder Konsequenzen, die durch die direkte oder indirekte Nutzung der angebotenen Inhalte entstehen.
+Neben den eigenen Inhalten bietet die Stadt Ingolstadt Querverweise („externe Links“) auf die von anderen Anbietern bereitgehaltenen Inhalte. Die fremden Inhalte stammen weder von der Stadt Ingolstadt noch hat es die Möglichkeit, den Inhalt von Seiten Dritter zu beeinflussen. Die Inhalte fremder Seiten, auf die die Stadt Ingolstadt mittels Links hinweist, spiegeln nicht die Meinung der Stadt Ingolstadt wider, sondern dienen lediglich der Information und der Darstellung von Zusammenhängen. Die Stadt Ingolstadt haftet nicht für fremde Inhalte, auf die es lediglich im oben genannten Sinne hinweist. Die Verantwortlichkeit liegt alleine bei dem Anbieter der Inhalte. Bei Nutzungsausfällen der Website wegen technischer oder organisatorischer Störungen bestehen keinerlei Ansprüche - gleich welcher Art - gegen die Stadt Ingolstadt.</p>
 
 <h2 id="datenschutz">Datenschutz</h2>
-<p>Das Bezirksamt Treptow-Köpenick nimmt den Schutz Ihrer Privat- und Persönlichkeitssphäre ernst und beachtet die datenschutzrechtlichen Bestimmungen. Ihr coppyright allgemeinVertrauen ist uns wichtig!
-Mit diesen Hinweisen kommen wir unseren Informationspflichten nach Artikel 13 der Datenschutz-Grundverordnung (DS-GVO) bei der Erhebung personenbezogener Daten nach. Beim Zugriff auf die SDG-Online Plattform werden vom Bezirksamt Treptow- Köpenick keine personenbezogenen Daten erhoben.
-Sie nutzen allerdings die Dienste des Anbieters GitHub. Die Datenschutzerklärung von GitHub finden Sie unter https://help.github.com/en/articles/github-privacy-statement.
+<p>Die Stadt Ingolstadt nimmt den Schutz Ihrer Privat- und Persönlichkeitssphäre ernst und beachtet die datenschutzrechtlichen Bestimmungen. Ihr coppyright allgemeinVertrauen ist uns wichtig!
+Mit diesen Hinweisen kommen wir unseren Informationspflichten nach Artikel 13 der Datenschutz-Grundverordnung (DS-GVO) bei der Erhebung personenbezogener Daten nach. Beim Zugriff auf die SDG-Online Plattform werden von der Stadt Ingolstadt keine personenbezogenen Daten erhoben.
+Sie nutzen allerdings die Dienste des Anbieters GitHub. Die Datenschutzerklärung von GitHub finden Sie unter <a href="https://help.github.com/en/articles/github-privacy-statement">https://help.github.com/en/articles/github-privacy-statement</a>.
 Wir haben technische und organisatorische Maßnahmen getroffen, die sicherstellen, dass die Vorschriften über den Datenschutz sowohl von uns als auch von unserem Dienstleister beachtet werden. In diesem Zusammenhang weisen wir daraufhin, dass die Daten von GitHub in den USA verarbeitet werden können.
 Als Website-Besucher werden technische Informationen, auch die IP-Adresse, erfasst: diese kann ggf. ein personenbezogenes Datum sein.
 Im Zuge der Weiterentwicklung unserer Website können auch Änderungen dieser Datenschutzerklärung erforderlich werden. Daher empfehlen wir Ihnen, sich diese Erklärung regelmäßig durchzulesen.</p>
@@ -304,7 +320,7 @@ Die meisten Internetbrowser sind so eingestellt, dass sie Cookies automatisch ak
 <p>Wenn Sie Ihre Anfragen per E-Mail oder Telefon an uns richten, werden Ihre Angaben zur Beantwortung der Anfrage in unserem Kundenmanagement gespeichert. Dies erfolgt in Erfüllung unserer öffentlichen Aufgaben nach Artikel 6 Absatz 1 lit. e) DS-GVO in Verbindung mit § 3 BDSG. Sollte eine Anfrage kostenpflichtig sein, werden Sie darauf per E-Mail hingewiesen, es sei denn Ihre Anfrage enthält im Einzelfall bereits eine konkrete Bestellung mit den erforderlichen Vertragsbestandteilen. Die Verarbeitung basiert sodann auf Artikel 6 Absatz 1 lit. b) DS-GVO. Ihnen stehen ebenso die jeweils einschlägigen untenstehenden Rechte zu.</p>
 
 <h2 id="weitergabe-personenbezogener-daten-an-dritte">Weitergabe personenbezogener Daten an Dritte</h2>
-<p>Daten, die beim Zugriff auf das Internet-Angebot vom Bezirksamt Treptow-Köpenick protokolliert worden sind, werden an Dritte nur übermittelt, soweit wir gesetzlich oder durch Gerichtsentscheidung dazu verpflichtet sind oder die Weitergabe im Falle von Angriffen auf die Internet-Infrastruktur vom Bezirksamt Treptow-Köpenick zu Rechts- oder Strafverfolgung erforderlich ist. Eine Weitergabe zu anderen nichtkommerziellen oder zu kommerziellen Zwecken erfolgt nicht.</p>
+<p>Daten, die beim Zugriff auf das Internet-Angebot von der Stadt Ingolstadt protokolliert worden sind, werden an Dritte nur übermittelt, soweit wir gesetzlich oder durch Gerichtsentscheidung dazu verpflichtet sind oder die Weitergabe im Falle von Angriffen auf die Internet-Infrastruktur der Stadt Ingolstadt zu Rechts- oder Strafverfolgung erforderlich ist. Eine Weitergabe zu anderen nichtkommerziellen oder zu kommerziellen Zwecken erfolgt nicht.</p>
 
 <h2 id="minderjährigenschutz">Minderjährigenschutz</h2>
 <p>Personen unter 18 Jahren sollten ohne Zustimmung der Eltern oder Erziehungsberechtigten keine personenbezogenen Daten an uns übermitteln. Wir fordern keine personenbezogenen Daten von Kindern und Jugendlichen an. Wissentlich sammeln wir solche Daten nicht und geben sie auch nicht weiter.</p>
@@ -321,7 +337,7 @@ Die meisten Internetbrowser sind so eingestellt, dass sie Cookies automatisch ak
 </div>
 
 
-<footer class="wide-background " style="width: 100%; margin-top: 6rem; padding-top: 5rem;">
+<footer class="wide-background " style="width: 100%; margin-top: 6rem; padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="row g-0" style="padding: 0px;">
             <div class="col-xs-12">
@@ -333,6 +349,11 @@ Die meisten Internetbrowser sind so eingestellt, dass sie Cookies automatisch ak
     </div>
     <div class="container">
         <div class="row g-0 flexdirection justify-content-around">
+            <div class="col-xs-3" id="footer-binder">
+                <div id="bilder" style="background-color:white; padding-top: 1.4rem;">
+                    <a href="https://www.htw-berlin.de" id="footer-binder-href" target="_blank"><img src="/assets/img/logo_htw.png" alt="htw_berlin" id="footer-binder-image" class="img-responsive"></a>
+                </div>
+            </div>
             <div class="col-xs-3" id="footer-binder">
                 <div id="bilder" style="background-color:white;">
                     <h5 style="margin-top: 3%; margin-bottom: 2%;">In Koorperation mit</h5>
@@ -351,11 +372,6 @@ Die meisten Internetbrowser sind so eingestellt, dass sie Cookies automatisch ak
                     <a href="https://www.bmz.de/de" id="footer-binder-href" target="_blank" ><img src="/assets/img/logo_BMZ.png" alt="bmz" id="footer-binder-image" class="img-responsive"></a>
                 </div>
             </div>
-            <div class="col-xs-3" id="footer-binder">
-                <div id="bilder" style="background-color:white; padding-top: 1.4rem;">
-                    <a href="https://www.htw-berlin.de" id="footer-binder-href" target="_blank"><img src="/assets/img/logo_htw.png" alt="htw_berlin" id="footer-binder-image" class="img-responsive"></a>
-                </div>
-            </div>
          </div>
     </div>
     <div class="container">
@@ -366,12 +382,12 @@ Die meisten Internetbrowser sind so eingestellt, dass sie Cookies automatisch ak
                         
                             <li style="color:white;margin: 15px;font-weight: bold;">
                                     
-                                        <a href="https://sdgs-treptow-koepenick.github.io/DataTK/en/zip/all_indicators.zip" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem; font-size: 1.1rem; font-weight: 600;">Download</a>
+                                        <a href="https://StadtIngolstadt.github.io/sdg-data/de/zip/all_indicators.zip" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem; font-size: 1.1rem; font-weight: 600;">Download</a>
                                         
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
                                     
-                                        <a href="mailto:nachhaltigkeit@ba-tk.berlin.de" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Kontakt</a>
+                                        <a href="mailto:nachhaltigkeit@ingolstadt.de" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Kontakt</a>
                                     
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
@@ -429,12 +445,12 @@ Die meisten Internetbrowser sind so eingestellt, dass sie Cookies automatisch ak
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230324173730'></script>
+<script src='/assets/js/sdg.js?v=20230418063307'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230324173730"></script><script>
+    <script src="/assets/js/custom.js?v=20230418063307"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

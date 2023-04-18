@@ -1,7 +1,8 @@
-<!-- <style>
-    /*1-2. Handlungsfelder in custom.scss */
-</style> -->
+<head>
+    <script src="https://kit.fontawesome.com/7ee11bdcfb.js" crossorigin="anonymous"></script>
+</head>
 
+<html>
 <!DOCTYPE html>
 <html lang="de" class="no-js">
     <head>
@@ -131,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230324173730">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230418063307">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -163,36 +164,39 @@ layout-frontpage
     <p class="internet-explorer-message-body">Wir haben festgestellt, dass Sie den Internet Explorer verwenden, um diese Website zu besuchen. Der Internet Explorer wird von Microsoft nicht mehr unterstützt. Aus diesem Grund hat diese Website ebenfalls die Unterstützung für alle Versionen des Internet Explorers eingestellt, einige Bereiche auf dieser Website werden daher nicht oder nur eingeschränkt funktionieren. Bitte verwenden Sie einen modernen Browser wie Edge, Chrome, Firefox oder Safari. Wenn Sie Schwierigkeiten haben, einen anderen Browser zu installieren oder darauf zuzugreifen, wenden Sie sich bitte an Ihr IT-Supportteam.</p>
 </div>
 
-<!-- position: sticky;  position: -webkit-sticky;  -->
-<div style="top: 15px; z-index:3; background-color: white;"> 
-    <div id="color-bar-background"  style="position: relative;"> </div>
+<header>
+    <div id="color-bar-background"></div>
 
-    <header role="banner" class="">
-        <div class="container" style="top: 0px;">
-
-            <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-center" id="narbar-container"> 
-
-                <a class="navbar-brand" href="/" id="home" aria-label="" title="">
-                    <img src="/assets/img/SDG_logo.png"
-                    onmouseover="this.src='/assets/img/SDG_logo.png'"
-                    onmouseout="this.src='/assets/img/SDG_logo.png'" alt="Ziele für Nachhaltige Entwicklung - 17 Ziele, um unsere Welt zu verändern"/>
+    <div class="header-container justify-content-between"> 
+      
+        <!-- header logo and lower navbar -->
+        <div class="row g-0 w-100">
+            <div class="col align-self-center">
+                <a href="https://nachhaltigkeitsagenda-ingolstadt.de/" id="home" aria-label="" title="" target="_blank">
+                    <img src="/assets/img/SDG_logo.png" alt="Nachhaltigkeitsagenda Ingolstadt" style="width: 100%">      
                 </a>
-<!-- 
-                
-                <h1 class="header">
-                    Monitoring der <br>
-                    Kommunalen Nachhaltigkeitsstrategie <br>
-                    Ingolstadt
-                </h1>
-                 -->
+            </div>
+            <div class="col align-self-center">
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <!-- header page-top navbar -->
+                <div class="row justify-content-end">
+                    <li class="page-top-navbar" style="width:fit-content; list-style-type: none; padding-bottom: 20px;">
+        <a id="page-top-navbar-item" href="//leichte-sprache">Leichtes Deutsch
+        </a>
+    </li>
 
-                <div class="d-flex flex-wrap w-100 justify-content-between"  id="navigation-search-bar">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav" id="menu"><li class="nav-item ">
+       <!---->
+                </div>
+
+                <div class="navbar navbar-expand-lg navbar-dark align-items-center" id="narbar-container">
+                    <button class="navbar-toggler" id="navbar-hamburger-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav" id="menu"><li class="nav-item active">
+    <a class="container nav-link" href="/"  target="">Startseite</a>
+</li><li class="nav-item ">
     <a class="container nav-link" href="/goals"  target="">Ziele</a>
 </li><li class="nav-item ">
     <a class="container nav-link" href="/reporting-status"  target="">Berichtsstatus</a>
@@ -203,40 +207,54 @@ layout-frontpage
 </li></ul>
     
                     </div>
-                    <div class="d-flex header-toggle">
-                        <!-- add placeholder in input field -->
-
-<form class="search-field" id="search" action="/search/">
-    <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Suche</label>
-        <input class="form-control" type="search" placeholder="Indikatoren suchen" name="q" id="indicator_search" title="Suche">
-        <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
-                <i class="fa fa-search"></i>
+                    <span class="d-flex justify-content-end">
+                        <div class="align-items-center" id="navbar-search-md">
+    <button class="btn hide-btn" id="search-btn-collapse" onclick="showSearchField()" aria-label="">
+        <i class="fa fa-search"></i>
+    </button>
+    <div class="overlay header-container" id="search-field-input">
+        <form class="search-field float-start" id="search-md" action="/search/">
+            <div class="input-group">
+                <label class="visually-hidden" for="indicator_search">Suche</label>
+                <input class="form-control" type="search" placeholder="Indikatoren suchen" name="q" id="indicator_search" title="Suche">
+            </div>
+        </form>
+        <span class="float-end" >
+            <button id="search-field-close" onclick="hideSearchField()">
+                <i class="fa fa-close" style="padding: 0.45em; background-color: white;"></i>
             </button>
         </span>
     </div>
-</form>
-<a title="Aktivieren Sie hohen Kontrast" aria-label="Aktivieren Sie hohen Kontrast"
-    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="high"
->A</a>
-
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
 </div>
+
+
+<script>
+    function showSearchField() {
+        $("#search-field-input").slideDown(500);
+        // document.getElementById( "search-field-input" ).style.display = "unset";
+        // document.getElementById( "search-field-input" ).style.top="45px";
+    }
+    function hideSearchField() {
+        $("#search-field-input").slideUp(500);
+        // document.getElementById( "search-field-input" ).style.top="0px";
+        // document.getElementById( "search-field-input" ).style.display = "none";  
+    }
+</script>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+<!--
 <div id="top" tabindex=-1></div>
 
+ -->
 
 
-
-<div class ="main-image scroll-area">
+<div class ="main-image">
     <a><img src="/assets/img/full-size-img.jpg"></a>
 </div>
 
@@ -245,9 +263,19 @@ data-event-label="high"
     
         <div class="site-intro">
             <h1 style="font-weight: 700;">17 Ziele, um unsere Welt zu verändern</h1>
-            <div class="lead-copy"><p> Die 17 Ziele für nachhaltige Entwicklung (SDGs) sollen weltweit eine nachhaltige Entwicklung auf ökonomischer, sozialer und ökologischer Ebene anstoßen und wurden 2015 von allen UN-Mitgliedsstaaten als Teil der Agenda 2030 ratifiziert.
-                Um die weltweiten Ziele auch auf kommunaler Ebene voranzubringen, hat der Berliner Bezirk Treptow-Köpenick 2021 eine Kommunale Nachhaltigkeitsstrategie verabschiedet, welche gemeinsam mit verschiedenen Akteuren des Bezirks erarbeitet wurde.
-                Diese Kommunale Nachhaltigkeitsstrategie wurde um ein SDG-Monitoring ergänzt, zu  welchem sich an dieser Stelle die Indikatoren und Daten finden.</p></div>
+            <div class="lead-copy"><p> Die 17 Ziele für nachhaltige Entwicklung (Sustainable Development Goals, kurz SDGs) sollen weltweit eine nachhaltige Entwicklung auf ökonomischer, 
+sozialer und ökologischer Ebene anstoßen und wurden 2015 von allen UN-Mitgliedsstaaten (Vereinten Nationen, engl.: United Nations) als Teil der Agenda 2030 ratifiziert.
+Um die weltweiten Ziele auch auf kommunaler Ebene voranzubringen, hat die Stadt Ingolstadt am 28. Februar 2023 ihre Nachhaltigkeitsagenda verabschiedet. 
+In einem parallellaufenden Prozess wurde vom Stadtrat im Juni 2022 bereits das “integrierte Klimaschutzkonzept” beschlossen, welches ein klimaneutrales Ingolstadt 
+bis 2035 vorsieht. <br>
+<br>
+Unter Nachhaltigkeit versteht Ingolstadt neben dem schonenden Umgang mit der Umwelt unter anderem auch das würde- und friedvolle Leben miteinander, soziale Wärme, 
+Vielfalt, wirtschaftliche Innovation sowie eine hohe Bildung. In einem umfassenden Beteiligungsprozess wurden gemeinsam mit der Stadtgesellschaft fünf Handlungsfelder 
+und insgesamt 15 dazu passende Schwerpunktthemen für Ingolstadts Zukunft identifiziert. Diese sind hinterlegt mit Ingolstadt-spezifischen Zielen und Indikatoren, 
+welche sich wiederum an den SDGs der UN orientieren. Die Kommunale Nachhaltigkeitsstrategie der Stadt Ingolstadt wurde um ein digitales SDG-Monitoring ergänzt, 
+zu welchem Sie an dieser Stelle die Indikatoren und Daten finden. Hier haben Sie die Möglichkeit, sich digital über den aktuellen Stand der Zielerreichung zu 
+informieren.
+</p></div>
         </div>
     
 
@@ -372,42 +400,81 @@ data-event-label="high"
 </div>
     </div>
     
+
 </div>
 
 
-<!-- Handlungsfelder -->
+<!-- Handlungsfelder - title -->
+<div style="background-color:#efeeeb;">
+    <div class="container" style="margin-top: 3rem; padding-top: 3rem; padding-bottom: 1rem;">
+        <!-- <hr style="border: 1px solid black; margin-top: 5rem;"> -->
+        <h2 class="frontpage-goals-grid-title" style="font-size: 32px; font-weight: 700;">Handlungsfelder entdecken</h2>
+        <div class="frontpage-goals-grid-description"  style="font-size: 22px;">Die Handlungsfelder der Nachhaltigkeitsagenda Ingolstadt</div>
+    </div>
+    
+    <!-- Handlungsfelder - expandable tabs -->
+    <div class="tab container" style="margin-top:1rem;">
+        <div class="row g-0 align-items-center justify-content-start">
+            <button class="tablinks active" id="tabbtn-1" onclick="openTab(event, 'frontpage-handlungsfelder-Wirtschaft')">
+                <i class="fa fa-gear" style="font-size:  calc(10px + 0.75vw);"></i>
+                <span class="tabs-text">Wirtschaft</span>
+            </button>
+            <button class="tablinks" id="tabbtn-2" onclick="openTab(event, 'frontpage-handlungsfelder-Umwelt')">
+                <i class='fas fa-solar-panel'style="font-size:  calc(10px + 0.75vw);"></i>
+                <span class="tabs-text">Umwelt</span>
+            </button>
+            <button class="tablinks" id="tabbtn-3" onclick="openTab(event, 'frontpage-handlungsfelder-Leben')">
+                <i class="fa fa-tree" style="font-size:  calc(10px + 0.75vw);"></i>
+                <span class="tabs-text">Leben</span>
+            </button>
+            <button class="tablinks" id="tabbtn-4" onclick="openTab(event, 'frontpage-handlungsfelder-Vielfalt')">
+                <i class="fa fa-globe" style="font-size:  calc(10px + 0.75vw);"></i>
+                <span class="tabs-text">Vielfalt</span>
+            </button>
+            <button class="tablinks" id="tabbtn-5" onclick="openTab(event, 'frontpage-handlungsfelder-Bildung')">            
+                <i class="fa fa-pencil" style="font-size:  calc(10px + 0.75vw);"></i>
+                <span class="tabs-text">Bildung</span>
+            </button>
+        </div>
+    </div>
+</div>
 
 
-<div class ="wide-background scroll-area" id="frontpage-handlungsfelder" style="background-color: #007ebe;">
-    <div id="second-content" class="container"><h2 class="hf-title">Handlungsfelder entdecken</h2>
-        <div class="hf-description">Die Handlungsfelder der Nachhaltigkeitsagenda Ingolstadt</div><!-- hier Handlungsfelder von _config.yml importieren -->
-        <div class="row">
-    <div class="col-md-7">
-        
-        <h3 class="hf-subtitle">Wirtschaft</h3>
-        
-        
-        <div class="hf-thema-title">Vision</div>
-        <div class="hf-thema-text">Ingolstadt wirtschaftet in 2045 nachhaltig: Die Wirtschaft schützt den Planeten 
+
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Wirtschaft"  style="background-color: #007ebe;">
+    <!-- hier Handlungsfelder von _config.yml importieren -->
+    <div class="tab container">
+    <div class="row justify-content-start">
+        <div class="col" style="margin-bottom: 3vm;">
+            
+            <h3 class="hf-subtitle">Wirtschaft</h3>
+            
+            
+            <div class="hf-thema-title">Vision</div>
+            <div class="hf-thema-text">Ingolstadt wirtschaftet in 2045 nachhaltig: Die Wirtschaft schützt den Planeten 
 und stärkt das Gemeinwohl. Nicht nur die Lebensqualität ist auf einem Höchststand. Auch sind 
 Ingolstädter/-innen die zufriedensten Bürger/-innen in Deutschland:
 Die Balance zwischen Arbeit und Leben steht in Ingolstadt im Vordergrund.
 </div>
-        
-        
-        <div class="hf-thema-title">Leitsatz</div>
-        <div class="hf-thema-text">Ingolstadt ist ein attraktiver und nachhaltiger Wirtschaftsstandort. Als
+            
+            
+            <div class="hf-thema-title">Leitsatz</div>
+            <div class="hf-thema-text">Ingolstadt ist ein attraktiver und nachhaltiger Wirtschaftsstandort. Als
 vernetzte und zukunftsorientierte Stadt sichern wir mit technologischem, sozialem
 und gesellschaftlichem Fortschritt den Wohlstand für alle Menschen in Ingolstadt.
 Ökonomie und Ökologie betrachten wir nicht als Widersprüche, sondern als Quelle
 für Synergien.
 </div>
-        
+            
+        </div>
     </div>
-    <div class="col-md-1"></div>
     
-    <div class="col-md-4">
-        <div class="hf-goal-tiles">
+    <hr style="border: 1px solid white;">
+
+    
+    <div class="row justify-content-start">
+        <div class="col hf-goal-tiles">
+            <div class="hf-subtitle" style="font-size: 1.5rem; margin-top: 4vh;">SDGs zu dem Handlungsfeld</div>
             <div class="flex-grid">
                 
                 
@@ -464,39 +531,43 @@ für Synergien.
         </div>
     </div>
     
+</div> 
+
 </div>
 
-    </div>
-</div>
-
-<div class ="wide-background scroll-area" id="frontpage-handlungsfelder" style="background-color: #65b448;">
-    <div id="second-content" class="container"><!-- hier Handlungsfelder von _config.yml importieren -->
-        <div class="row">
-    <div class="col-md-7">
-        
-        <h3 class="hf-subtitle">Umwelt</h3>
-        
-        
-        <div class="hf-thema-title">Vision</div>
-        <div class="hf-thema-text">Ingolstadt verbindet Stadt und Natur und gilt als grüne Lunge unter den
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Umwelt"  style="background-color: #65b448;">
+    <!-- hier Handlungsfelder von _config.yml importieren -->
+    <div class="tab container">
+    <div class="row justify-content-start">
+        <div class="col" style="margin-bottom: 3vm;">
+            
+            <h3 class="hf-subtitle">Umwelt</h3>
+            
+            
+            <div class="hf-thema-title">Vision</div>
+            <div class="hf-thema-text">Ingolstadt verbindet Stadt und Natur und gilt als grüne Lunge unter den
 Städten Bayerns. Ingolstadt versorgt sich selbst mit Energie - ist autark und setzt
 Kreislaufwirtschaft um. Die Donau ist sauber und die CO2-Bilanz der Stadt weist
 aus: Ingolstadt ist klimapositiv.
 </div>
-        
-        
-        <div class="hf-thema-title">Leitsatz</div>
-        <div class="hf-thema-text">Ingolstadt lebt und wirtschaftet klima- und ressourcenschützend. Wir
+            
+            
+            <div class="hf-thema-title">Leitsatz</div>
+            <div class="hf-thema-text">Ingolstadt lebt und wirtschaftet klima- und ressourcenschützend. Wir
 schaffen Bewusstsein für den Erhalt unserer natürlichen Lebensgrundlagen und sichern diese.
 Mit einer positiven und effektiven Sichtweise auf die Ökologie treten wir mit Natur und Technik 
 in eine neue Beziehung.
 </div>
-        
+            
+        </div>
     </div>
-    <div class="col-md-1"></div>
     
-    <div class="col-md-4">
-        <div class="hf-goal-tiles">
+    <hr style="border: 1px solid white;">
+
+    
+    <div class="row justify-content-start">
+        <div class="col hf-goal-tiles">
+            <div class="hf-subtitle" style="font-size: 1.5rem; margin-top: 4vh;">SDGs zu dem Handlungsfeld</div>
             <div class="flex-grid">
                 
                 
@@ -559,38 +630,42 @@ in eine neue Beziehung.
         </div>
     </div>
     
+</div> 
+
 </div>
 
-    </div>
-</div>
-
-<div class ="wide-background scroll-area" id="frontpage-handlungsfelder" style="background-color: #f8b715;">
-    <div id="second-content" class="container"><!-- hier Handlungsfelder von _config.yml importieren -->
-        <div class="row">
-    <div class="col-md-7">
-        
-        <h3 class="hf-subtitle">Leben</h3>
-        
-        
-        <div class="hf-thema-title">Vision</div>
-        <div class="hf-thema-text">Der Alltag in Ingolstadt ist geprägt von Lebensqualität – und von einer vielfältigen Mobilität mit einem
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Leben"  style="background-color: #f8b715;">
+    <!-- hier Handlungsfelder von _config.yml importieren -->
+    <div class="tab container">
+    <div class="row justify-content-start">
+        <div class="col" style="margin-bottom: 3vm;">
+            
+            <h3 class="hf-subtitle">Leben</h3>
+            
+            
+            <div class="hf-thema-title">Vision</div>
+            <div class="hf-thema-text">Der Alltag in Ingolstadt ist geprägt von Lebensqualität – und von einer vielfältigen Mobilität mit einem
 breiten und nutzer/-innenfreundlichen Angebot für alle. Gemeinschaftlichkeit und Wohlbefinden sind Kennzeichen der
 nachhaltigen Stadtviertel der kurzen Wege, in denen sich die Generationen treffen. Zukunftskaufhäuser verdienen an
 langlebigen Produkten zur Nutzung statt zum Besitz, weil sie auch Reparatur anbieten. Seltener wird ganz neu Pro-
 duziertes gekauft.
 </div>
-        
-        
-        <div class="hf-thema-title">Leitsatz</div>
-        <div class="hf-thema-text">Wir ermöglichen ein gesundes und sicheres Miteinander im Alltag für die Menschen
+            
+            
+            <div class="hf-thema-title">Leitsatz</div>
+            <div class="hf-thema-text">Wir ermöglichen ein gesundes und sicheres Miteinander im Alltag für die Menschen
 in Ingolstadt. Das urbane Leben läuft im Einklang mit Mobilität und Ökologie.
 </div>
-        
+            
+        </div>
     </div>
-    <div class="col-md-1"></div>
     
-    <div class="col-md-4">
-        <div class="hf-goal-tiles">
+    <hr style="border: 1px solid white;">
+
+    
+    <div class="row justify-content-start">
+        <div class="col hf-goal-tiles">
+            <div class="hf-subtitle" style="font-size: 1.5rem; margin-top: 4vh;">SDGs zu dem Handlungsfeld</div>
             <div class="flex-grid">
                 
                 
@@ -659,39 +734,43 @@ in Ingolstadt. Das urbane Leben läuft im Einklang mit Mobilität und Ökologie.
         </div>
     </div>
     
+</div> 
+
 </div>
 
-    </div>
-</div>
-
-<div class ="wide-background scroll-area" id="frontpage-handlungsfelder" style="background-color: #ed6d29;">
-    <div id="second-content" class="container"><!-- hier Handlungsfelder von _config.yml importieren -->
-        <div class="row">
-    <div class="col-md-7">
-        
-        <h3 class="hf-subtitle">Vielfalt</h3>
-        
-        
-        <div class="hf-thema-title">Vision</div>
-        <div class="hf-thema-text">Ingolstadt ist weltoffen und leistet ihren Beitrag zur globalen Verantwortung. 
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Vielfalt"  style="background-color: #ed6d29;">
+    <!-- hier Handlungsfelder von _config.yml importieren -->
+    <div class="tab container">
+    <div class="row justify-content-start">
+        <div class="col" style="margin-bottom: 3vm;">
+            
+            <h3 class="hf-subtitle">Vielfalt</h3>
+            
+            
+            <div class="hf-thema-title">Vision</div>
+            <div class="hf-thema-text">Ingolstadt ist weltoffen und leistet ihren Beitrag zur globalen Verantwortung. 
 Verschiedenheit wird in Ingolstadt respektiert und wertgeschätzt. Engagierte 
 Ingolstädter/-innen stärken den Gemeinsinn. Diskriminierungen hingegen – auch
  bei der Entlohnung – gehören schon lange der Vergangenheit an.
 </div>
-        
-        
-        <div class="hf-thema-title">Leitsatz</div>
-        <div class="hf-thema-text">Die Stadt Ingolstadt steht für Vielfalt, Offenheit und Toleranz. Durch unsere 
+            
+            
+            <div class="hf-thema-title">Leitsatz</div>
+            <div class="hf-thema-text">Die Stadt Ingolstadt steht für Vielfalt, Offenheit und Toleranz. Durch unsere 
 vielfältige Gesellschaft fördern wir Kreativität und Produktivität. Wir engagieren
 uns lokal und global für ein gerechtes, gesundes und inklusives Miteinander. Damit
 fördern wir die Glokalisierung
 </div>
-        
+            
+        </div>
     </div>
-    <div class="col-md-1"></div>
     
-    <div class="col-md-4">
-        <div class="hf-goal-tiles">
+    <hr style="border: 1px solid white;">
+
+    
+    <div class="row justify-content-start">
+        <div class="col hf-goal-tiles">
+            <div class="hf-subtitle" style="font-size: 1.5rem; margin-top: 4vh;">SDGs zu dem Handlungsfeld</div>
             <div class="flex-grid">
                 
                 
@@ -766,38 +845,42 @@ fördern wir die Glokalisierung
         </div>
     </div>
     
+</div> 
+
 </div>
 
-    </div>
-</div>
-
-<div class ="wide-background scroll-area" id="frontpage-handlungsfelder" style="background-color: #05afda;">
-    <div id="second-content" class="container"><!-- hier Handlungsfelder von _config.yml importieren -->
-        <div class="row">
-    <div class="col-md-7">
-        
-        <h3 class="hf-subtitle">Bildung</h3>
-        
-        
-        <div class="hf-thema-title">Vision</div>
-        <div class="hf-thema-text">Nachhaltigkeit hat Einzug in Bildungs- und Kultureinrichtungen gehalten.
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Bildung"  style="background-color: #05afda;">
+    <!-- hier Handlungsfelder von _config.yml importieren -->
+    <div class="tab container">
+    <div class="row justify-content-start">
+        <div class="col" style="margin-bottom: 3vm;">
+            
+            <h3 class="hf-subtitle">Bildung</h3>
+            
+            
+            <div class="hf-thema-title">Vision</div>
+            <div class="hf-thema-text">Nachhaltigkeit hat Einzug in Bildungs- und Kultureinrichtungen gehalten.
 Der Zugang zur Kultur ist offen, für alle attraktiv und leicht zugänglich. Bildung selbst
-hat eine neue Qualität: Erfahrungslernen, vernetzter Umgang miteinander und Teil-
-habe sind fester Bestandteil von Bildungsangeboten.
+hat eine neue Qualität: Erfahrungslernen, vernetzter Umgang miteinander und Teilhabe sind 
+fester Bestandteil von Bildungsangeboten.
 </div>
-        
-        
-        <div class="hf-thema-title">Leitsatz</div>
-        <div class="hf-thema-text">Wir fördern Bildung für alle Menschen in unserer Stadt, auch mit den 
+            
+            
+            <div class="hf-thema-title">Leitsatz</div>
+            <div class="hf-thema-text">Wir fördern Bildung für alle Menschen in unserer Stadt, auch mit den 
 Mitteln der Kultur und kulturellen Bildung und leisten damit einen wichtigen Beitrag für
 eine nachhaltige Zukunft.
 </div>
-        
+            
+        </div>
     </div>
-    <div class="col-md-1"></div>
     
-    <div class="col-md-4">
-        <div class="hf-goal-tiles">
+    <hr style="border: 1px solid white;">
+
+    
+    <div class="row justify-content-start">
+        <div class="col hf-goal-tiles">
+            <div class="hf-subtitle" style="font-size: 1.5rem; margin-top: 4vh;">SDGs zu dem Handlungsfeld</div>
             <div class="flex-grid">
                 
                 
@@ -836,63 +919,99 @@ eine nachhaltige Zukunft.
         </div>
     </div>
     
-</div>
+</div> 
 
-    </div>
 </div>
 
 
 
 
 <!-- cards (imported from separate file) -->
-<!-- cards for publication etc-->
-<div id="sub-content" class="container" style="padding-top: 65px;">
-    <div class="row g-0 frontpage-card" style="padding-left: -calc(var(--bs-gutter-x) * -.5)">
+
+<div class="container">
+    <div class="row g-0 frontpage-card">
+        <!-- cards for publication etc-->
+<h2 style="font-size: 32px; font-weight: 700; color: #444444; padding-top: 5rem;">Veröffentlichungen</h2>
+<h4 style="font-size: 22px; color: #444444; margin-bottom: 20px;">Bleibe auf dem Laufenden...</h4>
+<br>
+
+
+<div id="carouselCard" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+    
+    <div class="carousel-inner" style="margin-right: -10px;">
         
-        <h2 style="font-size: 32px; font-weight: 700; color: #444444; padding-top: 5rem;">Veröffentlichungen</h2>
-        <h4 style="font-size: 22px; color: #444444; margin-bottom: 20px;">Bleibe auf dem Laufenden...</h4>
-        <br>
-
-        <div class="row flexdirection" style="padding-left: -calc(var(--bs-gutter-x) * -.5)">
-            <div class="col-xl-4 col-lg-6">
-                <a href="https://nachhaltigkeitsagenda-ingolstadt.de/wp-content/uploads/2023/01/221208_BNK_final_web.pdf" target="_blank" style="text-decoration: none;">
-                <div class="card1 border">
-                    <img class="card-img-top" src='/assets/img/3397_5_1_m.jpg' alt="include.card.title">
-                    <div class="cont">
-                        <h4 style="font-weight: 500; font-size: 1.125em;; line-height: 1.5;"><br>Nachhaltigkeitsbericht 2021</h4>
-                    </div>
+        <div class="carousel-item active card-gap" style="overflow:visible">
+            <div class="col">
+                <div class="card border">
+                    <a href="https://nachhaltigkeitsagenda-ingolstadt.de/wp-content/uploads/2023/01/221208_BNK_final_web.pdf" target="_blank" style="text-decoration: none;">
+                        <img class="card-img-top" src='/assets/img/BNK_Titelbild.jpg' alt="include.card.title">
+                        <div class="cont">
+                            <h4 style="font-weight: 600; font-size: calc(1rem + 1vw*0.075); line-height: 1.5;">Nachhaltigkeitsbericht - Stadt Ingolstadt 2021</h4>
+                        </div>
+                    </a>
                 </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-lg-6">
-                <a href=" https://nachhaltigkeitsagenda-ingolstadt.de/wp-content/uploads/2023/01/IN_Magazin_dpa-CC_FINAL_DIGTAL.pdf" target="_blank" style="text-decoration: none;">
-                    <div class="card2 border">
-                        <img class="card-img-top" src="/assets/img/3397_5_1_m.jpg" alt="include.card.title">
-                        <div class="cont">
-                            <h4 style="font-weight: 500; font-size: 1.125em;; line-height: 1.5; padding-top: 0.57rem">Nachhaltigkeitsmagazin 2021 (Deutsch)</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-xl-4 col-lg-6">
-                <a href="https://www.youtube.com/watch?v=LnqFFrIGQQQ" target="_blank" style="text-decoration: none;">
-                    <div class="card3 border">
-                        <img class="card-img-top"src="/assets/img/3397_5_1_m.jpg" alt="include.card.title">
-                        <div class="cont">
-                            <h4 style="font-weight: 500; font-size: 1.125em;; line-height: 1.5;">Nachhaltigkeitsfilm</h4>
-                        </div>
-                    </div>
-                </a>
             </div>
         </div>
+        
+        <div class="carousel-item  card-gap" style="overflow:visible">
+            <div class="col">
+                <div class="card border">
+                    <a href="https://nachhaltigkeitsagenda-ingolstadt.de/wp-content/uploads/2023/01/IN_Magazin_dpa-CC_FINAL_DIGTAL.pdf" target="_blank" style="text-decoration: none;">
+                        <img class="card-img-top" src='/assets/img/IN_Magazin_Titelbild.jpg' alt="include.card.title">
+                        <div class="cont">
+                            <h4 style="font-weight: 600; font-size: calc(1rem + 1vw*0.075); line-height: 1.5;">Magazin - "Ingolstadt Nachhaltig" - Ausgabe 2022</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-item  card-gap" style="overflow:visible">
+            <div class="col">
+                <div class="card border">
+                    <a href="https://www.youtube.com/watch?v=LnqFFrIGQQQ" target="_blank" style="text-decoration: none;">
+                        <img class="card-img-top" src='/assets/img/Logo_Nachhaltigkeitsagenda_96dpi.jpg' alt="include.card.title">
+                        <div class="cont">
+                            <h4 style="font-weight: 600; font-size: calc(1rem + 1vw*0.075); line-height: 1.5;">Nachhaltigkeitsfilm - Stadt Ingolstadt</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-item  card-gap" style="overflow:visible">
+            <div class="col">
+                <div class="card border">
+                    <a href="https://www.youtube.com/watch?v=VDQF-RdU0nc" target="_blank" style="text-decoration: none;">
+                        <img class="card-img-top" src='/assets/img/Logo_Nachhaltigkeitsagenda_96dpi.jpg' alt="include.card.title">
+                        <div class="cont">
+                            <h4 style="font-weight: 600; font-size: calc(1rem + 1vw*0.075); line-height: 1.5;">Video Rückblick - Visionen 2045 Ingolstadt</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <a class="carousel-card-prev float-start" role="button" data-bs-target="#carouselCard" data-bs-slide="next" style="color:white">
+        <span class="fa fa-chevron-left" id="nav-arrow" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-card-next float-end" role="button" data-bs-target="#carouselCard" data-bs-slide="prev" style="color:white">
+        <span class="fa fa-chevron-right" id="nav-arrow" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+
+</div>
 
     </div>
 </div>
 
+
 <!-- footer incl. binder logos -->
 
-<footer class="wide-background " style="width: 100%; margin-top: 6rem; padding-top: 5rem;">
+<footer class="wide-background " style="width: 100%; margin-top: 6rem; padding-top: 5rem; padding-bottom: 0px;">
     <div class="container">
         <div class="row g-0" style="padding: 0px;">
             <div class="col-xs-12">
@@ -904,6 +1023,11 @@ eine nachhaltige Zukunft.
     </div>
     <div class="container">
         <div class="row g-0 flexdirection justify-content-around">
+            <div class="col-xs-3" id="footer-binder">
+                <div id="bilder" style="background-color:white; padding-top: 1.4rem;">
+                    <a href="https://www.htw-berlin.de" id="footer-binder-href" target="_blank"><img src="/assets/img/logo_htw.png" alt="htw_berlin" id="footer-binder-image" class="img-responsive"></a>
+                </div>
+            </div>
             <div class="col-xs-3" id="footer-binder">
                 <div id="bilder" style="background-color:white;">
                     <h5 style="margin-top: 3%; margin-bottom: 2%;">In Koorperation mit</h5>
@@ -922,11 +1046,6 @@ eine nachhaltige Zukunft.
                     <a href="https://www.bmz.de/de" id="footer-binder-href" target="_blank" ><img src="/assets/img/logo_BMZ.png" alt="bmz" id="footer-binder-image" class="img-responsive"></a>
                 </div>
             </div>
-            <div class="col-xs-3" id="footer-binder">
-                <div id="bilder" style="background-color:white; padding-top: 1.4rem;">
-                    <a href="https://www.htw-berlin.de" id="footer-binder-href" target="_blank"><img src="/assets/img/logo_htw.png" alt="htw_berlin" id="footer-binder-image" class="img-responsive"></a>
-                </div>
-            </div>
          </div>
     </div>
     <div class="container">
@@ -937,12 +1056,12 @@ eine nachhaltige Zukunft.
                         
                             <li style="color:white;margin: 15px;font-weight: bold;">
                                     
-                                        <a href="https://sdgs-treptow-koepenick.github.io/DataTK/en/zip/all_indicators.zip" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem; font-size: 1.1rem; font-weight: 600;">Download</a>
+                                        <a href="https://StadtIngolstadt.github.io/sdg-data/de/zip/all_indicators.zip" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem; font-size: 1.1rem; font-weight: 600;">Download</a>
                                         
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
                                     
-                                        <a href="mailto:nachhaltigkeit@ba-tk.berlin.de" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Kontakt</a>
+                                        <a href="mailto:nachhaltigkeit@ingolstadt.de" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Kontakt</a>
                                     
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
@@ -1000,14 +1119,32 @@ eine nachhaltige Zukunft.
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230324173730'></script>
+<script src='/assets/js/sdg.js?v=20230418063307'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230324173730"></script><script>
+    <script src="/assets/js/custom.js?v=20230418063307"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
 
 
+</html>
+
+<!-- onclick expand tab for Handlungsfelder -->
+<script>
+    function openTab(evt, hf_id) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(hf_id).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
