@@ -4,4 +4,4 @@ If in meta data the following is set to true:
 There will be no diagramms showing. Instead, images in this folder will be loaded.
 
 Images muss be named the same as the CSV data, with the same numbers e.g. 1-1-1.jpg, 2-1-2.png
-So there could be found and placed under the same indicator.
+So they could be found and placed under the same indicator.
