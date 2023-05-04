@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230419120601">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230504062541">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -422,7 +422,7 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>In Städten wirkt sich besonders die durch den Klimawandel bedingte zunehmende Hitzebelastung negativ auf die menschliche Gesundheit aus. Nach den Prognosen des bayerischen Landesamts für Umweltschutz wird die Zahl der gesundheitsbelastenden Hitzetage (Tmax &gt; 30° C) und Tropennächte (Tmin &gt; 20°C) deutlich zunehmen. Um in der Stadtentwicklung darauf angemessen reagieren und Vorsorgemaßnahmen treffen zu können, sind umfangreiche und hochaufgelöste Grundlageninformationen unverzichtbar. Geeignete Instrumente zur Identifizierung der relevanten „Klimatope“ (Flächen mit einheitlichen klimatischen Gegebenheiten) und deren planerischen Bearbeitung ist die Klimaanalysekarte.</p>
+    <p>In Städten wirkt sich besonders die durch den Klimawandel bedingte zunehmende Hitzebelastung negativ auf die menschliche Gesundheit aus. Nach den Prognosen des bayerischen Landesamts für Umweltschutz wird die Zahl der gesundheitsbelastenden Hitzetage (Tmax &gt; 30° C) und Tropennächte (Tmin &gt; 20°C) deutlich zunehmen. Um in der Stadtentwicklung darauf angemessen reagieren und Vorsorgemaßnahmen treffen zu können, sind umfangreiche und hochaufgelöste Grundlageninformationen unverzichtbar. Geeignete Instrumente zur Identifizierung der relevanten „Klimatope“ (Flächen mit einheitlichen klimatischen Gegebenheiten) und deren planerischen Bearbeitung ist die <a href="https://stadtplan.ingolstadt.de/#ll=48.762982,11.390595&amp;z=13&amp;m=custom379&amp;mf=s100!o100&amp;cat=39338,39357">Klimaanalysekarte</a>.</p>
 
   </div>
 </div>
@@ -464,7 +464,7 @@ layout-indicator
   
   <!-- add statistic data as image -->
   <div class="row g-0 justify-content-center">
-    <img class="col-md-7" src="/assets/img/indicator_img/13-1.png" alt="indicator-as-image">
+    <img class="col-md-7" src="/assets/img/indicator_img/13-1.png" onerror="this.onerror=null; this.src='/assets/img/indicator_img/13-1.jpg'"alt="indicator-as-image">
   </div>
   <div id="indicator-main" class="indicator-main col-md-12">
   
@@ -885,11 +885,11 @@ data-event-label="Change to Metadaten tab"
                 
             </div>
             
-            <a class="carousel-control-prev" role="button" data-bs-target="#carouselLowerNavigation" data-bs-slide="next">
+            <a class="carousel-control-prev" role="button" data-bs-target="#carouselLowerNavigation" data-bs-slide="prev">
                 <span class="fa fa-chevron-left" id="nav-arrow" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </a>
-            <a class="carousel-control-next" role="button" data-bs-target="#carouselLowerNavigation" data-bs-slide="prev">
+            <a class="carousel-control-next" role="button" data-bs-target="#carouselLowerNavigation" data-bs-slide="next">
                 <span class="fa fa-chevron-right" id="nav-arrow" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </a>
@@ -1007,12 +1007,12 @@ data-event-label="Change to Metadaten tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230419120601'></script>
+<script src='/assets/js/sdg.js?v=20230504062541'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230419120601"></script><script>
+    <script src="/assets/js/custom.js?v=20230504062541"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
