@@ -15,7 +15,7 @@
         },
         {
           "id": "1-2",
-          "title": "Empfänger/innen von Grundsicherung im Alter",
+          "title": "Empfänger/-innen von Grundsicherung im Alter",
           "description": "",
           "keywords": "",
           "href": "/1-2",
@@ -23,7 +23,7 @@
         },
         {
           "id": "1-3",
-          "title": "Empfänger/innen von Grundsicherung nach SGB II insgesamt",
+          "title": "Empfänger/-innen von Grundsicherung nach SGB II insgesamt",
           "description": "",
           "keywords": "",
           "href": "/1-3",
@@ -47,7 +47,7 @@
         },
         {
           "id": "1-5",
-          "title": "Empfänger/innen von Grundsicherung nach SGB II insgesamt in % der Einwohner unter 65",
+          "title": "Empfänger/-innen von Grundsicherung nach SGB II insgesamt in % der Einwohner/-innen unter 65",
           "description": "",
           "keywords": "",
           "href": "/1-5",
@@ -55,7 +55,7 @@
         },
         {
           "id": "1-6",
-          "title": "Empfänger/innen von sozialer Mindestsicherung insgesamt (ohne Asylbewerber und BaföG-Empfänger) in % der Gesamtbevölkerung",
+          "title": "Empfänger/-innen von sozialer Mindestsicherung insgesamt (ohne Asylbewerber/-innen und BaföG-Empfänger/-innen) in % der Gesamtbevölkerung",
           "description": "",
           "keywords": "",
           "href": "/1-6",
@@ -103,7 +103,7 @@
         },
         {
           "id": "3-3",
-          "title": "Ärzteversorgung (Allg.-Mediziner/-innen je 100.000 E)",
+          "title": "Ärzteversorgung",
           "description": "",
           "keywords": "",
           "href": "/3-3",
@@ -111,7 +111,7 @@
         },
         {
           "id": "3-4",
-          "title": "Fachärzte/-innen-Versorgung (Anzahl und Verteilung im Stadtgebiet)",
+          "title": "Fachärzte/-innen-Versorgung",
           "description": "",
           "keywords": "",
           "href": "/3-4",
@@ -119,7 +119,7 @@
         },
         {
           "id": "3-5",
-          "title": "Immission von Luftschadstoffen (µg / m³)",
+          "title": "Immission von Luftschadstoffen",
           "description": "",
           "keywords": "",
           "href": "/3-5",
@@ -135,7 +135,7 @@
         },
         {
           "id": "3-7",
-          "title": "Vorzeitige Sterblickeit (unter 70 Jahre, Todesfälle)",
+          "title": "Vorzeitige Sterblickeit",
           "description": "",
           "keywords": "",
           "href": "/3-7",
@@ -143,7 +143,7 @@
         },
         {
           "id": "3-8",
-          "title": "Wohnungsnahe Grundversorgung - Krankenhaus (Krankenhausbetten je 100.000 Einwohner:innen)",
+          "title": "Wohnungsnahe Grundversorgung - Krankenhaus",
           "description": "",
           "keywords": "",
           "href": "/3-8",
@@ -175,7 +175,7 @@
         },
         {
           "id": "4-3",
-          "title": "Betreuung von Kindern in öff. KiTa (unter 3-Jährige / in %)",
+          "title": "Betreuung von Kindern in öff. Kita",
           "description": "",
           "keywords": "",
           "href": "/4-3",
@@ -183,7 +183,7 @@
         },
         {
           "id": "4-4",
-          "title": "Integrative Kindertageseinrichtungen (in %)",
+          "title": "Integrative Kindertageseinrichtungen",
           "description": "",
           "keywords": "",
           "href": "/4-4",
@@ -191,7 +191,7 @@
         },
         {
           "id": "4-5",
-          "title": "Kinder in öff. Tageseinrichtungen (unter 3-Jährige / absolut)",
+          "title": "Kinder in öff. Tageseinrichtungen",
           "description": "",
           "keywords": "",
           "href": "/4-5",
@@ -207,7 +207,7 @@
         },
         {
           "id": "4-7",
-          "title": "Schulabbrecherquote* (in % / ohne Mittelschulabschluss)",
+          "title": "Schulabbrecherquote*",
           "description": "",
           "keywords": "",
           "href": "/4-7",
@@ -239,7 +239,7 @@
         
         {
           "id": "5-1",
-          "title": "Angebote für Vereinbarkeit von Beruf und Familie für städtische MA",
+          "title": "Angebote für Vereinbarkeit von Beruf und Familie für städtische Mitarbeitende",
           "description": "",
           "keywords": "",
           "href": "/5-1",
@@ -247,7 +247,7 @@
         },
         {
           "id": "5-2",
-          "title": "Empfänger/innen von Hilfe zum Lebensunterhalt",
+          "title": "Empfänger/-innen von Hilfe zum Lebensunterhalt",
           "description": "",
           "keywords": "",
           "href": "/5-2",
@@ -255,7 +255,7 @@
         },
         {
           "id": "5-3",
-          "title": "Empfänger/innen von sozialer Mindestsicherung insgesamt (ohne Asylbewerber und BaföG-Empfänger)",
+          "title": "Empfänger/-innen von sozialer Mindestsicherung insgesamt (ohne Asylbewerber/-innen und BaföG-Empfänger/-innen)",
           "description": "",
           "keywords": "",
           "href": "/5-3",
@@ -263,7 +263,7 @@
         },
         {
           "id": "5-4",
-          "title": "Frauenanteil im Stadtrat, Gemeinderat bzw. Kreistag (in %)",
+          "title": "Frauenanteil im Stadtrat, Gemeinderat bzw. Kreistag",
           "description": "",
           "keywords": "",
           "href": "/5-4",
@@ -271,7 +271,7 @@
         },
         {
           "id": "5-5",
-          "title": "sv-Beschäftigungsquote in % (15-65 J)",
+          "title": "sv-Beschäftigungsquote",
           "description": "",
           "keywords": "",
           "href": "/5-5",
@@ -311,7 +311,7 @@
         },
         {
           "id": "6-3",
-          "title": "Nitrat im Grundwasser: Anteil der Messstellen, an denen der Schwellenwert von 50 mg Nitrat pro Liter überschritten wird.",
+          "title": "Nitrat im Grundwasser",
           "description": "",
           "keywords": "",
           "href": "/6-3",
@@ -335,7 +335,7 @@
         
         {
           "id": "7-1",
-          "title": "Strom aus Windkraft* (Watt je Einwohner:in)",
+          "title": "Strom aus Windkraft*",
           "description": "",
           "keywords": "",
           "href": "/7-1",
@@ -351,7 +351,7 @@
         
         {
           "id": "8-1",
-          "title": "Aufstocker (Anteil der erwerbstätigen ALG-II Bezieher an allen erwerbsfähigen Leistungsbeziehern)",
+          "title": "Aufstocker (Anteil der erwerbstätigen ALG-II Bezieher/-innen an allen erwerbsfähigen Leistungsbezieher/-innen)",
           "description": "",
           "keywords": "",
           "href": "/8-1",
@@ -359,7 +359,7 @@
         },
         {
           "id": "8-2",
-          "title": "Beschäftigungsquote (15- bis 64-Jährige / in %)",
+          "title": "Beschäftigungsquote (15- bis 64-Jährige)",
           "description": "",
           "keywords": "",
           "href": "/8-2",
@@ -367,7 +367,7 @@
         },
         {
           "id": "8-3",
-          "title": "Bruttoinlandsprodukt (€ je Einwohner/in)",
+          "title": "Bruttoinlandsprodukt",
           "description": "",
           "keywords": "",
           "href": "/8-3",
@@ -383,7 +383,7 @@
         },
         {
           "id": "8-5",
-          "title": "Langzeitarbeitslosenquote (Prozentualer Anteil, der länger als 1 Jahr arbeitslos ist)",
+          "title": "Langzeitarbeitslosenquote",
           "description": "",
           "keywords": "",
           "href": "/8-5",
@@ -423,7 +423,7 @@
         },
         {
           "id": "9-3",
-          "title": "Existenzgründungen* (je 1.000 Einwohner:innen)",
+          "title": "Existenzgründungen*",
           "description": "",
           "keywords": "",
           "href": "/9-3",
@@ -463,7 +463,7 @@
         },
         {
           "id": "10-3",
-          "title": "Beschäftigungsquote - Ausländer (in %)",
+          "title": "Beschäftigungsquote - Ausländer",
           "description": "",
           "keywords": "",
           "href": "/10-3",
@@ -471,7 +471,7 @@
         },
         {
           "id": "10-4",
-          "title": "Schulabbrecherquote - Ausländer (in % / im Verhältnis zur Schulabbrecherquote in der Gesamtbevölkerung)",
+          "title": "Schulabbrecherquote - Ausländer",
           "description": "",
           "keywords": "",
           "href": "/10-4",
@@ -487,7 +487,7 @@
         },
         {
           "id": "10-6",
-          "title": "Einbürgerungen im Jahr* (absolut)",
+          "title": "Einbürgerungen im Jahr*",
           "description": "",
           "keywords": "",
           "href": "/10-6",
@@ -495,7 +495,7 @@
         },
         {
           "id": "10-7",
-          "title": "Wohnfläche (m² je Einwohner) in den 12 Stadtbezirken, Gini-Koeffizient",
+          "title": "Wohnfläche (m² je Einwohner/-in) in den 12 Stadtbezirken, Gini-Koeffizient",
           "description": "",
           "keywords": "",
           "href": "/10-7",
@@ -551,7 +551,7 @@
         },
         {
           "id": "11-6",
-          "title": "Beteigte an Unfällen mit Personenschaden",
+          "title": "Beteiligte an Unfällen mit Personenschaden",
           "description": "",
           "keywords": "",
           "href": "/11-6",
@@ -559,7 +559,7 @@
         },
         {
           "id": "11-7",
-          "title": "Biotopflächenfaktor (Verhältnis naturhaushaltwirksamer Flächen zur gesamten Grundstücksfläche)",
+          "title": "Biotopflächenfaktor",
           "description": "",
           "keywords": "",
           "href": "/11-7",
@@ -567,7 +567,7 @@
         },
         {
           "id": "11-8",
-          "title": "Fertiggestellte Wohngebäude mit erneuerbarer Heizenergie bzw. Fernwärme (in %)",
+          "title": "Fertiggestellte Wohngebäude mit erneuerbarer Heizenergie bzw. Fernwärme",
           "description": "",
           "keywords": "",
           "href": "/11-8",
@@ -575,7 +575,7 @@
         },
         {
           "id": "11-9",
-          "title": "Flächeninanspruchnahme (in %)",
+          "title": "Flächeninanspruchnahme",
           "description": "",
           "keywords": "",
           "href": "/11-9",
@@ -583,7 +583,7 @@
         },
         {
           "id": "11-10",
-          "title": "Flächenneuinanspruchnahme (in %)",
+          "title": "Flächenneuinanspruchnahme",
           "description": "",
           "keywords": "",
           "href": "/11-10",
@@ -591,7 +591,7 @@
         },
         {
           "id": "11-11",
-          "title": "Flächennutzungsintensität (m² je Einwohner/-in)",
+          "title": "Flächennutzungsintensität",
           "description": "",
           "keywords": "",
           "href": "/11-11",
@@ -607,7 +607,7 @@
         },
         {
           "id": "11-13",
-          "title": "Mietpreise (ohne geförderten Wohnungsbau) (Durchschnittliche Nettokaltmiete / € je m²)",
+          "title": "Mietpreise (ohne geförderten Wohnungsbau)",
           "description": "",
           "keywords": "",
           "href": "/11-13",
@@ -615,7 +615,7 @@
         },
         {
           "id": "11-14",
-          "title": "Naherholungsflächen (mit Wald) in Hektar je 1000 Einwohner/-innen",
+          "title": "Naherholungsflächen (mit Wald)",
           "description": "",
           "keywords": "",
           "href": "/11-14",
@@ -623,7 +623,7 @@
         },
         {
           "id": "11-15",
-          "title": "Öffentliche Grünflächen (km2 je 1.000 E) in Stadtvierteln (Unterkategorien Grünflächen)",
+          "title": "Öffentliche Grünflächen",
           "description": "",
           "keywords": "",
           "href": "/11-15",
@@ -639,7 +639,7 @@
         },
         {
           "id": "11-17",
-          "title": "PKW-Dichte (Anzahl der PKW je 1.000 Einwohner:innen)",
+          "title": "PKW-Dichte",
           "description": "",
           "keywords": "",
           "href": "/11-17",
@@ -647,7 +647,7 @@
         },
         {
           "id": "11-18",
-          "title": "Wohnfläche je Einwohner (in m²)",
+          "title": "Wohnfläche je Einwohner/-in",
           "description": "",
           "keywords": "",
           "href": "/11-18",
@@ -671,7 +671,7 @@
         
         {
           "id": "12-1",
-          "title": "Abfallmenge (private Haushalte) (Tonne je Einwohner:in)",
+          "title": "Abfallmenge (private Haushalte)",
           "description": "",
           "keywords": "",
           "href": "/12-1",
@@ -711,7 +711,7 @@
         },
         {
           "id": "12-6",
-          "title": "Trinkwasserverbrauch - private Haushalte (Liter je Einwohner:in und Tag)",
+          "title": "Trinkwasserverbrauch - private Haushalte",
           "description": "",
           "keywords": "",
           "href": "/12-6",
@@ -767,7 +767,7 @@
         
         {
           "id": "14-1",
-          "title": "Fließwasserqualität in % (Ökologisches Potenzial von x% der Fließgewässer in der Kommune ist mind. 'gut' bewertet)",
+          "title": "Fließwasserqualität",
           "description": "",
           "keywords": "",
           "href": "/14-1",
@@ -847,7 +847,7 @@
         },
         {
           "id": "16-2",
-          "title": "Anzahl und Art der informellen Bürger/-innenbeteiligungsverfahren pro 1.000 E",
+          "title": "Anzahl und Art der informellen Bürger/-innenbeteiligungsverfahren",
           "description": "",
           "keywords": "",
           "href": "/16-2",
@@ -855,7 +855,7 @@
         },
         {
           "id": "16-3",
-          "title": "Finanzmittelsaldo (€ je Einwohner:in)",
+          "title": "Finanzmittelsaldo",
           "description": "",
           "keywords": "",
           "href": "/16-3",
@@ -863,7 +863,7 @@
         },
         {
           "id": "16-4",
-          "title": "Liquiditätskredite (€ je Einwohner:in)",
+          "title": "Liquiditätskredite",
           "description": "",
           "keywords": "",
           "href": "/16-4",
@@ -871,7 +871,7 @@
         },
         {
           "id": "16-5",
-          "title": "Steuereinnahmen (€ je Einwohner:in)",
+          "title": "Steuereinnahmen",
           "description": "",
           "keywords": "",
           "href": "/16-5",
@@ -879,7 +879,7 @@
         },
         {
           "id": "16-6",
-          "title": "Straftaten (polizeilich gemeldet) (je 1.000 Einwohner:innen)",
+          "title": "Straftaten (polizeilich gemeldet)",
           "description": "",
           "keywords": "",
           "href": "/16-6",
