@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230721061549">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230721070716">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -452,21 +452,21 @@ K1.2: Ausbau von erneuerbaren Energien, insbesondere Erzeugung von regenerativem
   data-country="Ingolstadt"
   data-charttitle="Zubau in Kilowatt Peak"
   data-charttitles="null"
-  data-measurementunit="Zubau in Kilowatt Peak"
+  data-measurementunit="kWp"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Group&quot;,&quot;value&quot;:&quot;Zubau in kWp seit 1993&quot;},{&quot;field&quot;:&quot;Group&quot;,&quot;value&quot;:&quot;Zubau in kWp&quot;},{&quot;field&quot;:&quot;Group&quot;,&quot;value&quot;:&quot;kWp Gesamt&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Group&quot;,&quot;value&quot;:&quot;Zubau in kWp 1993 bis 2018&quot;},{&quot;field&quot;:&quot;Group&quot;,&quot;value&quot;:&quot;Zubau in kWp ab 2019&quot;},{&quot;field&quot;:&quot;Group&quot;,&quot;value&quot;:&quot;Gesamtleistung Ingolstadt&quot;},{&quot;field&quot;:&quot;Group&quot;,&quot;value&quot;:&quot;Gesamtleistung städtische Anlagen&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Zubau in kWp seit 1993&quot;,&quot;Zubau in kWp&quot;,&quot;kWp Gesamt&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;kWp&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Zubau 1993 bis 2018&quot;,&quot;Zubau in kWp ab 2019&quot;,&quot;Gesamtleistung Ingolstadt&quot;,&quot;Gesamtleistung städtische Anlagen&quot;,&quot;&quot;]},&quot;title&quot;:&quot;kWp&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -499,161 +499,15 @@ K1.2: Ausbau von erneuerbaren Energien, insbesondere Erzeugung von regenerativem
   <div id="datatables">
 
     
-    <a href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/headline/7-2.csv" class="btn btn-primary btn-download" download="indicator_7-2.csv" tabindex="0" role="button">Speichern der Headline im CSV-Format</a>
-    
     <a href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/data/7-2.csv" class="btn btn-primary btn-download" download='indicator_7-2.csv' tabindex='0' role='button'>Daten im CSV-Format speichern</a>
 
     <p class="no-js-disaggregation-hint">Quell-CSV für Disaggregationen herunterladen</p>
 
     
-    <h3>Schlagzeilendaten</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Zubau in Kilowatt Peak</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col">Value</th>
-        
-        
-        
-        <th scope="col" class="table-value">Units</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td>47300</td>
-          
-          
-          
-          <td class="table-value">Zubau in kWp seit 1993</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td>3044</td>
-          
-          
-          
-          <td class="table-value">Zubau in kWp</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td>3625</td>
-          
-          
-          
-          <td class="table-value">Zubau in kWp</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td>4433</td>
-          
-          
-          
-          <td class="table-value">Zubau in kWp</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2022</td>
-          
-          
-          
-          <td>4812</td>
-          
-          
-          
-          <td class="table-value">Zubau in kWp</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2023</td>
-          
-          
-          
-          <td>5915</td>
-          
-          
-          
-          <td class="table-value">Zubau in kWp</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2023</td>
-          
-          
-          
-          <td>69128</td>
-          
-          
-          
-          <td class="table-value">kWp Gesamt</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>Keine Headline-Daten verfügbar</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    
-    <p>Geographische Abdeckung: Ingolstadt</p>
-    
-    
-    <p>Einheit: Zubau in Kilowatt Peak</p>
-    
-    
-  </div>
   
 
 </div>
@@ -993,7 +847,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Zubau in Kilowatt Peak</p>
+            <p>kWp</p>
 
           
         </td>
@@ -1571,12 +1425,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230721061549'></script>
+<script src='/assets/js/sdg.js?v=20230721070716'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230721061549"></script><script>
+    <script src="/assets/js/custom.js?v=20230721070716"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
