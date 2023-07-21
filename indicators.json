@@ -340,6 +340,22 @@
           "keywords": "",
           "href": "/7-1",
           "status": "complete"
+        },
+        {
+          "id": "7-2",
+          "title": "Zubau in Kilowatt Peak",
+          "description": "",
+          "keywords": "",
+          "href": "/7-2",
+          "status": "complete"
+        },
+        {
+          "id": "7-3",
+          "title": "CO2e-Emissionen",
+          "description": "",
+          "keywords": "",
+          "href": "/7-3",
+          "status": "complete"
         }]
     }
   },
