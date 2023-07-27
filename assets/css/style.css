@@ -2686,7 +2686,7 @@ h1.header {
   text-decoration: none; }
 
 .page-top-navbar {
-  padding-right: 5rem; }
+  padding-right: 2rem; }
   @media screen and (max-width: 992px) {
     .page-top-navbar {
       display: none; } }
@@ -3026,7 +3026,7 @@ h1.header {
   flex-direction: row; }
 
 .flex-grid > * {
-  flex-basis: 8%;
+  flex-basis: calc(5vw + 30px);
   width: 33.33%; }
 
 .hf-goal-tiles {
