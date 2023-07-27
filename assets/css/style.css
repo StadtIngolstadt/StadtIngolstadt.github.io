@@ -2833,10 +2833,16 @@ h1.header {
   margin-bottom: 0px; }
 
 /*1-1. frontpage */
-.main-image {
-  padding-bottom: 5rem; }
-  .main-image img {
-    max-width: 100%; }
+@media (min-width: 992px) {
+  .main-image {
+    padding-bottom: 5rem; }
+    .main-image img {
+      max-width: 100%; } }
+@media (max-width: 992px) {
+  .main-image {
+    padding-bottom: 1rem; }
+    .main-image img {
+      height: calc(30vw + 80px); } }
 
 .site-intro {
   background: none !important;
