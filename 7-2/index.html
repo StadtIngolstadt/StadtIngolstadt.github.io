@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20231213101527">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20240216120533">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -425,10 +425,9 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Dieser Indikator gibt den Zubau an Photovoltaik in Kilowatt Peak (kWp) an. In der Zeitreihe 2018 sind alle Zubauten seit 1993 verzeichnet.
-Daher ist diese entsprechend ausgeprägter. <br />
+    <p>Dieser Indikator gibt den Zubau an Photovoltaik in Kilowatt Peak (kWp) ab 1993 sowie die installierte Gesamtleistung der jeweiligen Jahre an. Die Gesamtleistung der städtischen Anlagen bezieht sich ausschlielßlich auf die installierte Leistung auf Gebäuden, welche sich in städtischer Hand befinden.<br />
 Geplante Anlagen sind in dieser Grafik nicht berücksichtigt.<br />
-Stand der Auswertung: 7. Juni 2023<br />
+Stand der Auswertung: 26.01.2024<br />
 <br />
 <b>Ziel Nachhaltigkeitsagenda Ingolstadt</b><br />
 K1.2: Ausbau von erneuerbaren Energien, insbesondere Erzeugung von regenerativem Strom vor Ort<br />
@@ -459,14 +458,14 @@ K1.2: Ausbau von erneuerbaren Energien, insbesondere Erzeugung von regenerativem
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;kWp&quot;,&quot;value&quot;:&quot;Zubau 1993 bis 2018&quot;},{&quot;field&quot;:&quot;kWp&quot;,&quot;value&quot;:&quot;Zubau ab 2019&quot;},{&quot;field&quot;:&quot;kWp&quot;,&quot;value&quot;:&quot;Gesamtleistung Ingolstadt&quot;},{&quot;field&quot;:&quot;kWp&quot;,&quot;value&quot;:&quot;Gesamtleistung städtische Anlagen&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;kWp&quot;,&quot;value&quot;:&quot;Zubau&quot;},{&quot;field&quot;:&quot;kWp&quot;,&quot;value&quot;:&quot;Gesamtleistung Ingolstadt&quot;},{&quot;field&quot;:&quot;kWp&quot;,&quot;value&quot;:&quot;Gesamtleistung städtische Anlagen&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;kWp&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Zubau 1993 bis 2018&quot;,&quot;Zubau ab 2019&quot;,&quot;Gesamtleistung Ingolstadt&quot;,&quot;Gesamtleistung städtische Anlagen&quot;,&quot;&quot;]},&quot;title&quot;:&quot;kWp&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;kWp&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Zubau&quot;,&quot;Gesamtleistung Ingolstadt&quot;,&quot;Gesamtleistung städtische Anlagen&quot;,&quot;&quot;]},&quot;title&quot;:&quot;kWp&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -895,7 +894,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p>2018</p>
+            <p>1993</p>
 
           
         </td>
@@ -1425,12 +1424,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20231213101527'></script>
+<script src='/assets/js/sdg.js?v=20240216120533'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20231213101527"></script><script>
+    <script src="/assets/js/custom.js?v=20240216120533"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
