@@ -131,7 +131,7 @@
           "description": "",
           "keywords": "",
           "href": "/3-6",
-          "status": "complete"
+          "status": "inprogress"
         },
         {
           "id": "3-7",
@@ -843,6 +843,14 @@
           "description": "",
           "keywords": "",
           "href": "/15-5",
+          "status": "complete"
+        },
+        {
+          "id": "15-6",
+          "title": "Vertrags-Naturschutzflächen",
+          "description": "",
+          "keywords": "",
+          "href": "/15-6",
           "status": "complete"
         }]
     }
