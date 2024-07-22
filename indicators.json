@@ -452,6 +452,22 @@
           "keywords": "",
           "href": "/9-4",
           "status": "complete"
+        },
+        {
+          "id": "9-5",
+          "title": "Förderprojekte für technische und digitale Lösungen",
+          "description": "",
+          "keywords": "",
+          "href": "/9-5",
+          "status": "complete"
+        },
+        {
+          "id": "9-6",
+          "title": "Finanzielle Beteiligung für Forschung",
+          "description": "",
+          "keywords": "",
+          "href": "/9-6",
+          "status": "complete"
         }]
     }
   },
