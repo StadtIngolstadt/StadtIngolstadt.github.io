@@ -323,7 +323,7 @@
           "description": "",
           "keywords": "",
           "href": "/6-4",
-          "status": "inprogress"
+          "status": "complete"
         }]
     }
   },
@@ -355,6 +355,14 @@
           "description": "",
           "keywords": "",
           "href": "/7-3",
+          "status": "complete"
+        },
+        {
+          "id": "7-4",
+          "title": "Ladesäuleninfrastruktur",
+          "description": "",
+          "keywords": "",
+          "href": "/7-4",
           "status": "complete"
         }]
     }

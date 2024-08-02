@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240725134355">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20240802123823">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -449,7 +449,7 @@ N1.5: Mehr Selbstversorgung und Urban Gardening fördern<br />
   data-country="Ingolstadt"
   data-charttitle="Trinkwasserverbrauch - private Haushalte"
   data-charttitles="null"
-  data-measurementunit="Liter je Einwohner/-in und Tag"
+  data-measurementunit="Liter je EW / Tag"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -463,7 +463,7 @@ N1.5: Mehr Selbstversorgung und Urban Gardening fördern<br />
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Ingolstadt&quot;,&quot;Bayern&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -496,81 +496,15 @@ N1.5: Mehr Selbstversorgung und Urban Gardening fördern<br />
   <div id="datatables">
 
     
-    <a href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/headline/12-6.csv" class="btn btn-primary btn-download" download="indicator_12-6.csv" tabindex="0" role="button">Speichern der Headline im CSV-Format</a>
-    
     <a href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/data/12-6.csv" class="btn btn-primary btn-download" download='indicator_12-6.csv' tabindex='0' role='button'>Daten im CSV-Format speichern</a>
 
     <p class="no-js-disaggregation-hint">Quell-CSV für Disaggregationen herunterladen</p>
 
     
-    <h3>Schlagzeilendaten</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Trinkwasserverbrauch - private Haushalte</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">117.9</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">119.2</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">120.2</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>Keine Headline-Daten verfügbar</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    
-    <p>Geographische Abdeckung: Ingolstadt</p>
-    
-    
-    <p>Einheit: Liter je Einwohner/-in und Tag</p>
-    
-    
-  </div>
   
 
 </div>
@@ -882,19 +816,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Definitionen </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>Liter je EW / Tag</p>
 
           
         </td>
@@ -910,7 +837,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Liter je Einwohner/-in und Tag</p>
+            <p>Liter je EW / Tag</p>
 
           
         </td>
@@ -974,7 +901,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>Ingolstädter Kommunalbetriebe</p>
+            <p>Ingolstädter Kommunalbetriebe und Statistisches Bundesamt</p>
 
           
         </td>
@@ -1488,12 +1415,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20240725134355'></script>
+<script src='/assets/js/sdg.js?v=20240802123823'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240725134355"></script><script>
+    <script src="/assets/js/custom.js?v=20240802123823"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
