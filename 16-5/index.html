@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240830122135">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20240830124545">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -425,7 +425,7 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>2020 und 2021 sind deutliche Einbrüche bei der Gewerbesteuer aufgrund der COVID-19-Pandemie zu verzeichnen. Gewerbesteuerkompensationszahlung wird nicht als Steuereinnahme erfasst und fließt daher nicht in die Daten mit ein.<br />
+    <p>2020 und 2021 kam es zu deutlichen Einbrüche bei der Gewerbesteuer aufgrund der COVID-19-Pandemie. In den darauf folgenden Jahren konnten wieder mehr Gewerbesteuer eingenommen werden.<br />
 <br />
 <b>BNK-Indikator</b></p>
 
@@ -446,7 +446,7 @@ layout-indicator
   data-country="Ingolstadt"
   data-charttitle="Steuereinnahmen"
   data-charttitles="null"
-  data-measurementunit="Steuereinnahmen in € je Einwohner/-in"
+  data-measurementunit="Euro"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -552,6 +552,30 @@ layout-indicator
           
         </tr>
         
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value">1936.99</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2023</td>
+          
+          
+          
+          <td class="table-value">2616.59</td>
+          
+          
+        </tr>
+        
       </tbody>
     </table>
     
@@ -564,7 +588,7 @@ layout-indicator
     <p>Geographische Abdeckung: Ingolstadt</p>
     
     
-    <p>Einheit: Steuereinnahmen in € je Einwohner/-in</p>
+    <p>Einheit: Euro</p>
     
     
   </div>
@@ -879,19 +903,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Definitionen </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>Steuereinnahmen in € je Einwohner/-in</p>
 
           
         </td>
@@ -907,7 +924,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Steuereinnahmen in € je Einwohner/-in</p>
+            <p>Euro</p>
 
           
         </td>
@@ -971,7 +988,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p><a href="https://www.ingolstadt.de/Rathaus/Verwaltung-Beteiligung/%C3%84mter-Referate/index.php?object=tx%7C2789.1&amp;ModID=9&amp;FID=465.78.1">Kämmerei Ingolstadt</a></p>
+            <p><a href="https://www.ingolstadt.de/Rathaus/Verwaltung-Beteiligung/%C3%84mter-Referate/index.php?object=tx%7C2789.1&amp;ModID=9&amp;FID=465.78.1">Kämmerei der Stadt Ingolstadt</a></p>
 
           
         </td>
@@ -1485,12 +1502,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20240830122135'></script>
+<script src='/assets/js/sdg.js?v=20240830124545'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240830122135"></script><script>
+    <script src="/assets/js/custom.js?v=20240830124545"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
