@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240830084217">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20240830122135">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -425,7 +425,7 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Im Messwertarchiv steht eine umfangreiche Sammlung der kontinuierlich erfassten Luftschadstoffmessdaten des LÜB-Messnetzes seit dem Jahr 1980 in stündlicher zeitlicher Auflösung zum Download zur Verfügung. Das Datenangebot umfasst die Stoffe Stickstoffdioxid, Stickstoffmonoxid, Feinstaub-PM10, Feinstaub-PM2,5, Ozon, Kohlenmonoxid, BTX (Benzol, Toluol und o-Xylol), Schwefeldioxid und Schwefelwasserstoff. Hier wird der Jahresmittelwert des Feinstaub-PM10 an der Messstation Rechbergstraße in Ingolstadt angegeben. Lokal und ausschließlich an vom Verkehr beeinflussten Stationen in Ballungsräumen traten in der Vergangenheit gelegentlich Überschreitungen des für das Kalenderjahr festgelegten Grenzwerts von 40 µg/m³ auf. Seit 2012 wurden keine Überschreitungen dieses Grenzwertes mehr festgestellt.<br />
+    <p>Im Messwertarchiv steht eine umfangreiche Sammlung der kontinuierlich erfassten Luftschadstoffmessdaten des Landesüberwachungssystem Bayern (LÜB)-Messnetzes seit dem Jahr 1980 in stündlicher zeitlicher Auflösung zum Download zur Verfügung. Das Datenangebot umfasst die Stoffe Stickstoffdioxid, Stickstoffmonoxid, Feinstaub-PM10, Feinstaub-PM2,5, Ozon, Kohlenmonoxid, BTX (Benzol, Toluol und o-Xylol), Schwefeldioxid und Schwefelwasserstoff. Hier wird der Jahresmittelwert des Feinstaub-PM10, PM2,5 und NO2 an der Messstation Rechbergstraße (bis 2021) und an der Münchener Straße (ab 2022) in Ingolstadt angegeben. Lokal und ausschließlich an vom Verkehr beeinflussten Stationen in Ballungsräumen traten in der Vergangenheit gelegentlich Überschreitungen des für das Kalenderjahr festgelegten Jahresmittelgrenzwerts von 40 µg/m³ (PM10), 25 µg/m³ (PM2,5) und 40 µg/m³ (NO2) auf.<br />
 <br />
 <b>Ziel Nachhaltigkeitsagenda Ingolstadt:</b><br />
 N2.1: Reduzierung der gesundheitlichen physischen und psychischen Belastung und Sicherstellung von ausreichenden Präventions- und Suchtmaßnahmen<br />
@@ -456,14 +456,14 @@ N2.1: Reduzierung der gesundheitlichen physischen und psychischen Belastung und 
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Ingolstadt&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Bayern&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Luftschadstoff&quot;,&quot;value&quot;:&quot;PM10&quot;},{&quot;field&quot;:&quot;Luftschadstoff&quot;,&quot;value&quot;:&quot;PM2.5&quot;},{&quot;field&quot;:&quot;Luftschadstoff&quot;,&quot;value&quot;:&quot;NO2&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Luftschadstoff&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;PM10&quot;,&quot;PM2.5&quot;,&quot;NO2&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Luftschadstoff&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -496,81 +496,15 @@ N2.1: Reduzierung der gesundheitlichen physischen und psychischen Belastung und 
   <div id="datatables">
 
     
-    <a href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/headline/3-5.csv" class="btn btn-primary btn-download" download="indicator_3-5.csv" tabindex="0" role="button">Speichern der Headline im CSV-Format</a>
-    
     <a href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/data/3-5.csv" class="btn btn-primary btn-download" download='indicator_3-5.csv' tabindex='0' role='button'>Daten im CSV-Format speichern</a>
 
     <p class="no-js-disaggregation-hint">Quell-CSV für Disaggregationen herunterladen</p>
 
     
-    <h3>Schlagzeilendaten</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Immission von Luftschadstoffen</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">16</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">15</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">15</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>Keine Headline-Daten verfügbar</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    
-    <p>Geographische Abdeckung: Ingolstadt</p>
-    
-    
-    <p>Einheit: µg / m³</p>
-    
-    
-  </div>
   
 
 </div>
@@ -882,19 +816,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Definitionen </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>Jahresmittelwert in µg / m³</p>
 
           
         </td>
@@ -974,7 +901,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p><a href="https://www.lfu.bayern.de/luft/immissionsmessungen/messwerte/stationen/detail/1409/172">LfU Bayern</a> und <a href="https://www.umweltbundesamt.de/daten/luft/feinstaub-belastung#feinstaubkonzentrationen-in-deutschland">Umweltbundesamt</a></p>
+            <p><a href="https://www.lfu.bayern.de/luft/immissionsmessungen/messwerte/stationen/detail/1409/172">Bayerisches Landesamt für Umwelt</a> und <a href="https://www.umweltbundesamt.de/daten/luft/feinstaub-belastung#feinstaubkonzentrationen-in-deutschland">Umweltbundesamt</a></p>
 
           
         </td>
@@ -1488,12 +1415,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20240830084217'></script>
+<script src='/assets/js/sdg.js?v=20240830122135'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240830084217"></script><script>
+    <script src="/assets/js/custom.js?v=20240830122135"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
