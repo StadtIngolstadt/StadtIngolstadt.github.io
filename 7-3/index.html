@@ -107,7 +107,7 @@ var translations = {
         
         Indikator 7.3 -
         
-        CO2e-Emissionen - Indikatoren für die nachhaltigen Entwicklungsziele
+        Ladesäuleninfrastruktur - Indikatoren für die nachhaltigen Entwicklungsziele
     </title>
 
 
@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240904091040">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20241009124827">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -313,7 +313,7 @@ layout-indicator
         <img class="img-fluid" src="/assets/img/goals/de/7.png" alt="Bezahlbare und saubere Energie - Ziel 7" id="goal-7"  />
       </div>
       <div class="col text-center">
-        <a href="/7-4" class="btn btn-primary goal-7 btn-right goal-banner" role="button">
+        <a href="/8-1" class="btn btn-primary goal-7 btn-right goal-banner" role="button">
           <i class="fa fa-chevron-right" aria-hidden="true" style="font-size: 2.8vw;"></i><span id="next-link" class="hidden-sm hidden-xs"></span>
         </a>
       </div>
@@ -410,7 +410,7 @@ layout-indicator
             <div class="goal-titles">
                 
                 <h2 class="indicator-title-by-indicator goal-7">Indikator 7.3</h2>
-                <h2 class="indicator-title-by-indicator goal-7" style="font-weight:600">CO2e-Emissionen</h2>
+                <h2 class="indicator-title-by-indicator goal-7" style="font-weight:600">Ladesäuleninfrastruktur</h2>
                 
             </div>
         </div>
@@ -425,13 +425,18 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Die CO2-Emissionen sind als CO2-Äquivalente (CO2e) angegeben und umfassen dementsprechend auch alle weiteren Treibhausgase neben CO2. <br />
-Die CO2-Bilanz wird momentan alle 2 Jahre aktualisiert, da auf dieser Ebene jährlich zu kleinteilig ist, um eine wirkliche Entwicklung feststellen zu können und der Erhebungsaufwand dementsprechend hoch. Die nächste Bilanz wird daher gegen Mitte 2025 mit den Daten von 2023 vorliegen. <br />
+    <p>In Ingolstadt gibt es derzeit laut <a href="https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/Ladesaeulenkarte/start.html">Ladesäulenregister der Bundesnetzagentur</a> 1.579 öffentlich 
+zugängliche Ladepunkte (Stand 01.01.2024). Diese verteilen sich jedoch nicht gleichmäßig über das Stadtgebiet. Der Stadtbezirk Etting im Bereich der Audi AG belegt den ersten Platz. 
+Danach folgen der Stadtbezirk Nordwest und der Stadtbezirk Nordost. Schlusslichter sind der Bezirk Südwest sowie die Bezirke Oberhaunstadt und West. Die Zahlen belegen eine Konzentration 
+im Bereich der Audi AG sowie dem IN-Campus im Südosten. In den Stadtbezirken mit geringer Ladesäuleninfrastruktur, werden Elektro- und Plug-In-Hybridfahrzeuge oft auch durch private Anschlüsse (Wall-Boxen) 
+mit Strom versorgt.<br />
 <br />
-<b>Erläuterung: GHD-Emissionen sind alle Emissionen des Sektor Gewerbe, Handel, Dienstleistungen und übrige Verbraucher. Die Stadtverwaltung Ingolstadt zählt ebenfalls zum Sektor GHD, wird in dieser Grafik aber nochmal separat aufgeführt.</b><br />
+Im regionalen sowie im bayernweiten Vergleich führt Ingolstadt. So sind es im Landkreis Eichstätt 265, im Landkreis Pfaffenhofen 244 und im Landkreis Neuburg-Schrobenhausen 192 Ladesäulenpunkte.
+Unter den acht größten Städten in Bayern liegt Ingolstadt auf Platz 1, d. h. es hat die wenigsten zugelassenen Elektro- und Plug-In-Hybrid-Fahrzeuge pro Ladepunkt. Danach folgen Regensburg und Fürth 
+(<a href="https://www.ingolstadt.de/Rathaus/Aktuelles/Aktuelle-Meldungen-Archiv/Elektromobilit%C3%A4t-auf-dem-Vormarsch.php?object=tx,2789.5&amp;ModID=7&amp;FID=2789.22365.1&amp;NavID=2789.411&amp;La=1">Quelle: Pressemitteilung Stadt Ingolstadt vom 10.06.2024)</a>.<br />
 <br />
 <b>Ziel Nachhaltigkeitsagenda Ingolstadt</b><br />
-K1.1: Reduktion von Treibhausgasemissionen: klimaneutral stadtweit bis 2035<br />
+N4.1: Steigerung umweltfreundlicher und sicherer Mobilität<br />
 <br />
 <b>Ingolstadtspezifischer Indikator</b></p>
 
@@ -450,23 +455,23 @@ K1.1: Reduktion von Treibhausgasemissionen: klimaneutral stadtweit bis 2035<br /
   data-indicatorid='indicator_7-3'
   data-id="7-3"
   data-country="Ingolstadt"
-  data-charttitle="CO2e-Emissionen"
+  data-charttitle="Ladesäuleninfrastruktur"
   data-charttitles="null"
-  data-measurementunit="CO2e-Emissionen"
+  data-measurementunit="Ladesäulenpunkte"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Sektoren&quot;,&quot;value&quot;:&quot;Haushalte&quot;},{&quot;field&quot;:&quot;Sektoren&quot;,&quot;value&quot;:&quot;Industrie&quot;},{&quot;field&quot;:&quot;Sektoren&quot;,&quot;value&quot;:&quot;GHD&quot;},{&quot;field&quot;:&quot;Sektoren&quot;,&quot;value&quot;:&quot;GHD - Stadtverwaltung Ingolstadt&quot;},{&quot;field&quot;:&quot;Sektoren&quot;,&quot;value&quot;:&quot;Verkehr&quot;},{&quot;field&quot;:&quot;Sektoren&quot;,&quot;value&quot;:&quot;Gesamtemissionen&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Ladesäule&quot;,&quot;value&quot;:&quot;Normalladesäule&quot;},{&quot;field&quot;:&quot;Ladesäule&quot;,&quot;value&quot;:&quot;Schnellladesäule&quot;},{&quot;field&quot;:&quot;Ladesäule&quot;,&quot;value&quot;:&quot;Gesamt&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Sektoren&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Haushalte&quot;,&quot;Industrie&quot;,&quot;GHD&quot;,&quot;Verkehr&quot;,&quot;Gesamtemissionen&quot;,&quot;GHD - Stadtverwaltung Ingolstadt&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sektoren&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Ladesäule&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Normalladesäule&quot;,&quot;Schnellladesäule&quot;,&quot;Gesamt&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Ladesäule&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -590,7 +595,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">CO2e-Emissionen</h4>
+          <h4 id="chart-heading" class="chart-title">Ladesäuleninfrastruktur</h4>
           <div id="chart" class="plot-container">
             <canvas
     role="img"
@@ -808,7 +813,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Indikatorenbezeichnung </th>
         <td>
           
-            <p>CO2e-Emissionen</p>
+            <p>Ladesäuleninfrastruktur</p>
 
           
         </td>
@@ -819,19 +824,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Definitionen </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>Anzahl der öffentlichen Normal- und Schnellladepunkte ab 3,7 kW</p>
 
           
         </td>
@@ -847,7 +845,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>CO2e-Emissionen</p>
+            <p>Ladesäulenpunkte</p>
 
           
         </td>
@@ -879,7 +877,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Periodizität </th>
         <td>
           
-            <p>Alle 2 Jahre</p>
+            <p>Jährlich</p>
 
           
         </td>
@@ -895,7 +893,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p>1990</p>
+            <p>2016</p>
 
           
         </td>
@@ -911,7 +909,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p><a href="https://www.ingolstadt.de/Rathaus/Verwaltung-Beteiligung/Adressen/Stabsstelle-Klima-Biodiversit%C3%A4t-Donau.php?object=tx,2789.1.1&amp;ModID=9&amp;FID=465.3033.1&amp;NavID=2789.173&amp;La=1">Stabsstelle Strategien Klima, Biodiversität und Donau</a></p>
+            <p><a href="https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/Ladesaeulenkarte/start.html">Bundesnetzagentur - Ladesäuleninfrastruktur</a></p>
 
           
         </td>
@@ -1425,12 +1423,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20240904091040'></script>
+<script src='/assets/js/sdg.js?v=20241009124827'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240904091040"></script><script>
+    <script src="/assets/js/custom.js?v=20241009124827"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

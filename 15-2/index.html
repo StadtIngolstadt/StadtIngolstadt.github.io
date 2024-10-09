@@ -107,7 +107,7 @@ var translations = {
         
         Indikator 15.2 -
         
-        Anteil versiegelter Flächen - Indikatoren für die nachhaltigen Entwicklungsziele
+        Vielfalt und Qualität von Biotoptypen - Indikatoren für die nachhaltigen Entwicklungsziele
     </title>
 
 
@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240904091040">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20241009124827">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -410,7 +410,7 @@ layout-indicator
             <div class="goal-titles">
                 
                 <h2 class="indicator-title-by-indicator goal-15">Indikator 15.2</h2>
-                <h2 class="indicator-title-by-indicator goal-15" style="font-weight:600">Anteil versiegelter Flächen</h2>
+                <h2 class="indicator-title-by-indicator goal-15" style="font-weight:600">Vielfalt und Qualität von Biotoptypen</h2>
                 
             </div>
         </div>
@@ -425,8 +425,10 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p><b>Ziel Nachhaltigkeitsagenda Ingolstadt</b><br />
-K2.3: Vernetzung, Entwicklung und Erhalt schützenswerter Flächen<br />
+    <p>Der Indikator zeigt die Biotopfläche der Stadt Ingolstadt auf Grundlage der Biotopkartierung (2021 - 2023) an im Verhältnis zur Gesamtfläche. Eine Aussagen zu den einzelnen Jahren ist nicht möglich. Die letzte Biotopkartierung wurde 1986/87 mit Überarbeitungen 2003 und 2006 durchgeführt. Eine Flächensumme über gesetzlich und nicht gesetzlich geschützte Biotope liegt nicht vor. Da die Kartiervorgaben sich zu den vorherigen Biotopkartierungen geändert haben und z.B. in der neuen Kartierung Privatwaldflächen im Gegensatz zur letzten Biotopkartierung nicht mehr kartiert worden sind, desgleichen die Flächen im Naturschutzgebiet, sind die Zahlen nicht vergleichbar und werden daher auch nicht aufgeführt.<br />
+<br />
+<b>Ziel Nachhaltigkeitsagenda Ingolstadt</b><br />
+K2.4: Schutz und Begünstigung der Biodiversität<br />
 <br />
 <b>BNK-Indikator</b></p>
 
@@ -445,34 +447,288 @@ K2.3: Vernetzung, Entwicklung und Erhalt schützenswerter Flächen<br />
   data-indicatorid='indicator_15-2'
   data-id="15-2"
   data-country="Ingolstadt"
-  data-charttitle="Anteil versiegelter Flächen"
+  data-charttitle="Vielfalt und Qualität von Biotoptypen"
   data-charttitles="null"
-  data-measurementunit="Prozent"
+  data-measurementunit="Hektar"
   data-xaxislabel=""
-  data-showdata="false"
-  data-graphtype="line"
+  data-showdata="true"
+  data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Ingolstadt&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Bayern&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Fläche&quot;,&quot;value&quot;:&quot;Biotop&quot;},{&quot;field&quot;:&quot;Fläche&quot;,&quot;value&quot;:&quot;gesamt&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Fläche&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Biotop&quot;,&quot;gesamt&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Fläche&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
   data-proxyseries="null"
 >
   
-  <!-- add statistic data as image -->
-  <div class="row g-0 justify-content-center">
-    <img class="col-md-7" src="/assets/img/indicator_img/15-2.png" onerror="this.onerror=null; this.src='/assets/img/indicator_img/15-2.jpg'"alt="indicator-as-image">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Disaggregationsdimensionen</h4>
+    <p>Wählen Sie aus den nachstehenden Dropdown-Listen Kategorien aus, um verschiedene Aufschlüsselungen der Daten anzuzeigen.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/assets/img/loading-small.gif"></p>
   </div>
-  <div id="indicator-main" class="indicator-main col-md-12">
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/data/15-2.csv" class="btn btn-primary btn-download" download='indicator_15-2.csv' tabindex='0' role='button'>Daten im CSV-Format speichern</a>
+
+    <p class="no-js-disaggregation-hint">Quell-CSV für Disaggregationen herunterladen</p>
+
+    
+    <h3>Keine Headline-Daten verfügbar</h3>
+    
+  </div>
+
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">Für tabellarische Daten alternativ siehe Registerkarte Tabelle.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Grafik</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Tabelle</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Warnung:</span></i>
+      Zu viele Zeitreihen ausgewählt um diese in einer Grafik darzustellen. Es können nicht alle Zeitreihen dargestellt werden.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">Vielfalt und Qualität von Biotoptypen</h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        
+        <dt>Geographische Abdeckung:</dt>
+        <dd>Ingolstadt</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Fußnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Daten zuletzt aktualisiert am:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Grafik als Bild herunterladen"
+          aria-label="Grafik als Bild herunterladen"
+          class='btn btn-primary btn-download'>
+          Grafik herunterladen
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Klicken Sie auf , um nach dieser Spalte zu sortieren</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        
+        <dt>Geographische Abdeckung:</dt>
+        <dd>Ingolstadt</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Fußnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Daten zuletzt aktualisiert am:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -549,7 +805,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Indikatorenbezeichnung </th>
         <td>
           
-            <p>Anteil versiegelter Flächen</p>
+            <p>Vielfalt und Qualität von Biotoptypen</p>
 
           
         </td>
@@ -560,19 +816,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Definitionen </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>Anteil  der Biotope an der Gesamtfläche der Stadt</p>
 
           
         </td>
@@ -588,7 +837,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Prozent</p>
+            <p>Hektar</p>
 
           
         </td>
@@ -615,19 +864,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Periodizität </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>unregelmäßig</p>
 
           
         </td>
@@ -637,20 +879,13 @@ data-event-label="Change to Metadaten tab"
   
       
       
-      
-        
-          
-          
-          
-          
-        
       
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>2023</p>
 
           
         </td>
@@ -661,19 +896,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p><a href="https://www.lfu.bayern.de/natur/biotopkartierung/index.htm">Bayerisches Landesamt für Umwelt</a></p>
 
           
         </td>
@@ -1187,12 +1415,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20240904091040'></script>
+<script src='/assets/js/sdg.js?v=20241009124827'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240904091040"></script><script>
+    <script src="/assets/js/custom.js?v=20241009124827"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

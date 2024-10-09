@@ -107,7 +107,7 @@ var translations = {
         
         Indikator 8.6 -
         
-        sv-Beschäftigte (55 Jahre und älter) - Indikatoren für die nachhaltigen Entwicklungsziele
+        sv-Beschäftigte - Indikatoren für die nachhaltigen Entwicklungsziele
     </title>
 
 
@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240904091040">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20241009124827">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -313,7 +313,7 @@ layout-indicator
         <img class="img-fluid" src="/assets/img/goals/de/8.png" alt="Menschenwürdige Arbeit und Wirtschaftswachstum - Ziel 8" id="goal-8"  />
       </div>
       <div class="col text-center">
-        <a href="/9-1" class="btn btn-primary goal-8 btn-right goal-banner" role="button">
+        <a href="/8-7" class="btn btn-primary goal-8 btn-right goal-banner" role="button">
           <i class="fa fa-chevron-right" aria-hidden="true" style="font-size: 2.8vw;"></i><span id="next-link" class="hidden-sm hidden-xs"></span>
         </a>
       </div>
@@ -410,7 +410,7 @@ layout-indicator
             <div class="goal-titles">
                 
                 <h2 class="indicator-title-by-indicator goal-8">Indikator 8.6</h2>
-                <h2 class="indicator-title-by-indicator goal-8" style="font-weight:600">sv-Beschäftigte (55 Jahre und älter)</h2>
+                <h2 class="indicator-title-by-indicator goal-8" style="font-weight:600">sv-Beschäftigte</h2>
                 
             </div>
         </div>
@@ -425,10 +425,12 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Anzahl der sozialversicherungspflichtig Beschäftigten im Alter von 55 und älter.<br />
+    <p>Dieser Indikator zeigt die Anzahl der sv-Beschäftigten (Sozialversicherungspflichtig) unterteilt nach Geschlecht, Alter (über / unter 55 Jahre), Deutsch / Nicht-Deutsch, Qualifikation (Ausbildung / Hochschulabschluss) an.<br />
+<br />
+Es handelt sich dabei um Wohnortsstatistiken. Festzustellen sind auch weiterhin hohe Zahlen an Eintritten in den Ruhestand oder kurz davor (sv-Beschäftigte über 55 Jahre) sowie ein steigender Anteil an Akademiker/-innen und ein sinkender Anteil an Personen mit anerkanntem Berufsabschluss.<br />
 <br />
 <b>Ziel Nachhaltigkeitsagenda Ingolstadt</b><br />
-W3.3: Erreichung gleicher wirtschaftlicher Unabhängigkeit durch gleiche und gleichwertige Arbeit<br />
+N3.7: Sicherung einer qualitativ hochwertigen Beschäftigung<br />
 <br />
 <b>Ingolstadtspezifischer Indikator</b></p>
 
@@ -447,7 +449,7 @@ W3.3: Erreichung gleicher wirtschaftlicher Unabhängigkeit durch gleiche und gle
   data-indicatorid='indicator_8-6'
   data-id="8-6"
   data-country="Ingolstadt"
-  data-charttitle="sv-Beschäftigte (55 Jahre und älter)"
+  data-charttitle="sv-Beschäftigte"
   data-charttitles="null"
   data-measurementunit="Anzahl sv-Beschäftigte"
   data-xaxislabel=""
@@ -456,14 +458,14 @@ W3.3: Erreichung gleicher wirtschaftlicher Unabhängigkeit durch gleiche und gle
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Ingolstadt&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Bayern&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;sv-Beschäftigte&quot;,&quot;value&quot;:&quot;Männer&quot;},{&quot;field&quot;:&quot;sv-Beschäftigte&quot;,&quot;value&quot;:&quot;Frauen&quot;},{&quot;field&quot;:&quot;sv-Beschäftigte&quot;,&quot;value&quot;:&quot;Deutsche&quot;},{&quot;field&quot;:&quot;sv-Beschäftigte&quot;,&quot;value&quot;:&quot;Nicht-Deutsche&quot;},{&quot;field&quot;:&quot;sv-Beschäftigte&quot;,&quot;value&quot;:&quot;über 55 Jahre&quot;},{&quot;field&quot;:&quot;sv-Beschäftigte&quot;,&quot;value&quot;:&quot;mit Berufsabschluss&quot;},{&quot;field&quot;:&quot;sv-Beschäftigte&quot;,&quot;value&quot;:&quot;mit akademischen Abschluss&quot;},{&quot;field&quot;:&quot;sv-Beschäftigte&quot;,&quot;value&quot;:&quot;gesamt&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;sv-Beschäftigte&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Männer&quot;,&quot;Frauen&quot;,&quot;Deutsche&quot;,&quot;Nicht-Deutsche&quot;,&quot;über 55 Jahre&quot;,&quot;mit Berufsabschluss&quot;,&quot;mit akademischen Abschluss&quot;,&quot;gesamt&quot;,&quot;&quot;]},&quot;title&quot;:&quot;sv-Beschäftigte&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -496,81 +498,15 @@ W3.3: Erreichung gleicher wirtschaftlicher Unabhängigkeit durch gleiche und gle
   <div id="datatables">
 
     
-    <a href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/headline/8-6.csv" class="btn btn-primary btn-download" download="indicator_8-6.csv" tabindex="0" role="button">Speichern der Headline im CSV-Format</a>
-    
     <a href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/data/8-6.csv" class="btn btn-primary btn-download" download='indicator_8-6.csv' tabindex='0' role='button'>Daten im CSV-Format speichern</a>
 
     <p class="no-js-disaggregation-hint">Quell-CSV für Disaggregationen herunterladen</p>
 
     
-    <h3>Schlagzeilendaten</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>sv-Beschäftigte (55 Jahre und älter)</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">18186</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">18663</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">18690</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>Keine Headline-Daten verfügbar</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    
-    <p>Geographische Abdeckung: Ingolstadt</p>
-    
-    
-    <p>Einheit: Anzahl sv-Beschäftigte</p>
-    
-    
-  </div>
   
 
 </div>
@@ -653,7 +589,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">sv-Beschäftigte (55 Jahre und älter)</h4>
+          <h4 id="chart-heading" class="chart-title">sv-Beschäftigte</h4>
           <div id="chart" class="plot-container">
             <canvas
     role="img"
@@ -871,7 +807,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Indikatorenbezeichnung </th>
         <td>
           
-            <p>sv-Beschäftigte (55 Jahre und älter)</p>
+            <p>sv-Beschäftigte</p>
 
           
         </td>
@@ -882,19 +818,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Definitionen </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>sv-Beschäftigte unterteilt nach Geschlecht, Alter (über / unter 55 Jahre), Deutsch / Nicht-Deutsch, Qualifikation (Ausbildung / Hochschulabschluss)</p>
 
           
         </td>
@@ -974,7 +903,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>Amt für Statistik und Stadtforschung</p>
+            <p><a href="https://statistik.arbeitsagentur.de/SiteGlobals/Forms/Suche/Einzelheftsuche_Formular.html?topic_f=beschaeftigung-sozbe-svb-jc-merkmale">Bundesagentur für Arbeit</a></p>
 
           
         </td>
@@ -1488,12 +1417,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20240904091040'></script>
+<script src='/assets/js/sdg.js?v=20241009124827'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240904091040"></script><script>
+    <script src="/assets/js/custom.js?v=20241009124827"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

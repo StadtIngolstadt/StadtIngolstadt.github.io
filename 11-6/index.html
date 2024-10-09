@@ -107,7 +107,7 @@ var translations = {
         
         Indikator 11.6 -
         
-        Beteiligte an Unfällen mit Personenschaden - Indikatoren für die nachhaltigen Entwicklungsziele
+        Barrierefreie Spiel- und Freizeitanlagen - Indikatoren für die nachhaltigen Entwicklungsziele
     </title>
 
 
@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240904091040">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20241009124827">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -410,7 +410,7 @@ layout-indicator
             <div class="goal-titles">
                 
                 <h2 class="indicator-title-by-indicator goal-11">Indikator 11.6</h2>
-                <h2 class="indicator-title-by-indicator goal-11" style="font-weight:600">Beteiligte an Unfällen mit Personenschaden</h2>
+                <h2 class="indicator-title-by-indicator goal-11" style="font-weight:600">Barrierefreie Spiel- und Freizeitanlagen</h2>
                 
             </div>
         </div>
@@ -425,10 +425,10 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Anzahl an Beteiligten an Unfällen mit Personenschaden. Starker Rückgang seit 2020. Rückgang von 2019 auf 2020 u.a. auch auf Kontaktbeschränkungen durch Covid-Politik zurückzuführen. <br />
+    <p>Anzahl der Spiel- und Freizeitanlagen in der Stadt gesamt und Anteil der barrierefrei zugänglichen Anlagen.<br />
 <br />
 <b>Ziel Nachhaltigkeitsagenda Ingolstadt</b><br />
-N4.5: Verbesserung der Verkehrssicherheit<br />
+N2.3 Förderung der Bewegungsmöglichkeiten/-angebote sowie deren Zugang für alle<br />
 <br />
 <b>Ingolstadtspezifischer Indikator</b></p>
 
@@ -447,23 +447,23 @@ N4.5: Verbesserung der Verkehrssicherheit<br />
   data-indicatorid='indicator_11-6'
   data-id="11-6"
   data-country="Ingolstadt"
-  data-charttitle="Beteiligte an Unfällen mit Personenschaden"
+  data-charttitle="Barrierefreie Spiel- und Freizeitanlagen"
   data-charttitles="null"
-  data-measurementunit="Anzahl Beteiligte an Unfällen mit Personenschaden"
+  data-measurementunit="Anzahl Spiel-und Freizeitanlagen"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Ingolstadt&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Bayern&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Spiel-und Freizeitanlagen&quot;,&quot;value&quot;:&quot;barrierefrei zugänglich&quot;},{&quot;field&quot;:&quot;Spiel-und Freizeitanlagen&quot;,&quot;value&quot;:&quot;nicht barrierefrei zugänglich&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Spiel-und Freizeitanlagen&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;barrierefrei zugänglich&quot;,&quot;nicht barrierefrei zugänglich&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Spiel-und Freizeitanlagen&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -496,81 +496,15 @@ N4.5: Verbesserung der Verkehrssicherheit<br />
   <div id="datatables">
 
     
-    <a href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/headline/11-6.csv" class="btn btn-primary btn-download" download="indicator_11-6.csv" tabindex="0" role="button">Speichern der Headline im CSV-Format</a>
-    
     <a href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/data/11-6.csv" class="btn btn-primary btn-download" download='indicator_11-6.csv' tabindex='0' role='button'>Daten im CSV-Format speichern</a>
 
     <p class="no-js-disaggregation-hint">Quell-CSV für Disaggregationen herunterladen</p>
 
     
-    <h3>Schlagzeilendaten</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Beteiligte an Unfällen mit Personenschaden</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">1402</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">1136</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">1020</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>Keine Headline-Daten verfügbar</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    
-    <p>Geographische Abdeckung: Ingolstadt</p>
-    
-    
-    <p>Einheit: Anzahl Beteiligte an Unfällen mit Personenschaden</p>
-    
-    
-  </div>
   
 
 </div>
@@ -653,7 +587,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Beteiligte an Unfällen mit Personenschaden</h4>
+          <h4 id="chart-heading" class="chart-title">Barrierefreie Spiel- und Freizeitanlagen</h4>
           <div id="chart" class="plot-container">
             <canvas
     role="img"
@@ -871,7 +805,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Indikatorenbezeichnung </th>
         <td>
           
-            <p>Beteiligte an Unfällen mit Personenschaden</p>
+            <p>Barrierefreie Spiel- und Freizeitanlagen</p>
 
           
         </td>
@@ -882,19 +816,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Definitionen </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>Anzahl der Spiel- und Freizeitanlagen in der Stadt gesamt und Anteil der barrierefrei zugänglichen Anlagen</p>
 
           
         </td>
@@ -910,7 +837,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Anzahl Beteiligte an Unfällen mit Personenschaden</p>
+            <p>Anzahl Spiel-und Freizeitanlagen</p>
 
           
         </td>
@@ -942,7 +869,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Periodizität </th>
         <td>
           
-            <p>Jährlich</p>
+            <p>keine Angabe</p>
 
           
         </td>
@@ -958,7 +885,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p>2019</p>
+            <p>2022</p>
 
           
         </td>
@@ -974,7 +901,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>Amt für Statistik und Stadtforschung</p>
+            <p>Amt für Verkehrsmanagement und Geoinformation der Stadt Ingolstadt</p>
 
           
         </td>
@@ -1488,12 +1415,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20240904091040'></script>
+<script src='/assets/js/sdg.js?v=20241009124827'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240904091040"></script><script>
+    <script src="/assets/js/custom.js?v=20241009124827"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

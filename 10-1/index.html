@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240904091040">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20241009124827">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -425,10 +425,11 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Erfasste Förderschulen (SFZI, SFZII (beide städtisch) und JNVK (staatlich)); Ermittlung des Indikators umfasst auch die privaten Schulen; Berechnung jedoch ohne die Schüler/-innen an Technikerschule und Berufsfachschulen. Anteil an Gesamtschülerzahl Stadt Ingolstadt.<br />
+    <p>Bei diesem Indikator wurden die Sonderpädagogischen Förderzentren I und II (städtisch) berücksichtigt sowie die 
+Johann-Nepomuk-von-Kurz-Schule (staatlich). Die Ermittlung des Indikators umfasst auch die privaten Schulen. Allerdings ohne die Einberechnung der Schüler/-innen an der Technikerschule und den Berufsfachschulen.<br />
 <br />
 <b>Ziel Nachhaltigkeitsagenda Ingolstadt</b><br />
-B2.4: Förderung der Bildungsteilhabe bzw. Bildungsgerechtigkeit<br />
+B2.3: Förderung der Bildungsteilhabe / Bildungsgerechtigkeit und lebenslangem Lernen<br />
 <br />
 <b>Ingolstadtspezifischer Indikator</b></p>
 
@@ -911,7 +912,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Definitionen </th>
         <td>
           
-            <p>Anteil der Schüler/-innen an Sonderpädagogischen Förderzentren in Prozent</p>
+            <p>Anteil der Schüler/-innen an Sonderpädagogischen Förderzentren in Prozent an der Gesamtzahl der Schüler/-innen in Ingolstadt</p>
 
           
         </td>
@@ -1505,12 +1506,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20240904091040'></script>
+<script src='/assets/js/sdg.js?v=20241009124827'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240904091040"></script><script>
+    <script src="/assets/js/custom.js?v=20241009124827"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

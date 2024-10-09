@@ -127,7 +127,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240904091040">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20241009124827">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -352,7 +352,7 @@ layout-goal
           </div>
           <div class="col goal-page-indicator-name">
           
-            <span class="indicator-name"><a href="/9-1">Anzahl der angesiedelten Unternehmen in brigk und EGZ</a></span>
+            <span class="indicator-name"><a href="/9-1">Gründungssaldo</a></span>
           </div>
           <div class="col-1 goal-page-indicator-progress">
             <!-- reporting status shown in the same line as indicators -->
@@ -438,7 +438,7 @@ layout-goal
           </div>
           <div class="col goal-page-indicator-name">
           
-            <span class="indicator-name"><a href="/9-3">Existenzgründungen</a></span>
+            <span class="indicator-name"><a href="/9-3">Häufigkeit der Inanspruchnahme der Cityfreiraumförderung</a></span>
           </div>
           <div class="col-1 goal-page-indicator-progress">
             <!-- reporting status shown in the same line as indicators -->
@@ -481,7 +481,7 @@ layout-goal
           </div>
           <div class="col goal-page-indicator-name">
           
-            <span class="indicator-name"><a href="/9-4">sv-Beschäftigte mit Hochschulabschluss</a></span>
+            <span class="indicator-name"><a href="/9-4">5G-Abdeckung</a></span>
           </div>
           <div class="col-1 goal-page-indicator-progress">
             <!-- reporting status shown in the same line as indicators -->
@@ -524,7 +524,7 @@ layout-goal
           </div>
           <div class="col goal-page-indicator-name">
           
-            <span class="indicator-name"><a href="/9-5">Förderprojekte für technische und digitale Lösungen</a></span>
+            <span class="indicator-name"><a href="/9-5">Anzahl öffentlich zugänglicher Datensätze</a></span>
           </div>
           <div class="col-1 goal-page-indicator-progress">
             <!-- reporting status shown in the same line as indicators -->
@@ -567,7 +567,7 @@ layout-goal
           </div>
           <div class="col goal-page-indicator-name">
           
-            <span class="indicator-name"><a href="/9-6">Finanzielle Beteiligung für Forschung</a></span>
+            <span class="indicator-name"><a href="/9-6">Höhe der Drittmittel</a></span>
           </div>
           <div class="col-1 goal-page-indicator-progress">
             <!-- reporting status shown in the same line as indicators -->
@@ -583,8 +583,8 @@ layout-goal
 
 
 
-<span class="status complete">
-    <span class="status-inner">Gemeldet</span>
+<span class="status inprogress">
+    <span class="status-inner">in Bearbeitung</span>
 </span>
 
 
@@ -610,7 +610,7 @@ layout-goal
           </div>
           <div class="col goal-page-indicator-name">
           
-            <span class="indicator-name"><a href="/9-7">EMAS-zertifizierte Betriebsstandorte</a></span>
+            <span class="indicator-name"><a href="/9-7">Erschlossene Gewerbeflächen durch Fernwärmeanschluss</a></span>
           </div>
           <div class="col-1 goal-page-indicator-progress">
             <!-- reporting status shown in the same line as indicators -->
@@ -626,8 +626,8 @@ layout-goal
 
 
 
-<span class="status complete">
-    <span class="status-inner">Gemeldet</span>
+<span class="status inprogress">
+    <span class="status-inner">in Bearbeitung</span>
 </span>
 
 
@@ -1074,12 +1074,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20240904091040'></script>
+<script src='/assets/js/sdg.js?v=20241009124827'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240904091040"></script><script>
+    <script src="/assets/js/custom.js?v=20241009124827"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240904091040">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20241009124827">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -425,10 +425,14 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Absolute Anzahl der zugelassenen, angestellten und ermächtigten Ärzt/-innen zur vertragsärztlichen Versorgung, unabhängig von ihrem Tätigkeitsumfang oder ihrer Berücksichtigung in der Bedarfsplanung.<br />
+    <p>Der Indikator zeigt die fachärztliche Versorgung nach allgemeiner und spezialisierter fachärztlicher Versorgung je 100.000 Einwohner/-innen an.<br />
+<br />
+Zur allgemeinen fachärztlichen Versorgung zählen folgende Berufsgruppen: Augenärzte, Chirurgen und Orthopäden, Frauenärzte, Hautärzte, HNO-Ärzte, Kinder- und Jugendärzte, Nervenärzte, Psychotherapeuten, Urologen.<br />
+<br />
+Zur spezialisierten fachärztlichen Versorgung zählen folgende Berufsgruppen: Anästhesisten, fachärztlich tätige Internisten, Kinder- und Jugendpsychiater, Radiologen.<br />
 <br />
 <b>Ziel Nachhaltigkeitsagenda Ingolstadt:</b><br />
-N2.4: Sicherstellung einer ausreichenden medizinischen Infrastruktur im städtischen Raum<br />
+N2.4: Sicherstellung einer ausreichenden medizinischen Infrastruktur<br />
 <br />
 <b>Ingolstadtspezifischer Indikator</b></p>
 
@@ -452,18 +456,18 @@ N2.4: Sicherstellung einer ausreichenden medizinischen Infrastruktur im städtis
   data-measurementunit="Fachärzte/-innen-Versorgung (Anzahl im Stadtgebiet)"
   data-xaxislabel=""
   data-showdata="true"
-  data-graphtype="bar"
+  data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Ingolstadt&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Bayern&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Fachärzte&quot;,&quot;value&quot;:&quot;allgemeine fachärztliche Versorgung&quot;},{&quot;field&quot;:&quot;Fachärzte&quot;,&quot;value&quot;:&quot;spezialisierte fachärztliche Versorgung&quot;},{&quot;field&quot;:&quot;Fachärzte&quot;,&quot;value&quot;:&quot;gesamt&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Fachärzte&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;allgemeine fachärztliche Versorgung&quot;,&quot;spezialisierte fachärztliche Versorgung&quot;,&quot;gesamt&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Fachärzte&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -496,57 +500,15 @@ N2.4: Sicherstellung einer ausreichenden medizinischen Infrastruktur im städtis
   <div id="datatables">
 
     
-    <a href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/headline/3-4.csv" class="btn btn-primary btn-download" download="indicator_3-4.csv" tabindex="0" role="button">Speichern der Headline im CSV-Format</a>
-    
     <a href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/data/3-4.csv" class="btn btn-primary btn-download" download='indicator_3-4.csv' tabindex='0' role='button'>Daten im CSV-Format speichern</a>
 
     <p class="no-js-disaggregation-hint">Quell-CSV für Disaggregationen herunterladen</p>
 
     
-    <h3>Schlagzeilendaten</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Fachärzte/-innen-Versorgung</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2022</td>
-          
-          
-          
-          <td class="table-value">254</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>Keine Headline-Daten verfügbar</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    
-    <p>Geographische Abdeckung: Ingolstadt</p>
-    
-    
-    <p>Einheit: Fachärzte/-innen-Versorgung (Anzahl im Stadtgebiet)</p>
-    
-    
-  </div>
   
 
 </div>
@@ -858,19 +820,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Definitionen </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>Versorgung durch Fachärztinnen je 100.000 EW nach Fachgebieten (allgemeine fachärztliche und spezialisierte fachärztliche Versorgung)</p>
 
           
         </td>
@@ -913,19 +868,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Periodizität </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>jährlich</p>
 
           
         </td>
@@ -941,7 +889,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p>2022</p>
+            <p>2019</p>
 
           
         </td>
@@ -957,7 +905,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p><a href="https://www.kvb.de/ueber-uns/versorgungsatlas/">Kassenärztliche Vereinigung Bayerns, Versorgungsatlas, Januar 2023</a></p>
+            <p><a href="https://www.kvb.de/ueber-uns/versorgungsatlas/">Kassenärztliche Vereinigung Bayerns</a>, eigene Berechnung auf Grundlage der Fortschreibung des ZENSUS 2022 der Stadt Ingolstadt</p>
 
           
         </td>
@@ -1471,12 +1419,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20240904091040'></script>
+<script src='/assets/js/sdg.js?v=20241009124827'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240904091040"></script><script>
+    <script src="/assets/js/custom.js?v=20241009124827"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
