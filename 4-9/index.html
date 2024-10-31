@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20241031133919">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20241031145102">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -425,7 +425,10 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Die wohnortnahe Versorgung der Grundschüler/-innen in Bayern regelt die sogenannte Sprengelpflicht Art. 42 BayEUG. Schüler/-innen einer Grundschule oder Mittelschule erfüllen ihre Schulpflicht in der Schule, in deren Schulsprengel sie ihren gewöhnlichen Aufenthalt haben.  Die jeweilige Bezirksregierung bestimmt für jede Grundschule ein räumlich abgegrenztes Gebiet als Schulsprengel Art. 26 BayEUG. Die Stadt Ingolstadt als Sachaufwandsträger wird an der Sprengelfestlegung beteiligt. Zahlen zur einwohnergewichteten Luftliniendistanz sind aufgrund der Sprengelregelung für die Schulverwaltung nicht erforderlich und werden daher nicht erhoben.<br />
+    <p>Die wohnortnahe Versorgung der Grundschüler/-innen in Bayern regelt die sogenannte Sprengelpflicht Art. 42 BayEUG. Schüler/-innen einer Grundschule oder Mittelschule erfüllen ihre Schulpflicht in der Schule, in deren Schulsprengel sie ihren gewöhnlichen Aufenthalt haben.  Die jeweilige Bezirksregierung bestimmt für jede Grundschule ein räumlich abgegrenztes Gebiet als Schulsprengel Art. 26 BayEUG. Die Stadt Ingolstadt als Sachaufwandsträger wird an der Sprengelfestlegung beteiligt. Zahlen zur einwohnergewichteten Luftliniendistanz sind aufgrund der Sprengelregelung für die Schulverwaltung nicht erforderlich und werden daher nicht erhoben.<br /><br />
+Kommunen als Schulträger haben die pflichtige Selbstverwaltungsaufgabe, die äußeren Rahmenbedingungen für den Betrieb von Schulen sicherzustellen. Sie stellen die
+Schulgebäude und beschäftigen das für den äußeren Betrieb der Schule notwendige Personal. Dies sind insbesondere Schulhausmeister und die Schulassistenz. Die Schulentwicklungsplanung
+gilt als ein wichtiges kommunales Steuerungsinstrument.<br />
 <br />
 <b>Ziel Nachhaltigkeitsagenda Ingolstadt</b><br />
 B2.3: Förderung der Bildungsteilhabe / Bildungsgerechtigkeit und lebenslangem Lernen<br />
@@ -446,35 +449,289 @@ B2.3: Förderung der Bildungsteilhabe / Bildungsgerechtigkeit und lebenslangem L
   id="indicatorData"
   data-indicatorid='indicator_4-9'
   data-id="4-9"
-  data-country="Ingolstadt"
+  data-country="Ingolstadt, Eichstätt, Neuburg-Schrobenhausen, Pfaffenhofen an der Ilm"
   data-charttitle="Wohnungsnahe Grundversorgung - Grundschule"
   data-charttitles="null"
-  data-measurementunit="Wohnungsnahe Grundversorgung - Grundschule"
+  data-measurementunit="Meter"
   data-xaxislabel=""
-  data-showdata="false"
-  data-graphtype="line"
+  data-showdata="true"
+  data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Ingolstadt&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Bayern&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Ingolstadt&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Eichstätt&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Neuburg Schrobenhausen&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Pfaffenhofen an der Ilm&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Ingolstadt&quot;,&quot;Eichstätt&quot;,&quot;Neuburg Schrobenhausen&quot;,&quot;Pfaffenhofen an der Ilm&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
   data-proxyseries="null"
 >
   
-  <!-- add statistic data as image -->
-  <div class="row g-0 justify-content-center">
-    <img class="col-md-7" src="/assets/img/indicator_img/4-9.png" onerror="this.onerror=null; this.src='/assets/img/indicator_img/4-9.jpg'"alt="indicator-as-image">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Disaggregationsdimensionen</h4>
+    <p>Wählen Sie aus den nachstehenden Dropdown-Listen Kategorien aus, um verschiedene Aufschlüsselungen der Daten anzuzeigen.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/assets/img/loading-small.gif"></p>
   </div>
-  <div id="indicator-main" class="indicator-main col-md-12">
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/data/4-9.csv" class="btn btn-primary btn-download" download='indicator_4-9.csv' tabindex='0' role='button'>Daten im CSV-Format speichern</a>
+
+    <p class="no-js-disaggregation-hint">Quell-CSV für Disaggregationen herunterladen</p>
+
+    
+    <h3>Keine Headline-Daten verfügbar</h3>
+    
+  </div>
+
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">Für tabellarische Daten alternativ siehe Registerkarte Tabelle.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Grafik</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Tabelle</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Warnung:</span></i>
+      Zu viele Zeitreihen ausgewählt um diese in einer Grafik darzustellen. Es können nicht alle Zeitreihen dargestellt werden.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">Wohnungsnahe Grundversorgung - Grundschule</h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        
+        <dt>Geographische Abdeckung:</dt>
+        <dd>Ingolstadt, Eichstätt, Neuburg-Schrobenhausen, Pfaffenhofen an der Ilm</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Fußnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Daten zuletzt aktualisiert am:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Grafik als Bild herunterladen"
+          aria-label="Grafik als Bild herunterladen"
+          class='btn btn-primary btn-download'>
+          Grafik herunterladen
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Klicken Sie auf , um nach dieser Spalte zu sortieren</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        
+        <dt>Geographische Abdeckung:</dt>
+        <dd>Ingolstadt, Eichstätt, Neuburg-Schrobenhausen, Pfaffenhofen an der Ilm</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Fußnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Daten zuletzt aktualisiert am:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -562,19 +819,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Definitionen </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>Einwohner/-innengewichtete Luftliniendistanz in m zur nächsten Grundschule</p>
 
           
         </td>
@@ -590,7 +840,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Wohnungsnahe Grundversorgung - Grundschule</p>
+            <p>Meter</p>
 
           
         </td>
@@ -606,7 +856,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Geographische Abdeckung </th>
         <td>
           
-            <p>Ingolstadt</p>
+            <p>Ingolstadt, Eichstätt, Neuburg-Schrobenhausen, Pfaffenhofen an der Ilm</p>
 
           
         </td>
@@ -616,20 +866,13 @@ data-event-label="Change to Metadaten tab"
   
       
       
-      
-        
-          
-          
-          
-          
-        
       
       
       <tr>
         <th scope="row">Periodizität </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>unregelmäßig</p>
 
           
         </td>
@@ -640,19 +883,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>2019</p>
 
           
         </td>
@@ -668,7 +904,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p><a href="https://www.ingolstadt.de/Kultur/Bildung-Wissenschaft/Schule-Schulverwaltung/Schulsprengel-Gastschulverh%C3%A4ltnis/">Stadt Ingolstadt</a>, zuletzt abgerufen über das <a href="https://stadtplan.ingolstadt.de/">Geoportal der Stadt Ingolstadt</a> am 09.07.2024</p>
+            <p><a href="https://www.bbsr.bund.de/BBSR/DE/startseite/kurzmeldungen/erreichbarkeit-grundschulen.html">Bundesinstitut für Bau-, Stadt- und Raumforschung</a></p>
 
           
         </td>
@@ -1182,12 +1418,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20241031133919'></script>
+<script src='/assets/js/sdg.js?v=20241031145102'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20241031133919"></script><script>
+    <script src="/assets/js/custom.js?v=20241031145102"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
