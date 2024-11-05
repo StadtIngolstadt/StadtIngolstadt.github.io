@@ -996,6 +996,22 @@
           "keywords": "",
           "href": "/15-5",
           "status": "complete"
+        },
+        {
+          "id": "15-6",
+          "title": "Gesamtheit aller Eingriffe des Menschen in den Naturhaushalt (Hemerobieindex)",
+          "description": "",
+          "keywords": "",
+          "href": "/15-6",
+          "status": "inprogress"
+        },
+        {
+          "id": "15-7",
+          "title": "Stickstoffüberschuss in der Landwirtschaft",
+          "description": "",
+          "keywords": "",
+          "href": "/15-7",
+          "status": "inprogress"
         }]
     }
   },
