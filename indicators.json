@@ -1003,7 +1003,7 @@
           "description": "",
           "keywords": "",
           "href": "/15-6",
-          "status": "inprogress"
+          "status": "complete"
         },
         {
           "id": "15-7",
@@ -1011,7 +1011,7 @@
           "description": "",
           "keywords": "",
           "href": "/15-7",
-          "status": "inprogress"
+          "status": "complete"
         }]
     }
   },
