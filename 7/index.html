@@ -137,7 +137,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20250112183858">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250112191028">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -163,7 +163,7 @@ layout-goal
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha-Version","default_contrast":"Standard kontrast","disable_high_contrast":"Hoher Kontrast deaktivieren","disclaimer":"Diese Seite befindet sich im Entwicklungsstadium.Wir freuen uns über Ihre <a href=\"mailto:%email_contacts.suggestions\">Kommentare</a>.","enable_high_contrast":"Aktivieren Sie hohen Kontrast","high_contrast":"Hoher kontrast","internet_explorer_message":"Wir haben festgestellt, dass Sie den Internet Explorer verwenden, um diese Website zu besuchen. Der Internet Explorer wird von Microsoft nicht mehr unterstützt. Aus diesem Grund hat diese Website ebenfalls die Unterstützung für alle Versionen des Internet Explorers eingestellt, einige Bereiche auf dieser Website werden daher nicht oder nur eingeschränkt funktionieren. Bitte verwenden Sie einen modernen Browser wie Edge, Chrome, Firefox oder Safari. Wenn Sie Schwierigkeiten haben, einen anderen Browser zu installieren oder darauf zuzugreifen, wenden Sie sich bitte an Ihr IT-Supportteam.","internet_explorer_message_title":"Der Internet-Browser wird nicht mehr unterstützt","skip_link":"Zum Hauptinhalt springen","tag_line":"17 Ziele, um unsere Welt zu verändern","toggle_menu":"Menü umschalten. Klicken Sie darauf, um das Menü zu erweitern oder zu reduzieren.","toggle_search":"Umschalten der Suche. Klicken Sie darauf, um die Suchleiste ein- oder auszublenden."};</script>
+<script>translations['header'] = {"alpha":"Alpha-Version","default_contrast":"Standard kontrast","disable_high_contrast":"Hoher Kontrast deaktivieren","disclaimer":"Diese Seite befindet sich im Entwicklungsstadium.Wir freuen uns über Ihre <a href=\"mailto:%email_contacts.suggestions\">Kommentare</a>.","enable_high_contrast":"Aktivieren Sie hohen Kontrast","hide_menu":"Navigationsmenü ausblenden","high_contrast":"Hoher kontrast","internet_explorer_message":"Wir haben festgestellt, dass Sie den Internet Explorer verwenden, um diese Website zu besuchen. Der Internet Explorer wird von Microsoft nicht mehr unterstützt. Aus diesem Grund hat diese Website ebenfalls die Unterstützung für alle Versionen des Internet Explorers eingestellt, einige Bereiche auf dieser Website werden daher nicht oder nur eingeschränkt funktionieren. Bitte verwenden Sie einen modernen Browser wie Edge, Chrome, Firefox oder Safari. Wenn Sie Schwierigkeiten haben, einen anderen Browser zu installieren oder darauf zuzugreifen, wenden Sie sich bitte an Ihr IT-Supportteam.","internet_explorer_message_title":"Der Internet-Browser wird nicht mehr unterstützt","logo_title":"Zur Homepage gehen","show_menu":"Navigationsmenü anzeigen","skip_link":"Zum Hauptinhalt springen","tag_line":"17 Ziele, um unsere Welt zu verändern","toggle_menu":"Menü umschalten. Klicken Sie darauf, um das Menü zu erweitern oder zu reduzieren.","toggle_search":"Umschalten der Suche. Klicken Sie darauf, um die Suchleiste ein- oder auszublenden."};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Zum Hauptinhalt springen</a>
 <div class="container internet-explorer-message">
@@ -179,7 +179,7 @@ layout-goal
         <!-- header logo and lower navbar -->
         <div class="row g-0 w-100">
             <div class="col align-self-center">
-                <a href="https://nachhaltigkeitsagenda-ingolstadt.de/" id="home" aria-label="" title="" target="_blank">
+                <a href="https://nachhaltigkeitsagenda-ingolstadt.de/" id="home" aria-label="Zur Homepage gehen" title="Zur Homepage gehen" target="_blank">
                     <img src="/assets/img/SDG_logo.png" alt="Nachhaltigkeitsagenda Ingolstadt" style="width: 100%">      
                 </a>
             </div>
@@ -195,7 +195,7 @@ layout-goal
                 </div>
 
                 <div class="navbar navbar-expand-lg navbar-dark align-items-center" id="narbar-container">
-                    <button class="navbar-toggler" id="navbar-hamburger-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
+                    <button class="navbar-toggler" id="navbar-hamburger-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Navigationsmenü anzeigen">
                         <span class="navbar-toggler-icon"></span>
                     </button>
     
@@ -215,7 +215,7 @@ layout-goal
                     </div>
                     <span class="d-flex justify-content-end">
                         <div class="align-items-center" id="navbar-search-md">
-    <button class="btn hide-btn" id="search-btn-collapse" onclick="showSearchField()" aria-label="">
+    <button class="btn hide-btn" id="search-btn-collapse" onclick="showSearchField()" aria-label="Navigationsmenü anzeigen">
         <i class="fa fa-search"></i>
     </button>
     <div class="overlay header-container" id="search-field-input">
@@ -303,7 +303,7 @@ layout-goal
     
     <div class="previous-next-links row d-flex align-items-center justify-content-evenly">
       <div class="col text-center">
-        <a href="/6" class="btn btn-primary goal-7 btn-left goal-banner" role="button">
+        <a href="/6/" class="btn btn-primary goal-7 btn-left goal-banner" role="button">
           <i class="fa fa-chevron-left" aria-hidden="true" style="font-size: 2.8vw;"></i> <span id="previous-link" class="hidden-sm hidden-xs"></span>
         </a>
       </div>
@@ -311,7 +311,7 @@ layout-goal
         <img class="img-fluid" src="/assets/img/goals/de/7.png" alt="Bezahlbare und saubere Energie - Ziel 7" id="goal-7"  />
       </div>
       <div class="col text-center">
-        <a href="/8" class="btn btn-primary goal-7 btn-right goal-banner" role="button">
+        <a href="/8/" class="btn btn-primary goal-7 btn-right goal-banner" role="button">
           <i class="fa fa-chevron-right" aria-hidden="true" style="font-size: 2.8vw;"></i><span id="next-link" class="hidden-sm hidden-xs"></span>
         </a>
       </div>
@@ -365,7 +365,7 @@ layout-goal
           </div>
           <div class="col goal-page-indicator-name">
           
-            <span class="indicator-name"><a href="/7-1">Strom aus erneuerbaren Energien</a></span>
+            <span class="indicator-name"><a href="/7-1/">Strom aus erneuerbaren Energien</a></span>
           </div>
           <div class="col-1 goal-page-indicator-progress">
             <!-- reporting status shown in the same line as indicators -->
@@ -408,7 +408,7 @@ layout-goal
           </div>
           <div class="col goal-page-indicator-name">
           
-            <span class="indicator-name"><a href="/7-2">Zubau Photovoltaikanlagen in Kilowatt Peak</a></span>
+            <span class="indicator-name"><a href="/7-2/">Zubau Photovoltaikanlagen in Kilowatt Peak</a></span>
           </div>
           <div class="col-1 goal-page-indicator-progress">
             <!-- reporting status shown in the same line as indicators -->
@@ -451,7 +451,7 @@ layout-goal
           </div>
           <div class="col goal-page-indicator-name">
           
-            <span class="indicator-name"><a href="/7-3">Ladesäuleninfrastruktur</a></span>
+            <span class="indicator-name"><a href="/7-3/">Ladesäuleninfrastruktur</a></span>
           </div>
           <div class="col-1 goal-page-indicator-progress">
             <!-- reporting status shown in the same line as indicators -->
@@ -497,7 +497,7 @@ layout-goal
                 
                 <div class="carousel-item active">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/1">
+                        <a href="/1/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/1.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-1" alt="Keine Armut - Ziel 1"/>
                         </a>
                     </div>
@@ -505,7 +505,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/2">
+                        <a href="/2/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/2.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-2" alt="Kein Hunger - Ziel 2"/>
                         </a>
                     </div>
@@ -513,7 +513,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/3">
+                        <a href="/3/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/3.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-3" alt="Gesundheit und Wohlergehen - Ziel 3"/>
                         </a>
                     </div>
@@ -521,7 +521,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/4">
+                        <a href="/4/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/4.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-4" alt="Hochwertige Bildung - Ziel 4"/>
                         </a>
                     </div>
@@ -529,7 +529,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/5">
+                        <a href="/5/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/5.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-5" alt="Geschlechtergleichstellung - Ziel 5"/>
                         </a>
                     </div>
@@ -537,7 +537,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/6">
+                        <a href="/6/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/6.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-6" alt="Sauberes Wasser und Sanitärversorgung - Ziel 6"/>
                         </a>
                     </div>
@@ -545,7 +545,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/7">
+                        <a href="/7/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/7.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-7" alt="Bezahlbare und saubere Energie - Ziel 7"/>
                         </a>
                     </div>
@@ -553,7 +553,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/8">
+                        <a href="/8/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/8.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-8" alt="Menschenwürdige Arbeit und Wirtschaftswachstum - Ziel 8"/>
                         </a>
                     </div>
@@ -561,7 +561,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/9">
+                        <a href="/9/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/9.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-9" alt="Industrie, Innovationen und Infrastruktur - Ziel 9"/>
                         </a>
                     </div>
@@ -569,7 +569,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/10">
+                        <a href="/10/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/10.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-10" alt="Weniger Ungleichheiten - Ziel 10"/>
                         </a>
                     </div>
@@ -577,7 +577,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/11">
+                        <a href="/11/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/11.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-11" alt="Nachhaltige Städte und Gemeinden - Ziel 11"/>
                         </a>
                     </div>
@@ -585,7 +585,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/12">
+                        <a href="/12/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/12.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-12" alt="Verantwortungsvolle Konsum- und Produktionsmuster - Ziel 12"/>
                         </a>
                     </div>
@@ -593,7 +593,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/13">
+                        <a href="/13/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/13.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-13" alt="Maßnahmen zum Klimaschutz - Ziel 13"/>
                         </a>
                     </div>
@@ -601,7 +601,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/14">
+                        <a href="/14/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/14.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-14" alt="Leben unter Wasser - Ziel 14"/>
                         </a>
                     </div>
@@ -609,7 +609,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/15">
+                        <a href="/15/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/15.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-15" alt="Leben an Land - Ziel 15"/>
                         </a>
                     </div>
@@ -617,7 +617,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/16">
+                        <a href="/16/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/16.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-16" alt="Frieden, Gerechtigkeit und starke Institutionen - Ziel 16"/>
                         </a>
                     </div>
@@ -625,7 +625,7 @@ layout-goal
                 
                 <div class="carousel-item ">
                     <div class="carousel-col" id="lowerNavGoalHide">
-                        <a href="/17">
+                        <a href="/17/">
                             <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/17.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-17" alt="Partnerschaften zur Erreichung der Ziele - Ziel 17"/>
                         </a>
                     </div>
@@ -911,12 +911,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20250112183858'></script>
+<script src='/assets/js/sdg.js?v=20250112191028'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20250112183858"></script><script>
+    <script src="/assets/js/custom.js?v=20250112191028"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

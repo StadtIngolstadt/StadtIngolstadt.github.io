@@ -10,7 +10,7 @@
           "title": "Wohnungslosigkeit",
           "description": "",
           "keywords": "",
-          "href": "/1-1",
+          "href": "/1-1/",
           "status": "complete"
         },
         {
@@ -18,7 +18,7 @@
           "title": "Vergabe von sozial gefördertem Wohnraum",
           "description": "",
           "keywords": "",
-          "href": "/1-2",
+          "href": "/1-2/",
           "status": "complete"
         },
         {
@@ -26,7 +26,7 @@
           "title": "Mietschuldenprävention",
           "description": "",
           "keywords": "",
-          "href": "/1-3",
+          "href": "/1-3/",
           "status": "complete"
         },
         {
@@ -34,7 +34,7 @@
           "title": "Empfänger/-innen von Hilfe zum Lebensunterhalt und Grundsicherung und bei Erwerbsminderung (SGB XII)",
           "description": "",
           "keywords": "",
-          "href": "/1-4-1",
+          "href": "/1-4-1/",
           "status": "complete"
         },
         {
@@ -42,7 +42,7 @@
           "title": "Empfänger/-innen von Grundsicherung (SGB II)",
           "description": "",
           "keywords": "",
-          "href": "/1-4-2",
+          "href": "/1-4-2/",
           "status": "complete"
         },
         {
@@ -50,7 +50,7 @@
           "title": "SGB II-/SGB XII-Quote",
           "description": "",
           "keywords": "",
-          "href": "/1-5",
+          "href": "/1-5/",
           "status": "complete"
         },
         {
@@ -58,7 +58,7 @@
           "title": "Empfänger/-innen von sozialer Mindestsicherung insgesamt",
           "description": "",
           "keywords": "",
-          "href": "/1-6",
+          "href": "/1-6/",
           "status": "complete"
         },
         {
@@ -66,7 +66,7 @@
           "title": "Anzahl der Alleinerziehenden",
           "description": "",
           "keywords": "",
-          "href": "/1-7",
+          "href": "/1-7/",
           "status": "complete"
         },
         {
@@ -74,7 +74,7 @@
           "title": "Arbeitslosenquote",
           "description": "",
           "keywords": "",
-          "href": "/1-8",
+          "href": "/1-8/",
           "status": "complete"
         },
         {
@@ -82,7 +82,7 @@
           "title": "Wohngeldempfänger",
           "description": "",
           "keywords": "",
-          "href": "/1-9",
+          "href": "/1-9/",
           "status": "complete"
         }]
     }
@@ -98,7 +98,7 @@
           "title": "Anteil geretteter Lebensmittel",
           "description": "",
           "keywords": "",
-          "href": "/2-1",
+          "href": "/2-1/",
           "status": "complete"
         }]
     }
@@ -114,7 +114,7 @@
           "title": "Anzahl Kurzzeit- und Langzeitpflegeplätze",
           "description": "",
           "keywords": "",
-          "href": "/3-1",
+          "href": "/3-1/",
           "status": "complete"
         },
         {
@@ -122,7 +122,7 @@
           "title": "Anzahl und Art Präventionsangebote",
           "description": "",
           "keywords": "",
-          "href": "/3-2",
+          "href": "/3-2/",
           "status": "complete"
         },
         {
@@ -130,7 +130,7 @@
           "title": "Ärzteversorgung",
           "description": "",
           "keywords": "",
-          "href": "/3-3",
+          "href": "/3-3/",
           "status": "complete"
         },
         {
@@ -138,7 +138,7 @@
           "title": "Fachärzte/-innen-Versorgung",
           "description": "",
           "keywords": "",
-          "href": "/3-4",
+          "href": "/3-4/",
           "status": "complete"
         },
         {
@@ -146,7 +146,7 @@
           "title": "Luftschadstoffbelastung",
           "description": "",
           "keywords": "",
-          "href": "/3-5",
+          "href": "/3-5/",
           "status": "complete"
         },
         {
@@ -154,7 +154,7 @@
           "title": "Offene Stellen und Ausbildungen von medizinischem Fachpersonal",
           "description": "",
           "keywords": "",
-          "href": "/3-6",
+          "href": "/3-6/",
           "status": "complete"
         },
         {
@@ -162,7 +162,7 @@
           "title": "Vorzeitige Sterblickeit",
           "description": "",
           "keywords": "",
-          "href": "/3-7",
+          "href": "/3-7/",
           "status": "complete"
         },
         {
@@ -170,7 +170,7 @@
           "title": "Wohnungsnahe Grundversorgung - Krankenhaus",
           "description": "",
           "keywords": "",
-          "href": "/3-8",
+          "href": "/3-8/",
           "status": "complete"
         },
         {
@@ -178,7 +178,7 @@
           "title": "Durchschnittliches Sterbealter",
           "description": "",
           "keywords": "",
-          "href": "/3-9",
+          "href": "/3-9/",
           "status": "complete"
         },
         {
@@ -186,7 +186,7 @@
           "title": "Bio-Lebensmittelanteil an KiTas und Schulen",
           "description": "",
           "keywords": "",
-          "href": "/3-10",
+          "href": "/3-10/",
           "status": "complete"
         },
         {
@@ -194,7 +194,7 @@
           "title": "Durchimpfungsgrad",
           "description": "",
           "keywords": "",
-          "href": "/3-11",
+          "href": "/3-11/",
           "status": "complete"
         },
         {
@@ -202,7 +202,7 @@
           "title": "Inanspruchname der Früherkennungsmaßnahmen",
           "description": "",
           "keywords": "",
-          "href": "/3-12",
+          "href": "/3-12/",
           "status": "complete"
         },
         {
@@ -210,7 +210,7 @@
           "title": "Adipositas",
           "description": "",
           "keywords": "",
-          "href": "/3-13",
+          "href": "/3-13/",
           "status": "complete"
         },
         {
@@ -218,7 +218,7 @@
           "title": "Ambulante Versorgungssituation",
           "description": "",
           "keywords": "",
-          "href": "/3-14",
+          "href": "/3-14/",
           "status": "complete"
         },
         {
@@ -226,7 +226,7 @@
           "title": "Wohnungsnahe Grundversorgung - Hausarzt",
           "description": "",
           "keywords": "",
-          "href": "/3-15",
+          "href": "/3-15/",
           "status": "complete"
         }]
     }
@@ -242,7 +242,7 @@
           "title": "Studierendenanzahl und Anteil ausländischer Studierender",
           "description": "",
           "keywords": "",
-          "href": "/4-1",
+          "href": "/4-1/",
           "status": "complete"
         },
         {
@@ -250,7 +250,7 @@
           "title": "Aus- und Weiterbildungsangebote für städtische Mitarbeitende",
           "description": "",
           "keywords": "",
-          "href": "/4-2",
+          "href": "/4-2/",
           "status": "complete"
         },
         {
@@ -258,7 +258,7 @@
           "title": "Betreuung von Kindern zwischen 0 und 3 Jahre in öff. Kindertageseinrichtungen",
           "description": "",
           "keywords": "",
-          "href": "/4-3",
+          "href": "/4-3/",
           "status": "complete"
         },
         {
@@ -266,7 +266,7 @@
           "title": "Integrative Kindertageseinrichtungen",
           "description": "",
           "keywords": "",
-          "href": "/4-4",
+          "href": "/4-4/",
           "status": "complete"
         },
         {
@@ -274,7 +274,7 @@
           "title": "Betreuung von Kindern zwischen 3 und 6 Jahre in öff. Kindertageseinrichtungen",
           "description": "",
           "keywords": "",
-          "href": "/4-5",
+          "href": "/4-5/",
           "status": "complete"
         },
         {
@@ -282,7 +282,7 @@
           "title": "Anstellungsschlüssel in öff. geförderter Kinderbetreuung",
           "description": "",
           "keywords": "",
-          "href": "/4-6",
+          "href": "/4-6/",
           "status": "complete"
         },
         {
@@ -290,7 +290,7 @@
           "title": "Schulabbrecherquote",
           "description": "",
           "keywords": "",
-          "href": "/4-7",
+          "href": "/4-7/",
           "status": "complete"
         },
         {
@@ -298,7 +298,7 @@
           "title": "Wohnungsnahe Grundversorgung - Kita",
           "description": "",
           "keywords": "",
-          "href": "/4-8",
+          "href": "/4-8/",
           "status": "complete"
         },
         {
@@ -306,7 +306,7 @@
           "title": "Wohnungsnahe Grundversorgung - Grundschule",
           "description": "",
           "keywords": "",
-          "href": "/4-9",
+          "href": "/4-9/",
           "status": "complete"
         },
         {
@@ -314,7 +314,7 @@
           "title": "Nutzung der KiTa-App",
           "description": "",
           "keywords": "",
-          "href": "/4-10",
+          "href": "/4-10/",
           "status": "complete"
         },
         {
@@ -322,7 +322,7 @@
           "title": "Städtische Kultur- und Bildungseinrichtungen mit Internet- und PC-Zugängen",
           "description": "",
           "keywords": "",
-          "href": "/4-11",
+          "href": "/4-11/",
           "status": "complete"
         },
         {
@@ -330,7 +330,7 @@
           "title": "Freiwillige finanzielle  Kulturförderung",
           "description": "",
           "keywords": "",
-          "href": "/4-12",
+          "href": "/4-12/",
           "status": "complete"
         }]
     }
@@ -346,7 +346,7 @@
           "title": "Angebote für Vereinbarkeit von Beruf und Familie für städtische Mitarbeitende",
           "description": "",
           "keywords": "",
-          "href": "/5-1",
+          "href": "/5-1/",
           "status": "complete"
         },
         {
@@ -354,7 +354,7 @@
           "title": "Verdienstabstand zwischen Frauen und Männern",
           "description": "",
           "keywords": "",
-          "href": "/5-2",
+          "href": "/5-2/",
           "status": "complete"
         },
         {
@@ -362,7 +362,7 @@
           "title": "Frauenanteil im Stadtrat und in Führungspositionen in der Stadtverwaltung",
           "description": "",
           "keywords": "",
-          "href": "/5-3",
+          "href": "/5-3/",
           "status": "complete"
         }]
     }
@@ -378,7 +378,7 @@
           "title": "Anzahl sanitärer Einrichtungen im öffentlichen Raum",
           "description": "",
           "keywords": "",
-          "href": "/6-1",
+          "href": "/6-1/",
           "status": "complete"
         },
         {
@@ -386,7 +386,7 @@
           "title": "Anzahl Trinkwasserbrunnen",
           "description": "",
           "keywords": "",
-          "href": "/6-2",
+          "href": "/6-2/",
           "status": "complete"
         },
         {
@@ -394,7 +394,7 @@
           "title": "Nitrat im Grundwasser",
           "description": "",
           "keywords": "",
-          "href": "/6-3",
+          "href": "/6-3/",
           "status": "complete"
         },
         {
@@ -402,7 +402,7 @@
           "title": "Verhältnis von Trennsystemen zu Mischwasserkanälen",
           "description": "",
           "keywords": "",
-          "href": "/6-4",
+          "href": "/6-4/",
           "status": "complete"
         },
         {
@@ -410,7 +410,7 @@
           "title": "Stickstoffanteil im Abwasser",
           "description": "",
           "keywords": "",
-          "href": "/6-5",
+          "href": "/6-5/",
           "status": "inprogress"
         }]
     }
@@ -426,7 +426,7 @@
           "title": "Strom aus erneuerbaren Energien",
           "description": "",
           "keywords": "",
-          "href": "/7-1",
+          "href": "/7-1/",
           "status": "complete"
         },
         {
@@ -434,7 +434,7 @@
           "title": "Zubau Photovoltaikanlagen in Kilowatt Peak",
           "description": "",
           "keywords": "",
-          "href": "/7-2",
+          "href": "/7-2/",
           "status": "complete"
         },
         {
@@ -442,7 +442,7 @@
           "title": "Ladesäuleninfrastruktur",
           "description": "",
           "keywords": "",
-          "href": "/7-3",
+          "href": "/7-3/",
           "status": "complete"
         }]
     }
@@ -458,7 +458,7 @@
           "title": "Leistungsbezieher/-innen mit Einkommen aus Erwerbstätigkeit",
           "description": "",
           "keywords": "",
-          "href": "/8-1",
+          "href": "/8-1/",
           "status": "complete"
         },
         {
@@ -466,7 +466,7 @@
           "title": "Beschäftigungsquote (15- bis 64-Jährige)",
           "description": "",
           "keywords": "",
-          "href": "/8-2",
+          "href": "/8-2/",
           "status": "complete"
         },
         {
@@ -474,7 +474,7 @@
           "title": "Bruttoinlandsprodukt",
           "description": "",
           "keywords": "",
-          "href": "/8-3",
+          "href": "/8-3/",
           "status": "complete"
         },
         {
@@ -482,7 +482,7 @@
           "title": "Langzeitarbeitslose im Verhältnis zu Langzeitleistungsbeziehern",
           "description": "",
           "keywords": "",
-          "href": "/8-4",
+          "href": "/8-4/",
           "status": "complete"
         },
         {
@@ -490,7 +490,7 @@
           "title": "Anzahl teilnehmender Betriebe am Wohnortcluster",
           "description": "",
           "keywords": "",
-          "href": "/8-5",
+          "href": "/8-5/",
           "status": "inprogress"
         },
         {
@@ -498,7 +498,7 @@
           "title": "sv-Beschäftigte",
           "description": "",
           "keywords": "",
-          "href": "/8-6",
+          "href": "/8-6/",
           "status": "complete"
         },
         {
@@ -506,7 +506,7 @@
           "title": "Auszubildende am Standort",
           "description": "",
           "keywords": "",
-          "href": "/8-7",
+          "href": "/8-7/",
           "status": "complete"
         },
         {
@@ -514,7 +514,7 @@
           "title": "Wanderungssaldo",
           "description": "",
           "keywords": "",
-          "href": "/8-8",
+          "href": "/8-8/",
           "status": "complete"
         }]
     }
@@ -530,7 +530,7 @@
           "title": "Gründungssaldo",
           "description": "",
           "keywords": "",
-          "href": "/9-1",
+          "href": "/9-1/",
           "status": "complete"
         },
         {
@@ -538,7 +538,7 @@
           "title": "Breitbandversorgung",
           "description": "",
           "keywords": "",
-          "href": "/9-2",
+          "href": "/9-2/",
           "status": "complete"
         },
         {
@@ -546,7 +546,7 @@
           "title": "Häufigkeit der Inanspruchnahme der Cityfreiraumförderung",
           "description": "",
           "keywords": "",
-          "href": "/9-3",
+          "href": "/9-3/",
           "status": "complete"
         },
         {
@@ -554,7 +554,7 @@
           "title": "5G-Abdeckung",
           "description": "",
           "keywords": "",
-          "href": "/9-4",
+          "href": "/9-4/",
           "status": "complete"
         },
         {
@@ -562,7 +562,7 @@
           "title": "Anzahl öffentlich zugänglicher Datensätze",
           "description": "",
           "keywords": "",
-          "href": "/9-5",
+          "href": "/9-5/",
           "status": "complete"
         },
         {
@@ -570,7 +570,7 @@
           "title": "Höhe der Drittmittel",
           "description": "",
           "keywords": "",
-          "href": "/9-6",
+          "href": "/9-6/",
           "status": "complete"
         },
         {
@@ -578,7 +578,7 @@
           "title": "Erschlossene Gewerbeflächen durch Fernwärmeanschluss",
           "description": "",
           "keywords": "",
-          "href": "/9-7",
+          "href": "/9-7/",
           "status": "inprogress"
         }]
     }
@@ -594,7 +594,7 @@
           "title": "Anteil der Schüler/-innen an Sonderpädagogischen Förderzentren",
           "description": "",
           "keywords": "",
-          "href": "/10-1",
+          "href": "/10-1/",
           "status": "complete"
         },
         {
@@ -602,7 +602,7 @@
           "title": "Anzahl der gemeldeten Diskriminierungsfälle",
           "description": "",
           "keywords": "",
-          "href": "/10-2",
+          "href": "/10-2/",
           "status": "complete"
         },
         {
@@ -610,7 +610,7 @@
           "title": "Staatsangehörigkeit der Bevölkerung",
           "description": "",
           "keywords": "",
-          "href": "/10-3",
+          "href": "/10-3/",
           "status": "complete"
         },
         {
@@ -618,7 +618,7 @@
           "title": "Höchster erreichter Ausbildungsabschluss",
           "description": "",
           "keywords": "",
-          "href": "/10-4",
+          "href": "/10-4/",
           "status": "complete"
         },
         {
@@ -626,7 +626,7 @@
           "title": "Sprachkenntnisse bei Einschulung (Sprachniveau)",
           "description": "",
           "keywords": "",
-          "href": "/10-5",
+          "href": "/10-5/",
           "status": "complete"
         },
         {
@@ -634,7 +634,7 @@
           "title": "Einbürgerungen im Jahr",
           "description": "",
           "keywords": "",
-          "href": "/10-6",
+          "href": "/10-6/",
           "status": "complete"
         },
         {
@@ -642,7 +642,7 @@
           "title": "Wohnfläche (m² je Einwohner/-in) in den 12 Stadtbezirken, Gini-Koeffizient",
           "description": "",
           "keywords": "",
-          "href": "/10-7",
+          "href": "/10-7/",
           "status": "inprogress"
         },
         {
@@ -650,7 +650,7 @@
           "title": "Schüler/-innen in Einzelinklusion",
           "description": "",
           "keywords": "",
-          "href": "/10-8",
+          "href": "/10-8/",
           "status": "complete"
         },
         {
@@ -658,7 +658,7 @@
           "title": "Gewalttaten in Einrichtungen für Menschen mit Behinderungen",
           "description": "",
           "keywords": "",
-          "href": "/10-9",
+          "href": "/10-9/",
           "status": "complete"
         },
         {
@@ -666,7 +666,7 @@
           "title": "Ermäßigungen in öffentlichen Kultur- und Bildungseinrichtungen",
           "description": "",
           "keywords": "",
-          "href": "/10-10",
+          "href": "/10-10/",
           "status": "complete"
         },
         {
@@ -674,7 +674,7 @@
           "title": "Kinder mit nicht-deutscher Familiensprache in KiTas",
           "description": "",
           "keywords": "",
-          "href": "/10-11",
+          "href": "/10-11/",
           "status": "complete"
         }]
     }
@@ -690,7 +690,7 @@
           "title": "Anteil (lokal) emissionsfreier Fahrzeuge bei Zulassung",
           "description": "",
           "keywords": "",
-          "href": "/11-1",
+          "href": "/11-1/",
           "status": "complete"
         },
         {
@@ -698,7 +698,7 @@
           "title": "Barrierefreie und inklusive Mobilitätsangebot",
           "description": "",
           "keywords": "",
-          "href": "/11-2",
+          "href": "/11-2/",
           "status": "complete"
         },
         {
@@ -706,7 +706,7 @@
           "title": "Barrierefreies Wohnen",
           "description": "",
           "keywords": "",
-          "href": "/11-3",
+          "href": "/11-3/",
           "status": "complete"
         },
         {
@@ -714,7 +714,7 @@
           "title": "Gefahrenzonen in Starkregenkartierung",
           "description": "",
           "keywords": "",
-          "href": "/11-4",
+          "href": "/11-4/",
           "status": "complete"
         },
         {
@@ -722,7 +722,7 @@
           "title": "Verunglückte im Verkehr",
           "description": "",
           "keywords": "",
-          "href": "/11-5",
+          "href": "/11-5/",
           "status": "complete"
         },
         {
@@ -730,7 +730,7 @@
           "title": "Barrierefreie Spiel- und Freizeitanlagen",
           "description": "",
           "keywords": "",
-          "href": "/11-6",
+          "href": "/11-6/",
           "status": "complete"
         },
         {
@@ -738,7 +738,7 @@
           "title": "Fertiggestellte Wohngebäude mit erneuerbarer Heizenergie bzw. Fernwärme",
           "description": "",
           "keywords": "",
-          "href": "/11-7",
+          "href": "/11-7/",
           "status": "complete"
         },
         {
@@ -746,7 +746,7 @@
           "title": "Flächeninanspruchnahme und Flächenneuinanspruchnahme",
           "description": "",
           "keywords": "",
-          "href": "/11-8",
+          "href": "/11-8/",
           "status": "complete"
         },
         {
@@ -754,7 +754,7 @@
           "title": "Flächennutzungsintensität",
           "description": "",
           "keywords": "",
-          "href": "/11-9",
+          "href": "/11-9/",
           "status": "complete"
         },
         {
@@ -762,7 +762,7 @@
           "title": "Lärmkartierung / Anzahl der lärmbelasteten Flächen (Fortschritt / Rückschritt)",
           "description": "",
           "keywords": "",
-          "href": "/11-10",
+          "href": "/11-10/",
           "status": "complete"
         },
         {
@@ -770,7 +770,7 @@
           "title": "Mietpreise (ohne geförderten Wohnungsbau)",
           "description": "",
           "keywords": "",
-          "href": "/11-11",
+          "href": "/11-11/",
           "status": "complete"
         },
         {
@@ -778,7 +778,7 @@
           "title": "Naherholungsflächen (mit Wald)",
           "description": "",
           "keywords": "",
-          "href": "/11-12",
+          "href": "/11-12/",
           "status": "complete"
         },
         {
@@ -786,7 +786,7 @@
           "title": "Öffentliche Grünflächen",
           "description": "",
           "keywords": "",
-          "href": "/11-13",
+          "href": "/11-13/",
           "status": "complete"
         },
         {
@@ -794,7 +794,7 @@
           "title": "ÖPNV (Nahversorgung mit Haltestellen)",
           "description": "",
           "keywords": "",
-          "href": "/11-14",
+          "href": "/11-14/",
           "status": "complete"
         },
         {
@@ -802,7 +802,7 @@
           "title": "PKW-Dichte",
           "description": "",
           "keywords": "",
-          "href": "/11-15",
+          "href": "/11-15/",
           "status": "complete"
         },
         {
@@ -810,7 +810,7 @@
           "title": "Wohnfläche je Einwohner/-in",
           "description": "",
           "keywords": "",
-          "href": "/11-16",
+          "href": "/11-16/",
           "status": "complete"
         },
         {
@@ -818,7 +818,7 @@
           "title": "Modal Split",
           "description": "",
           "keywords": "",
-          "href": "/11-17",
+          "href": "/11-17/",
           "status": "complete"
         },
         {
@@ -826,7 +826,7 @@
           "title": "Generationengerechte Treffpunkte im Stadtgebiet",
           "description": "",
           "keywords": "",
-          "href": "/11-18",
+          "href": "/11-18/",
           "status": "complete"
         },
         {
@@ -834,7 +834,7 @@
           "title": "Planung und Neubau von Kleingartenanlagen",
           "description": "",
           "keywords": "",
-          "href": "/11-19",
+          "href": "/11-19/",
           "status": "complete"
         }]
     }
@@ -850,7 +850,7 @@
           "title": "Abfallmenge (private Haushalte)",
           "description": "",
           "keywords": "",
-          "href": "/12-1",
+          "href": "/12-1/",
           "status": "complete"
         },
         {
@@ -858,7 +858,7 @@
           "title": "Anzahl nachhaltige Kitas (zertifiziert, z.B. Fairtrade)",
           "description": "",
           "keywords": "",
-          "href": "/12-2",
+          "href": "/12-2/",
           "status": "complete"
         },
         {
@@ -866,7 +866,7 @@
           "title": "Schulen mit Nachhaltigkeits-Zertifizierungen",
           "description": "",
           "keywords": "",
-          "href": "/12-3",
+          "href": "/12-3/",
           "status": "complete"
         },
         {
@@ -874,7 +874,7 @@
           "title": "Fairtrade-Town (Anzahl der Zertifizierungen)",
           "description": "",
           "keywords": "",
-          "href": "/12-4",
+          "href": "/12-4/",
           "status": "complete"
         },
         {
@@ -882,7 +882,7 @@
           "title": "Recyclingquote",
           "description": "",
           "keywords": "",
-          "href": "/12-5",
+          "href": "/12-5/",
           "status": "complete"
         },
         {
@@ -890,7 +890,7 @@
           "title": "Trinkwasserverbrauch - private Haushalte",
           "description": "",
           "keywords": "",
-          "href": "/12-6",
+          "href": "/12-6/",
           "status": "complete"
         }]
     }
@@ -906,7 +906,7 @@
           "title": "Anzahl betroffener Bürger/-innen durch besonders belastete Gebiete aus Klimaanalysekarte",
           "description": "",
           "keywords": "",
-          "href": "/13-1",
+          "href": "/13-1/",
           "status": "complete"
         },
         {
@@ -914,7 +914,7 @@
           "title": "CO2e-Emissionen",
           "description": "",
           "keywords": "",
-          "href": "/13-2",
+          "href": "/13-2/",
           "status": "complete"
         },
         {
@@ -922,7 +922,7 @@
           "title": "Hitzetage pro Jahr",
           "description": "",
           "keywords": "",
-          "href": "/13-3",
+          "href": "/13-3/",
           "status": "complete"
         }]
     }
@@ -938,7 +938,7 @@
           "title": "Fließwasserqualität",
           "description": "",
           "keywords": "",
-          "href": "/14-1",
+          "href": "/14-1/",
           "status": "complete"
         },
         {
@@ -946,7 +946,7 @@
           "title": "Gewässerqualität",
           "description": "",
           "keywords": "",
-          "href": "/14-2",
+          "href": "/14-2/",
           "status": "complete"
         }]
     }
@@ -962,7 +962,7 @@
           "title": "Anteil der ökologisch bewirtschafteten Fläche an der landwirtschaftlich genutzten Fläche",
           "description": "",
           "keywords": "",
-          "href": "/15-1",
+          "href": "/15-1/",
           "status": "complete"
         },
         {
@@ -970,7 +970,7 @@
           "title": "Vielfalt und Qualität von Biotoptypen",
           "description": "",
           "keywords": "",
-          "href": "/15-2",
+          "href": "/15-2/",
           "status": "complete"
         },
         {
@@ -978,7 +978,7 @@
           "title": "Vertrags-Naturschutzflächen",
           "description": "",
           "keywords": "",
-          "href": "/15-3",
+          "href": "/15-3/",
           "status": "complete"
         },
         {
@@ -986,7 +986,7 @@
           "title": "Renaturierte Flächen in ha",
           "description": "",
           "keywords": "",
-          "href": "/15-4",
+          "href": "/15-4/",
           "status": "complete"
         },
         {
@@ -994,7 +994,7 @@
           "title": "Waldflächenbilanz",
           "description": "",
           "keywords": "",
-          "href": "/15-5",
+          "href": "/15-5/",
           "status": "complete"
         },
         {
@@ -1002,7 +1002,7 @@
           "title": "Landschaftsqualität",
           "description": "",
           "keywords": "",
-          "href": "/15-6",
+          "href": "/15-6/",
           "status": "complete"
         },
         {
@@ -1010,7 +1010,7 @@
           "title": "Stickstoffüberschuss in der Landwirtschaft",
           "description": "",
           "keywords": "",
-          "href": "/15-7",
+          "href": "/15-7/",
           "status": "complete"
         }]
     }
@@ -1026,7 +1026,7 @@
           "title": "Anzahl Ehrenamtliche",
           "description": "",
           "keywords": "",
-          "href": "/16-1",
+          "href": "/16-1/",
           "status": "complete"
         },
         {
@@ -1034,7 +1034,7 @@
           "title": "Anzahl und Art der informellen Bürger/-innenbeteiligungsverfahren",
           "description": "",
           "keywords": "",
-          "href": "/16-2",
+          "href": "/16-2/",
           "status": "complete"
         },
         {
@@ -1042,7 +1042,7 @@
           "title": "Finanzmittelsaldo",
           "description": "",
           "keywords": "",
-          "href": "/16-3",
+          "href": "/16-3/",
           "status": "complete"
         },
         {
@@ -1050,7 +1050,7 @@
           "title": "Liquiditätskredite",
           "description": "",
           "keywords": "",
-          "href": "/16-4",
+          "href": "/16-4/",
           "status": "complete"
         },
         {
@@ -1058,7 +1058,7 @@
           "title": "Steuereinnahmen",
           "description": "",
           "keywords": "",
-          "href": "/16-5",
+          "href": "/16-5/",
           "status": "complete"
         },
         {
@@ -1066,7 +1066,7 @@
           "title": "Straftaten (polizeilich gemeldet)",
           "description": "",
           "keywords": "",
-          "href": "/16-6",
+          "href": "/16-6/",
           "status": "complete"
         },
         {
@@ -1074,7 +1074,7 @@
           "title": "Wahlbeteiligung",
           "description": "",
           "keywords": "",
-          "href": "/16-7",
+          "href": "/16-7/",
           "status": "complete"
         }]
     }
@@ -1090,7 +1090,7 @@
           "title": "Anzahl Partnerschaften mit Kommunen aus dem Globalen Süden",
           "description": "",
           "keywords": "",
-          "href": "/17-1",
+          "href": "/17-1/",
           "status": "complete"
         },
         {
@@ -1098,7 +1098,7 @@
           "title": "Anzahl Projekte mit den Partnerstädten",
           "description": "",
           "keywords": "",
-          "href": "/17-2",
+          "href": "/17-2/",
           "status": "complete"
         },
         {
@@ -1106,7 +1106,7 @@
           "title": "Anzahl Projekte mit migrantischen Organisationen",
           "description": "",
           "keywords": "",
-          "href": "/17-3",
+          "href": "/17-3/",
           "status": "complete"
         },
         {
@@ -1114,7 +1114,7 @@
           "title": "Projekte mit Partnern in Ländern des globalen Südens",
           "description": "",
           "keywords": "",
-          "href": "/17-4",
+          "href": "/17-4/",
           "status": "complete"
         }]
     }
