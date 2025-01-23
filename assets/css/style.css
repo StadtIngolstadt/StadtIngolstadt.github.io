@@ -93,7 +93,7 @@ body.contrast-high {
   body.contrast-high a {
     color: #FFDD00; }
 
-button:focus {
+button:focus:not(.no-focus) {
   color: #0b0c0c !important;
   outline: 3px solid transparent !important;
   background-color: transparent !important;
