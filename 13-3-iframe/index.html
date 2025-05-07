@@ -141,7 +141,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20250506080033">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250507093141">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -286,7 +286,7 @@ layout-indicator-iframe
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Heißer Tag oder Hitzetag, ist die meteorologisch-klimatologische Bezeichnung für Tage, an denen die Tageshöchsttemperatur 30 °C erreicht oder übersteigt. Er wird zur genaueren Darstellung des Klimas eines Ortes und zur Beurteilung von Hitzewellen herangezogen. Gemessen wird in einer Standard-Wetterhütte in zwei Metern Höhe. Die Menge der heißen Tage ist eine Untermenge der Sommertage. Sinkt die Tagestiefsttemperatur nicht unter 20 °C, spricht man zusätzlich von Tropennacht.<br />
+    <p>Heißer Tag oder Hitzetag, ist die meteorologisch-klimatologische Bezeichnung für Tage, an denen die Tageshöchsttemperatur 30 °C erreicht oder übersteigt. Er wird zur genaueren Darstellung des Klimas eines Ortes und zur Beurteilung von Hitzewellen herangezogen. Gemessen wird in einer Standard-Wetterhütte in zwei Metern Höhe. Die Menge der heißen Tage ist eine Untermenge der Sommertage. <a href="https://www.dwd.de/DE/service/lexikon/Functions/glossar.html?lv3=101162&amp;lv2=101094">(Quelle: Deutscher Wetterdienst, Hitzetag)</a> Sinkt die Tagestiefsttemperatur nicht unter 20 °C, spricht man zusätzlich von Tropennacht <a href="https://www.dwd.de/DE/service/lexikon/Functions/glossar.html?nn=103346&amp;lv2=102672&amp;lv3=102802">(Quelle: Deutscher Wetterdienst, Tropennacht)</a> <br />
 <br />
 <b>Ziel Nachhaltigkeitsagenda Ingolstadt</b><br />
 K3.2: Entgegenwirken von Hitzeinseln (Vermeiden durch Ausbau der grünen Infrastruktur, Berücksichtigung von Kaltluftschneisen zur Belüftung der Siedlungsbereiche)<br />
@@ -310,21 +310,21 @@ K3.2: Entgegenwirken von Hitzeinseln (Vermeiden durch Ausbau der grünen Infrast
   data-country="Ingolstadt"
   data-charttitle="Hitzetage pro Jahr"
   data-charttitles="null"
-  data-measurementunit="Hitzetage pro Jahr"
+  data-measurementunit="Hitzetage und Tropennächte pro Jahr"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Ingolstadt&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Bayern&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Hitzetage und Tropennächte&quot;,&quot;value&quot;:&quot;Hitzetag&quot;},{&quot;field&quot;:&quot;Hitzetage und Tropennächte&quot;,&quot;value&quot;:&quot;Tropennacht&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Hitzetage und Tropennächte &quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Hitzetag&quot;,&quot;Tropennacht&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Hitzetage und Tropennächte &quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -357,105 +357,15 @@ K3.2: Entgegenwirken von Hitzeinseln (Vermeiden durch Ausbau der grünen Infrast
   <div id="datatables">
 
     
-    <a role="button" href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/headline/13-3.csv" class="btn btn-primary btn-download" download="indicator_13-3.csv" tabindex="0" role="button">Speichern der Headline im CSV-Format</a>
-    
     <a role="button" href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/data/13-3.csv" class="btn btn-primary btn-download" download='indicator_13-3.csv' tabindex='0' role='button'>Daten im CSV-Format speichern</a>
 
     <p class="no-js-disaggregation-hint">Quell-CSV für Disaggregationen herunterladen</p>
 
     
-    <h3>Schlagzeilendaten</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Hitzetage pro Jahr</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">19</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">12</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">6</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2022</td>
-          
-          
-          
-          <td class="table-value">21</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2023</td>
-          
-          
-          
-          <td class="table-value">20</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>Keine Headline-Daten verfügbar</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    
-    <p>Geographische Abdeckung: Ingolstadt</p>
-    
-    
-    <p>Einheit: Hitzetage pro Jahr</p>
-    
-    
-  </div>
   
 
 </div>
@@ -776,7 +686,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Definitionen </th>
         <td>
           
-            <p>Hitzetage pro Jahr</p>
+            <p>Hitzetage und Tropennächte pro Jahr</p>
 
           
         </td>
@@ -792,7 +702,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Hitzetage pro Jahr</p>
+            <p>Hitzetage und Tropennächte pro Jahr</p>
 
           
         </td>
@@ -856,7 +766,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>Amt für Statistik und Stadtforschung der Stadt Ingolstadt</p>
+            <p>Deutscher Wetterdienst, Datenabruf über <a href="https://www.wetterkontor.de/wetter-rueckblick/monats-und-jahreswerte.asp?id=91">WetterKontor GmbH</a></p>
 
           
         </td>
@@ -1117,12 +1027,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20250506080033'></script>
+<script src='/assets/js/sdg.js?v=20250507093141'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20250506080033"></script><script>
+    <script src="/assets/js/custom.js?v=20250507093141"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
