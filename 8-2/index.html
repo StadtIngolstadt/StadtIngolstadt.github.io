@@ -141,7 +141,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20250508142345">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250513084811">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -438,10 +438,10 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Dieser Indikator zeigt die sv-Beschäftigtenquote der in Ingolstadt Beschäftigte an unterteilt nach Geschlecht und Deutsch / Nicht-Deutsch. Die Quoten sind Wohnortsstatistiken. In den letzten Jahren haben sich insbesondere die Beschäftigungsquoten der Deutsch / Nicht-Deutsch kategorisierten Personengruppen weitestgehend angeglichen.<br />
+    <p>Dieser Indikator zeigt die sv-Beschäftigtenquote der in Ingolstadt, Bayern und Deutschland Beschäftigte an. Die Quoten sind Wohnortsstatistiken. In den letzten Jahren haben sich insbesondere die Beschäftigungsquoten der Deutsch / Nicht-Deutsch kategorisierten Personengruppen in Ingolstadt weitestgehend angeglichen.<br />
 <br />
 <b>Hinweis:</b><br />
-Zu den Beschäftigten mit ausländischer Staatsangehörigkeit zählen auch Staatenlose und Personen mit ungeklärter Staatsangehörigkeit. Bei den Bevölkerungszahlen gelten hingegen alle Personen als Ausländerinnen/Ausländer, die nicht Deutsche im Sinne des Art. 116 Abs. 1 Grundgesetz (GG) sind. Die leicht unterschiedlichen Datenbasen schränken die Aussagekraft der Beschäftigungsquoten nicht ein.<a href="https://statistik.arbeitsagentur.de/DE/Navigation/Grundlagen/Methodik-Qualitaet/Methodenberichte/Uebergreifend/Methodenberichte-Uebergreifend-Nav.html"> (Quelle: Bundesagentur für Arbeit)</a><br />
+Zu den Beschäftigten mit ausländischer Staatsangehörigkeit zählen auch Staatenlose und Personen mit ungeklärter Staatsangehörigkeit. Bei den Bevölkerungszahlen gelten hingegen alle Personen als Ausländerinnen / Ausländer, die nicht Deutsche im Sinne des Art. 116 Abs. 1 Grundgesetz (GG) sind. Die leicht unterschiedlichen Datenbasen schränken die Aussagekraft der Beschäftigungsquoten nicht ein.<a href="https://statistik.arbeitsagentur.de/DE/Navigation/Grundlagen/Methodik-Qualitaet/Methodenberichte/Uebergreifend/Methodenberichte-Uebergreifend-Nav.html"> (Quelle: Bundesagentur für Arbeit)</a><br />
 <br />
 <b>Ziel Nachhaltigkeitsagenda Ingolstadt</b><br />
 N3.7: Sicherung einer qualitativ hochwertigen Beschäftigung<br />
@@ -472,14 +472,14 @@ N3.7: Sicherung einer qualitativ hochwertigen Beschäftigung<br />
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Beschäftigtenquote&quot;,&quot;value&quot;:&quot;Frauen&quot;},{&quot;field&quot;:&quot;Beschäftigtenquote&quot;,&quot;value&quot;:&quot;Männer&quot;},{&quot;field&quot;:&quot;Beschäftigtenquote&quot;,&quot;value&quot;:&quot;Deutsch&quot;},{&quot;field&quot;:&quot;Beschäftigtenquote&quot;,&quot;value&quot;:&quot;Nicht-Deutsch&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Ingolstadt&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Bayern&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Deutschland&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Beschäftigtenquote&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Frauen&quot;,&quot;Männer&quot;,&quot;Deutsch&quot;,&quot;Nicht-Deutsch&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Beschäftigtenquote&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Ingolstadt&quot;,&quot;Bayern&quot;,&quot;Deutschland&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -841,7 +841,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Definitionen </th>
         <td>
           
-            <p>sv-Beschäftigtenquote in Ingolstadt Beschäftigte unterteilt nach Geschlecht und Deutsch / Nicht-Deutsch</p>
+            <p>sv-Beschäftigtenquote in Ingolstadt, Bayern und Deutschland</p>
 
           
         </td>
@@ -1431,12 +1431,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20250508142345'></script>
+<script src='/assets/js/sdg.js?v=20250513084811'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20250508142345"></script><script>
+    <script src="/assets/js/custom.js?v=20250513084811"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -141,7 +141,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20250508142345">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250513084811">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -288,7 +288,9 @@ layout-indicator-iframe
   <div class="col-xs-12">
     <p>Anzahl der Bürger/-innen mit einer Ehrenamtskarte. Wie viele Ehrenamtliche insgesamt in Ingolstadt aktiv sind / waren, wird derzeit nicht erhoben. Die Bayerische Ehrenamtskarte ist ein sichtbares Zeichen der Anerkennung für besonderes Bürgerschaftliches Engagement. Sie drückt die Wertschätzung für den täglichen Einsatz im Ehrenamt aus, der besonders anerkannt und belohnt werden soll.<br />
 <br />
-Stand: Mai 2024<br />
+Im Jahr 2024 wurde zum zeiten Mal die Jugendauszeichnung “Dein Engagement ist IN” an ehrenamtlich engagierte Jugendliche überreicht. 254 Kinder und Jugendliche wurden ausgezeichnet. Die Auszeichnung fand das erste Mal 2022 statt und wird alle zwei Jahre an ehrenamtlich engagierte Kinder und Jugendliche im Alter von 11 bis 18 Jahren mit einem Engagement von 50 Stunden pro Jahr verliehen.<br />
+<br />
+Stand: Dezember 2024<br />
 <br />
 <b>Ziel Nachhaltigkeitsagenda Ingolstadt</b><br />
 V1.3: Förderung ehrenamtlicher Organisationen<br />
@@ -319,14 +321,14 @@ V1.3: Förderung ehrenamtlicher Organisationen<br />
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Ingolstadt&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Bayern&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Ehrenamtskarteninhaber und Jugendauszeichnungen&quot;,&quot;value&quot;:&quot;Ehrenamtskarteninhaber&quot;},{&quot;field&quot;:&quot;Ehrenamtskarteninhaber und Jugendauszeichnungen&quot;,&quot;value&quot;:&quot;Jugendauszeichnungen&quot;},{&quot;field&quot;:&quot;Ehrenamtskarteninhaber und Jugendauszeichnungen&quot;,&quot;value&quot;:&quot;gesamt&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Ehrenamtskarteninhaber und Jugendauszeichnungen&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Ehrenamtskarteninhaber&quot;,&quot;Jugendauszeichnungen&quot;,&quot;gesamt&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Ehrenamtskarteninhaber und Jugendauszeichnungen&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -359,105 +361,15 @@ V1.3: Förderung ehrenamtlicher Organisationen<br />
   <div id="datatables">
 
     
-    <a role="button" href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/headline/16-1.csv" class="btn btn-primary btn-download" download="indicator_16-1.csv" tabindex="0" role="button">Speichern der Headline im CSV-Format</a>
-    
     <a role="button" href="https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data/de/data/16-1.csv" class="btn btn-primary btn-download" download='indicator_16-1.csv' tabindex='0' role='button'>Daten im CSV-Format speichern</a>
 
     <p class="no-js-disaggregation-hint">Quell-CSV für Disaggregationen herunterladen</p>
 
     
-    <h3>Schlagzeilendaten</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Anzahl Ehrenamtliche</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">1215</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">1950</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">2008</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2022</td>
-          
-          
-          
-          <td class="table-value">2115</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2023</td>
-          
-          
-          
-          <td class="table-value">1910</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>Keine Headline-Daten verfügbar</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    
-    <p>Geographische Abdeckung: Ingolstadt</p>
-    
-    
-    <p>Einheit: Bürger/-innen mit Ehrenamtskarte</p>
-    
-    
-  </div>
   
 
 </div>
@@ -778,7 +690,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Definitionen </th>
         <td>
           
-            <p>Anzahl der Bürger/-innen mit einer Ehrenamtskarte</p>
+            <p>Anzahl der Bürger/-innen mit einer Ehrenamtskarte und Jugendauszeichnungen</p>
 
           
         </td>
@@ -1119,12 +1031,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20250508142345'></script>
+<script src='/assets/js/sdg.js?v=20250513084811'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20250508142345"></script><script>
+    <script src="/assets/js/custom.js?v=20250513084811"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
