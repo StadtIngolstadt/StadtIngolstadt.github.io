@@ -228,6 +228,22 @@
           "keywords": "",
           "href": "/3-15/",
           "status": "complete"
+        },
+        {
+          "id": "3-16",
+          "title": "Anzahl der Präventionsmaßnahmen für Mitarbeitende der Stadtverwaltung",
+          "description": "",
+          "keywords": "",
+          "href": "/3-16/",
+          "status": "complete"
+        },
+        {
+          "id": "3-17",
+          "title": "Anzahl der Langzeiterkrankten Mitarbeitenden der Stadtverwaltung",
+          "description": "",
+          "keywords": "",
+          "href": "/3-17/",
+          "status": "complete"
         }]
     }
   },
@@ -516,6 +532,30 @@
           "keywords": "",
           "href": "/8-8/",
           "status": "complete"
+        },
+        {
+          "id": "8-9",
+          "title": "Anzahl der Arbeitszeitmodelle für städtische Mitarbeitende",
+          "description": "",
+          "keywords": "",
+          "href": "/8-9/",
+          "status": "complete"
+        },
+        {
+          "id": "8-10",
+          "title": "Zahl der Mitarbeitenden und offenen Stellen bei der Stadt Ingolstadt",
+          "description": "",
+          "keywords": "",
+          "href": "/8-10/",
+          "status": "complete"
+        },
+        {
+          "id": "8-11",
+          "title": "Zahl der Auszubildenden bei der Stadt Ingolstadt",
+          "description": "",
+          "keywords": "",
+          "href": "/8-11/",
+          "status": "complete"
         }]
     }
   },
@@ -580,6 +620,14 @@
           "keywords": "",
           "href": "/9-7/",
           "status": "inprogress"
+        },
+        {
+          "id": "9-8",
+          "title": "Online-Verfahren der Stadt Ingolstadt",
+          "description": "",
+          "keywords": "",
+          "href": "/9-8/",
+          "status": "complete"
         }]
     }
   },
@@ -836,6 +884,30 @@
           "keywords": "",
           "href": "/11-19/",
           "status": "complete"
+        },
+        {
+          "id": "11-20",
+          "title": "Nutzerzahlen der nachhaltigen Mobilitätsangebote der Stadt",
+          "description": "",
+          "keywords": "",
+          "href": "/11-20/",
+          "status": "complete"
+        },
+        {
+          "id": "11-21",
+          "title": "Zahl der Sanierungsmaßnahmen städtischer Liegenschaften",
+          "description": "",
+          "keywords": "",
+          "href": "/11-21/",
+          "status": "inprogress"
+        },
+        {
+          "id": "11-22",
+          "title": "Zahl städtischer Neubauten mit Nachhaltigkeitszertifizierung",
+          "description": "",
+          "keywords": "",
+          "href": "/11-22/",
+          "status": "inprogress"
         }]
     }
   },
@@ -892,6 +964,14 @@
           "keywords": "",
           "href": "/12-6/",
           "status": "complete"
+        },
+        {
+          "id": "12-7",
+          "title": "Nachhaltige Beschaffung in der Verwaltung",
+          "description": "",
+          "keywords": "",
+          "href": "/12-7/",
+          "status": "inprogress"
         }]
     }
   },
@@ -1075,6 +1155,14 @@
           "description": "",
           "keywords": "",
           "href": "/16-7/",
+          "status": "complete"
+        },
+        {
+          "id": "16-8",
+          "title": "Nachhaltigkeitsgesteuerte Investitionen",
+          "description": "",
+          "keywords": "",
+          "href": "/16-8/",
           "status": "complete"
         }]
     }
