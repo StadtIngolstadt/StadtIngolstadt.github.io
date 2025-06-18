@@ -141,7 +141,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20250528085205">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250618155143">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -286,7 +286,7 @@ layout-indicator-iframe
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Dieser Indikator zeigt den Anteil der Kinder mit deutscher und nicht-deutscher Familiensprache in KiTas an.<br />
+    <p>Dieser Indikator zeigt den Anteil der Kinder mit vorrangig deutscher und nicht-deutscher Familiensprache in KiTas an.<br />
 <br />
 <b>Ziel Nachhaltigkeitsagenda Ingolstadt</b><br />
 B2.3: Förderung der Bildungsteilhabe / Bildungsgerechtigkeit und lebenslangem Lernen<br />
@@ -317,14 +317,14 @@ B2.3: Förderung der Bildungsteilhabe / Bildungsgerechtigkeit und lebenslangem L
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Muttersprache&quot;,&quot;value&quot;:&quot;deutsch&quot;},{&quot;field&quot;:&quot;Muttersprache&quot;,&quot;value&quot;:&quot;nicht-deutsch&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;vorrangige Sprache&quot;,&quot;value&quot;:&quot;deutsch&quot;},{&quot;field&quot;:&quot;vorrangige Sprache&quot;,&quot;value&quot;:&quot;nicht-deutsch&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Muttersprache&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;deutsch&quot;,&quot;nicht-deutsch&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Muttersprache&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;vorrangige Sprache&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;deutsch&quot;,&quot;nicht-deutsch&quot;,&quot;&quot;]},&quot;title&quot;:&quot;vorrangige Sprache&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -766,7 +766,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>Amt für Statistik und Stadtforschung der Stadt Ingolstadt</p>
+            <p><a href="https://www.statistikdaten.bayern.de/genesis/online?operation=table&amp;code=22541-003z&amp;bypass=true&amp;levelindex=1&amp;levelid=1744791923549#abreadcrumb">Bayerisches Landesamt für Statistik</a></p>
 
           
         </td>
@@ -1027,12 +1027,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20250528085205'></script>
+<script src='/assets/js/sdg.js?v=20250618155143'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20250528085205"></script><script>
+    <script src="/assets/js/custom.js?v=20250618155143"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
